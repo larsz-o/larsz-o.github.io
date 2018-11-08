@@ -49,6 +49,9 @@ footer {
 .github-link{
   margin-top: 5vh; 
 }
+h2 {
+  font-size: 3em;
+}
 .icon-div {
   margin: 2px; 
 }

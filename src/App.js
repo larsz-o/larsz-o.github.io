@@ -9,8 +9,8 @@ class App extends Component {
     return (
       <Router>
         <Switch>
-          <Route path="/" component={HomePage}/>
-          <Route path="/:id" component={DetailView}/>
+          <Route exact path="/" component={HomePage}/>
+          <Route exact path="/moredetails" component={DetailView}/>
           <Route render={() => <h1>404: Page not found</h1>} />
         </Switch>
       </Router>
