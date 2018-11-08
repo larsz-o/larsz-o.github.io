@@ -61,6 +61,9 @@ footer {
 .margin-top {
   margin-top: 5vh;
 }
+.padding {
+  padding: 3px;
+}
 .project-card-text{
   padding: 3px;
 }
