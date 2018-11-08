@@ -59,7 +59,7 @@ class HomePage extends Component {
                                         <div class="project-card">
                                             <h2 class="card-header">{project.title}</h2>
                                             <a href="link">
-                                                <img class="card-img-top" src={project.thumbnail} alt={project.title}/>
+                                                <img class="card-img-top" src={project.thumbnail} alt={project.title} maxWidth={250}/>
                                             </a>
                                             <p class="project-card-text">{project.short_summary}</p>
                                         </div>
