@@ -1,32 +1,72 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+a {
+  text-decoration: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a:hover{
+  text-decoration: none; 
+}
+.project-card {
+  padding: 5%;
+  height: 450px; 
+  margin-left: .5vw;
+  margin-right: .5vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  align-content: left; 
+  border: 1px solid gray;
+  text-align: center; 
+  background-color: white; 
+ 
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.flex-box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 0;
 }
-
-.App-link {
-  color: #61dafb;
+.flex-box-center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex-box-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+footer {
+  margin-right: 5vw;
+  margin-top: 5vh;
+  height: 10vh;
+  text-align: right;
+}
+.github-link{
+  margin-top: 5vh; 
+}
+.icon-div {
+  margin: 2px; 
+}
+.jumbotron{
+  margin-bottom: 0px; 
+}
+.margin-bottom {
+ margin-bottom: 4vh; 
+}
+.margin-top {
+  margin-top: 5vh;
+}
+.project-card-text{
+  padding: 3px;
+}
+.white {
+  background-color: #eaf9f9;
+}
+body, html {
+  background-color: #eaf9f9;
 }
