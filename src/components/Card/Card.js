@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'; 
+import { Image } from 'react-bootstrap'; 
 
 class Card extends Component {
 
@@ -16,7 +17,7 @@ class Card extends Component {
             <div className="col-md-4">
                 <div className="project-card">
                     <h2 className="card-header">{this.props.project.title}</h2>
-                    <img className="card-img-top" src={this.props.project.thumbnail} alt={this.props.project.title} width={250} />
+                    <Image className="card-img-top" src={this.props.project.thumbnail} alt={this.props.project.title} width={250}/>
                     <p className="project-card-text">{this.props.project.short_summary}</p>
                     <button className="btn btn-info my-2" onClick={this.handleClick}>Learn More</button>
                 </div>
