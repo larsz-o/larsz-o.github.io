@@ -15,9 +15,12 @@ class DetailView extends Component {
                         <p className="lead">{this.props.project.summary} <br />
                             Check out the code respository on: <a href={this.props.project.githubURL}><img src="https://raw.githubusercontent.com/larsz-o/professional-portfolio/master/src/static/github.png" alt="github icon" /></a>
                         </p>
-                        <Image src={this.props.project.image} alt={this.props.project.title}/>
+                        <Image src={this.props.project.image} alt={this.props.project.title} id="screenshot"/>
                     </div> 
-                    <a href="/#/" className="btn btn-secondary">Back</a>
+                    <div className="padding">
+                    <a href="/#/" className="btn btn-primary">Back</a>
+                    </div>
+                    
                 </section>
             </main>
 

@@ -52,6 +52,9 @@ footer {
 h2 {
   font-size: 3em;
 }
+h3 {
+  font-size: 2em; 
+}
 .icon-div {
   margin: 2px; 
 }
@@ -65,7 +68,7 @@ h2 {
   margin-top: 5vh;
 }
 .padding {
-  padding: 3px;
+  padding: 5px;
 }
 .project-card-text{
   padding: 3px;
@@ -75,4 +78,9 @@ h2 {
 }
 body, html {
   background-color: #eaf9f9;
+}
+@media (max-width:629px) {
+  img#screenshot {
+    display: none;
+  }
 }
