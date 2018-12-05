@@ -7,23 +7,33 @@ const mapStateToProps = state => ({
 });
 class DetailView extends Component {
     render() {
+        let empty = Object.keys(obj).length === 0 && obj.constructor === Object; 
+        let content;
+        if(empty){
+            content = (<div>
+                <h3>Uh oh, nothing to see here.</h3>
+             <div className="padding">
+                <a href="/#/" className="btn btn-primary">Return Home</a>
+            </div>
+            </div>); 
+        } else {
+            content = (<main role="main" className="margin-bottom">
+            <section className="jumbotron text-center white">
+                <div className="container flex-box">
+                    <h2>{this.props.project.title}</h2>
+                    <p className="lead">{this.props.project.summary} <br />
+                        Check out the code respository on: <a href={this.props.project.githubURL}><img src="https://raw.githubusercontent.com/larsz-o/professional-portfolio/master/src/static/github.png" alt="github icon" /></a>
+                    </p>
+                    <Image src={this.props.project.image} alt={this.props.project.title} id="screenshot"/>
+                </div> 
+                <div className="padding">
+                <a href="/#/" className="btn btn-primary">Back</a>
+                </div>
+            </section>
+        </main>);
+        }
         return (
-            <main role="main" className="margin-bottom">
-                <section className="jumbotron text-center white">
-                    <div className="container flex-box">
-                        <h2>{this.props.project.title}</h2>
-                        <p className="lead">{this.props.project.summary} <br />
-                            Check out the code respository on: <a href={this.props.project.githubURL}><img src="https://raw.githubusercontent.com/larsz-o/professional-portfolio/master/src/static/github.png" alt="github icon" /></a>
-                        </p>
-                        <Image src={this.props.project.image} alt={this.props.project.title} id="screenshot"/>
-                    </div> 
-                    <div className="padding">
-                    <a href="/#/" className="btn btn-primary">Back</a>
-                    </div>
-                    
-                </section>
-            </main>
-
+            {content}
         );
     }
 }
