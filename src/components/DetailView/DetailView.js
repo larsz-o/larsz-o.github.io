@@ -7,12 +7,14 @@ const mapStateToProps = state => ({
 });
 class DetailView extends Component {
     render() {
-        let empty = Object.keys(obj).length === 0 && obj.constructor === Object; 
+        let empty = Object.keys(this.props.project).length === 0;
         let content;
         if(empty){
-            content = (<div>
+            content = (<div className="padding-top">
+                <div className="flex-box">
                 <h3>Uh oh, nothing to see here.</h3>
-             <div className="padding">
+                </div>
+             <div className="padding flex-box">
                 <a href="/#/" className="btn btn-primary">Return Home</a>
             </div>
             </div>); 
@@ -33,7 +35,7 @@ class DetailView extends Component {
         </main>);
         }
         return (
-            {content}
+            content
         );
     }
 }

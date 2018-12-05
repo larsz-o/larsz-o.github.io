@@ -70,6 +70,10 @@ h3 {
 .padding {
   padding: 5px;
 }
+.padding-top {
+  margin-top: 20vh;
+  padding-top: 5px; 
+}
 .project-card-text{
   padding: 3px;
 }
