@@ -63,8 +63,8 @@ class HomePage extends Component {
                                     <a className="padding" href="mailto:larsmackenzie@gmail.com"><Image src="https://raw.githubusercontent.com/larsz-o/larsz-o.github.io/master/src/static/gmail.png" alt="email icon"/></a>
                                 </p>
                             </div>
-                            <p className="col-md-4">I'm always interested in connecting with others to talk about software, competitive cooking shows, and dogs. If you are interested in hiring me to build software for you or your
-                                    organization, please reach out!
+                            <p className="col-md-4">I'm always interested in connecting with others to talk about software, competitive cooking shows, and dogs. I've worked with a range of clients from small businesses to educators. If you are interested in hiring me to build software for you or your
+                                    organization, please <a href="mailto:larsmackenzie@gmail.com">reach out!</a> 
                     </p>
                         </div>
                     </section>
