@@ -3,7 +3,12 @@ import Footer from '../Footer/Footer';
 import Card from '../Card/Card'; 
 import { Image } from 'react-bootstrap';
 import axios from 'axios'; 
+import { connect } from 'react-redux'; 
 
+const mapStateToProps = state => ({
+    projects: state.projects.projects,
+    technologies: state.technologies
+})
 class HomePage extends Component {
     constructor(props) {
         super(props);
@@ -16,7 +21,25 @@ class HomePage extends Component {
         this.getProjects();
     }
     getProjects = () => {
-
+        axios({
+            method: 'GET', 
+            url: '/projects'
+        }).then((response) => {
+            this.props.dispatch({type: 'SET_PROJECTS', payload: response.data});
+            this.getTech(); 
+        }).catch((error) => {
+            console.log('Error getting projects', error);
+        })
+    }
+    getTech  = () => {
+        axios({
+            method: 'GET', 
+            url: '/projects/technologies'
+        }).then((response) => {
+            this.props.dispatch({type: 'SET_TECH', payload: response.data});
+        }).catch((error) => {
+            console.log('Error getting technologies', error);
+        })
     }
     render() {
         return (
@@ -56,7 +79,7 @@ class HomePage extends Component {
                             <div className="container flex-box">
                                 <h2>Projects</h2>
                                 <div className="flex-box-cards">
-                                    {this.state.projects.map((project, i) => {
+                                    {this.props.projects.map((project, i) => {
                                         return (
                                             <Card key={i} project={project} history={this.props.history}/>
                                         );
@@ -69,7 +92,7 @@ class HomePage extends Component {
                         <h2>Technologies</h2>
                     </div>
                     <div className="container flex-box">
-                        {this.state.technologies.map((tech, i) => {
+                        {this.props.technologies.map((tech, i) => {
                             return (
                                 <div className="icon-div" key={i}>
                                     <Image src={tech.icon} height={100} width={100} alt={tech.name} responsive/>
@@ -83,4 +106,4 @@ class HomePage extends Component {
         );
     }
 }
-export default HomePage; 
+export default connect(mapStateToProps)(HomePage); 

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Image } from 'react-bootstrap'; 
 
 const mapStateToProps = state => ({
-    project: state
+    project: state.currentProject
 });
 class DetailView extends Component {
     render() {

@@ -6,10 +6,10 @@ import * as serviceWorker from './serviceWorker';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux'; 
 import logger from 'redux-logger'; 
-import reducer from './redux/project.reducer';
+import rootReducer from './redux/index.js';
 
 const store = createStore(
-    reducer, 
+    rootReducer, 
     applyMiddleware(logger)
 );
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
