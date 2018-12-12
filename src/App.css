@@ -1,9 +1,11 @@
 
 a {
   text-decoration: none;
+  color: black; 
 }
 a:hover{
   text-decoration: none; 
+
 }
 .project-card {
   padding: 5%;
@@ -40,6 +42,12 @@ a:hover{
   flex-wrap: wrap;
   justify-content: left;
 }
+.flex-box-evenly {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 footer {
   margin-right: 5vw;
   margin-top: 5vh;
@@ -49,11 +57,23 @@ footer {
 .github-link{
   margin-top: 5vh; 
 }
+.header-link:hover{
+  color: black; 
+}
+.header-padding{
+  padding-bottom: 5vh; 
+}
+h1 {
+  font-family: 'Fredoka One', cursive;
+}
 h2 {
   font-size: 3em;
 }
 h3 {
   font-size: 2em; 
+}
+html, body {
+  font-family: 'Archivo', sans-serif;
 }
 .icon-div {
   margin: 2px; 
@@ -65,7 +85,10 @@ h3 {
  margin-bottom: 4vh; 
 }
 .margin-top {
-  margin-top: 5vh;
+  margin-top: 15vh;
+}
+.nav-item {
+  font-size: 1.5em; 
 }
 .padding {
   padding: 5px;
