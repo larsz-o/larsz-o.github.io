@@ -19,7 +19,7 @@ class ServicesInfo extends Component {
                 {this.props.services === 'Academic' && <Academic/>}
                 {this.props.services === 'Individuals' && <Individual/>}
                 {this.props.services === '' && <div className="margin-top">
-                            <p>Uh oh. Nothing to see here. <br/><Button bsStyle="warning" onClick={()=>this.props.history.push('/')}>Return Home</Button></p>
+                            <p>Uh oh. Nothing to see here. <br/><br/><Button bsStyle="warning" onClick={()=>this.props.history.push('/')}>Return Home</Button></p>
                 </div>}
             </section>
         );

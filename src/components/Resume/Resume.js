@@ -3,9 +3,7 @@ import { connect } from 'react-redux';
 import { Image } from 'react-bootstrap';
 import Nav from '../Nav/Nav'; 
 
-const mapStateToProps = state => ({
-    technologies: state.technologies
-})
+
 class Projects extends Component {
     render() {
         return (
@@ -18,18 +16,9 @@ class Projects extends Component {
                 tedious processes, to building platforms to connect people, to delivering meaningful insights from under-utilized data.</p>
                     <h2>Technologies</h2>
                 </div>
-                <div className="container flex-box">
-                    {this.props.technologies.map((tech, i) => {
-                        return (
-                            <div className="icon-div" key={i}>
-                                <Image src={tech.icon} height={100} width={100} alt={tech.name} responsive />
-                            </div>
-                        );
-                    })}
-                </div>
             </section>
         );
     }
 }
 
-export default connect(mapStateToProps)(Projects); 
+export default connect()(Projects); 

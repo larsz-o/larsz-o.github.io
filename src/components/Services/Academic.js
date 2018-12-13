@@ -37,7 +37,7 @@ class Academic extends Component {
                </Row>
                 <Row>
                     <Col xs={12} md={4} lg={4}>
-                    <h3>Platforms for research insights</h3>
+                    <h3>Platforms for research projects</h3>
                         <Image src={require('./web.svg')} alt="computer" width="100px" height="100px"/>
                     </Col>
                     <Col xs={12} md={4} lg={4}>
