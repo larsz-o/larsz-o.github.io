@@ -36,9 +36,7 @@ class Services extends Component {
                             Research Project Portfolios 
                             Fundraising Sites 
                             WordPress customization 
-                        Professional Resume Websites
-                    <p>I've worked with clients to build e-Commerce sites for small businesses, professional resume sites, and web portfolios community-oriented projects. 
-                        I've also built stand-alone applications to help small businesses keep track of their clients.</p> */}
+                    */}
                         {/* container for services divs */}
                 <div className="flex-box">
                 {this.state.services.map((service, i) => {
