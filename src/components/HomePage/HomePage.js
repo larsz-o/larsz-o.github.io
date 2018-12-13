@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Footer from '../Footer/Footer';
 import { Image, Button } from 'react-bootstrap';
 import axios from 'axios'; 
 import { connect } from 'react-redux'; 
@@ -57,7 +56,6 @@ class HomePage extends Component {
                         </div>
                     </section>
                 </main>
-                <Footer/>
             </div >
         );
     }

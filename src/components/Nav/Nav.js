@@ -4,7 +4,7 @@ class Nav extends Component {
         return (
         <div>
           <a className="header-link" href="/#/"><div className="flex-box header-padding">
-                <h1 className="jumbotron-heading">Lars Mackenzie</h1>
+                <h1 className="jumbotron-heading">Lars Mackenzie | software solutions</h1>
             </div></a>
                 <nav className="flex-box-evenly">
                     <div className="nav-item"><a href="/#/about">About</a></div>

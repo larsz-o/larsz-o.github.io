@@ -7,10 +7,11 @@ import Projects from './components/Projects/Projects';
 import Resume from './components/Resume/Resume'; 
 import Services from './components/Services/Services'; 
 import ServicesInfo from './components/Services/ServicesInfo'; 
-
+import Footer from './components/Footer/Footer';
 class App extends Component {
   render() {
     return (
+      <div>
       <Router>
         <Switch>
           <Route exact path="/" component={HomePage}/>
@@ -22,6 +23,9 @@ class App extends Component {
           <Route render={() => <h1>404: Page not found</h1>} />
         </Switch>
       </Router>
+      <Footer/>
+      </div>
+     
     );
   }
 }

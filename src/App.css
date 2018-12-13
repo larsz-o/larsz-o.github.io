@@ -67,9 +67,11 @@ h1 {
   font-family: 'Inconsolata', monospace;
 }
 h2 {
+  font-family: 'Inconsolata', monospace;
   font-size: 3em;
 }
 h3 {
+  font-family: 'Inconsolata', monospace;
   font-size: 2em; 
 }
 html, body {
@@ -100,11 +102,13 @@ html, body {
 .project-card-text{
   padding: 3px;
 }
+.row-padding {
+  padding: 50px; 
+}
 .services-div {
   height: 50vh; 
   width: 20vw; 
   padding: 5px; 
-  background-color: white; 
   margin-top: 10px; 
 }
 .white {

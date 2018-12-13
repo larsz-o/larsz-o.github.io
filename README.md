@@ -1,2 +1,2 @@
-# Professional Portfolio Site
-A portfolio of my software development work. 
+# LarsMackenzie.com 
+A website for my freelance software development work. 
