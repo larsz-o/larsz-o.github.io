@@ -8,8 +8,8 @@ class Nav extends Component {
             </div></a>
                 <nav className="flex-box-evenly">
                     <div className="nav-item"><a href="/#/about">About</a></div>
-                    <div className="nav-item"><a href="/#/projects">Projects</a></div>
                     <div className="nav-item"><a href="/#/services">Services</a></div>
+                    <div className="nav-item"><a href="/#/projects">Projects</a></div>
                     <div className="nav-item"><a href="/#/contact">Contact</a></div>
                 </nav>
         </div>
