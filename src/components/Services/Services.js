@@ -11,7 +11,7 @@ class Services extends Component {
             {name: 'Small Business', description: 'From online stores to custom web applications, the right solution for your business needs.', image: `${require('./business.jpg')}`}, 
             {name: 'Non-Profit', description: `Revamp your organization's website and show off your latest work.`, image: `${require('./nonprofit.jpg')}`}, 
             {name: 'Academic', description: 'Build digital research tools or highlight your latest project with a public platform.', image: `${require('./academic.jpg')}`},
-            {name: 'Individuals', description: 'Stand out with a beautiful professional resume or portfolio website.', image: `${require('./individual.jpg')}`},
+            {name: 'Individuals', description: 'Stand out with a beautiful professional resume or portfolio website.', image: `${require('./individual2.jpg')}`},
         ]
         }
     }
