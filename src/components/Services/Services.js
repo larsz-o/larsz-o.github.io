@@ -16,7 +16,11 @@ class Services extends Component {
         }
     }
     navTo = (service) => {
-
+        // TO-DO: build a component for each page. 
+        // send the name of the service to redux. 
+        // send the user to a services info page. that page will render whatever component matches the one in redux 
+        this.props.dispatch({type: 'SET_SERVICE_TO_VIEW', payload: service.name});
+        this.props.history.push('/more-info')
     }
     render(){
         return(

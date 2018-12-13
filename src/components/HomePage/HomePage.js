@@ -47,7 +47,7 @@ class HomePage extends Component {
                             <div className="col-md-4">
                                 <Image src="https://raw.githubusercontent.com/larsz-o/larsz-o.github.io/master/src/static/lars.jpg" alt="Lars headshot" height="350" width="400" circle/>
                             </div>
-                            <h2 className="col-md-4">Hello! I'm a full-stack software developer and I can help you build your professional web presence.</h2>
+                            <h2 className="col-md-4">Hello! I'm a full-stack software developer and I can help you build your professional or organizational web presence.</h2>
                         </div>
                         <div className="flex-box">
                             <div className="col-md-4">
