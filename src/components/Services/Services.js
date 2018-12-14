@@ -27,17 +27,8 @@ class Services extends Component {
             <section className="jumbotron text-center white">
                 <Nav/>
                 <div className="margin-top">
-                <h2>What Can I Build For You?</h2>
-                {/*   Small Business Tools 
-                            Small Business Online Stores
-                            WordPress customization 
-                            Customized web applications to keep track of business needs 
-                        Non-Profit
-                            Research Project Portfolios 
-                            Fundraising Sites 
-                            WordPress customization 
-                    */}
-                        {/* container for services divs */}
+                <h2>What are you here for?</h2>
+        {/* container for services divs */}
                 <div className="flex-box">
                 {this.state.services.map((service, i) => {
                     return (
