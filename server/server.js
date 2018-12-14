@@ -9,10 +9,10 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 // Routers
-const projectsRouter = require('./routes/projects-router'); 
+const contactRouter = require('./routes/contact.router'); 
 
 //Routes
-app.use('/projects', projectsRouter); 
+app.use('/contact', contactRouter); 
 
 // Serve static files
 app.use(express.static('build'));

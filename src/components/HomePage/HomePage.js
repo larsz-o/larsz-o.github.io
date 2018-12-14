@@ -7,9 +7,8 @@ class HomePage extends Component {
     render() {
         return (
             <div>
-                <main role="main">
-                    <section className="jumbotron white">
-                        <Nav/>
+                <Nav/>
+                    <section>
                         <div className="flex-box margin-top">
                             <div className="col-md-4">
                                 <Image src="https://raw.githubusercontent.com/larsz-o/larsz-o.github.io/master/src/static/lars.jpg" alt="Lars headshot" height="350" rounded/>
@@ -23,7 +22,7 @@ class HomePage extends Component {
                     </div>
                         </div>
                     </section>
-                </main>
+           
             </div >
         );
     }

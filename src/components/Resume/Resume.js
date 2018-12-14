@@ -9,7 +9,7 @@ class Projects extends Component {
         return (
             <section>
                 <Nav />
-                <div className="container flex-box-cards">
+                <div className="container flex-box-cards margin-top">
                     <h2>About Me</h2>
                     <p>I am a full-stack software developer with a background in research, higher education, and social services. I love creating technology that can improve people's lives - from automating tedious processes, to building platforms to connect people, to delivering meaningful insights from under-utilized data.</p>
                     <p>For the past six and a half years, I've been pursuing a PhD at the University of Minnesota, where I studied how software and data-driven decision-making impacts marginalized people.</p>
