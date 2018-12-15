@@ -32,6 +32,7 @@ class Projects extends Component {
                     <Col xs={12} md={6} lg={4}>
                         <h2>Projects</h2>
                     </Col>
+                    {/* temporary fix for a picture that refuses to resize! */}
                     {isDesktop ? (<Col xs={12} md={6} lg={8}>
                         <img src={require('./apple.jpg')} height="500px" alt="computer" responsive/>
                     </Col>) : (<div></div>)}
