@@ -82,6 +82,11 @@ footer {
   height: 5vh; 
   padding: 10px; 
 }
+.full-width {
+  width: 80%;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
 .github-link{
   margin-top: 5vh; 
 }

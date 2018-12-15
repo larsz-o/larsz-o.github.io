@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { FormControl, FormGroup, ControlLabel, Button } from 'react-bootstrap';
-import Nav from '../Nav/Nav'; 
-import axios from 'axios'; 
+import Nav from '../Nav/Nav';
+import axios from 'axios';
 
 class Contact extends Component {
     constructor(props) {
@@ -11,8 +11,16 @@ class Contact extends Component {
             email: '',
             product: '',
             subject: '',
-            message: ''
+            message: '',
+            isDesktop: true
         }
+    }
+    componentDidMount() {
+        this.updatePredicate();
+        window.addEventListener("resize", this.updatePredicate)
+    }
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.updatePredicate);
     }
     handleChangeFor = (event, property) => {
         this.setState({
@@ -22,11 +30,11 @@ class Contact extends Component {
     }
     handleSubmit = () => {
         axios({
-            method: 'POST', 
-            url: '/contact', 
+            method: 'POST',
+            url: '/contact',
             data: this.state
         }).then((response) => {
-           this.sendConfirmation(); 
+            this.sendConfirmation();
         }).catch((error) => {
             console.log('Error submitting form.', error);
             alert('Error submitting contact form. Please try again.');
@@ -34,7 +42,7 @@ class Contact extends Component {
     }
     sendConfirmation = () => {
         axios({
-            method: 'POST', 
+            method: 'POST',
             url: '/contact/confirmation',
             data: this.state
         }).then((response) => {
@@ -45,17 +53,23 @@ class Contact extends Component {
                 product: '',
                 subject: '',
                 message: ''
-            }); 
+            });
         }).catch((error) => {
-            console.log('Error posting confirmation', error); 
+            console.log('Error posting confirmation', error);
+        })
+    }
+    updatePredicate = () => {
+        this.setState({
+            isDesktop: window.innerWidth > 1024
         })
     }
     render() {
+        let isDesktop = this.state.isDesktop;
         return (
             <section className="main">
-                <Nav/>
-                <form onSubmit={this.handleSubmit} className="contact-form">
-                <h2 className="center">How can I help you?</h2>
+                <Nav />
+                {isDesktop ? (<form onSubmit={this.handleSubmit} className="contact-form">
+                    <h2 className="center">How can I help you?</h2>
                     <FormGroup>
                         <ControlLabel>Name</ControlLabel>
                         <FormControl type="text" value={this.state.name} onChange={(event) => this.handleChangeFor(event, 'name')} />
@@ -88,7 +102,40 @@ class Contact extends Component {
                         <Button bsSize="large" type="submit" bsStyle="primary">Submit</Button>
                     </div>
                 </form>
-
+                ) : (<form onSubmit={this.handleSubmit} className="full-width">
+                    <h2 className="center">How can I help you?</h2>
+                    <FormGroup>
+                        <ControlLabel>Name</ControlLabel>
+                        <FormControl type="text" value={this.state.name} onChange={(event) => this.handleChangeFor(event, 'name')} />
+                    </FormGroup>
+                    <FormGroup>
+                        <ControlLabel>Email</ControlLabel>
+                        <FormControl type="email" value={this.state.email} onChange={(event) => this.handleChangeFor(event, 'email')} />
+                    </FormGroup>
+                    <FormGroup>
+                        <ControlLabel>Are you interested in a particular product?</ControlLabel>
+                        <FormControl componentClass="select" placeholder="select one" value={this.state.product} onChange={(event) => this.handleChangeFor(event, 'product')}>
+                            <option value=""></option>
+                            <option value="Website Design (organization or business)">Website Design (organization or business)</option>
+                            <option value="Professional Portfolio (individual)">Professional Portfolio or Resume Site (individual)</option>
+                            <option value="Data Storytelling and Management Tools">Data Storytelling and Management Tools</option>
+                            <option value="Customer/Stakeholder Management Tools">Customer/Stakeholder Management Tools</option>
+                            <option value="Other">Other</option>
+                        </FormControl>
+                    </FormGroup>
+                    <FormGroup>
+                        <ControlLabel>Subject</ControlLabel>
+                        <FormControl type="text" value={this.state.subject} onChange={(event) => this.handleChangeFor(event, 'subject')} />
+                    </FormGroup>
+                    <FormGroup>
+                        <ControlLabel>Message</ControlLabel>
+                        <ControlLabel>Please be as detailed as possible to help me understand your needs. Do you have a deadline you're working with? Do you need a project built from scratch or do you have an existing product that needs improvement?</ControlLabel>
+                        <FormControl componentClass="textarea" rows={10} value={this.state.message} onChange={(event) => this.handleChangeFor(event, 'message')} />
+                    </FormGroup>
+                    <div className="center">
+                        <Button bsSize="large" type="submit" bsStyle="primary">Submit</Button>
+                    </div>
+                </form>)}
 
             </section>
         );
