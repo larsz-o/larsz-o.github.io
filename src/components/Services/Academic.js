@@ -10,7 +10,7 @@ class Academic extends Component {
                     <h2>For Research and Academics</h2>
                 </Col>
                     <Col xs={12} md={6} lg={8}>
-                        <Image src={require('./academic-full.jpg')}  alt="man sitting at a desk" height="500px" />
+                        <Image src={require('./academic-full.jpg')}  alt="man sitting at a desk" height="500px" responsive/>
                     </Col>
                 </Row>
                 <Row>

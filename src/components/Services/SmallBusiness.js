@@ -10,7 +10,7 @@ class SmallBusiness extends Component {
                     <h2>For Small Businesses</h2>
                 </Col>
                     <Col xs={12} md={6} lg={8}>
-                        <Image src={require('./apron-full.jpg')}  alt="worked in an apron" height="500px" />
+                        <Image src={require('./apron-full.jpg')}  alt="worked in an apron" height="500px" responsive/>
                     </Col>
                 </Row>
                 <Row>

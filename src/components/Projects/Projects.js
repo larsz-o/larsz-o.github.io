@@ -14,7 +14,7 @@ class Projects extends Component {
                         <h2>Projects</h2>
                     </Col>
                     <Col xs={12} lg={6}>
-                        <img src={require('./apple.jpg')} height="500px" alt="computer"/>
+                        <img src={require('./apple.jpg')} height="500px" alt="computer" responsive/>
                     </Col>
                 </Row>
                 <Row>

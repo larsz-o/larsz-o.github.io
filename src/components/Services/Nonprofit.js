@@ -10,7 +10,7 @@ class NonProfit extends Component {
                     <h2>For Non-Profits</h2>
                 </Col>
                     <Col xs={12} md={6} lg={8}>
-                        <Image src={require('./nonprofit-full.jpg')}  alt="people working around a table" height="500px" />
+                        <Image src={require('./nonprofit-full.jpg')}  alt="people working around a table" height="500px" responsive/>
                     </Col>
                 </Row>
                 <Row>

@@ -10,7 +10,7 @@ class Individual extends Component {
                     <h2>For Individuals</h2>
                 </Col>
                     <Col xs={12} md={6} lg={8}>
-                        <Image src={require('./businesswoman.jpg')}  alt="woman working" height="500px" />
+                        <Image src={require('./businesswoman.jpg')}  alt="woman working" height="500px" responsive/>
                     </Col>
                 </Row>
                 <Row>

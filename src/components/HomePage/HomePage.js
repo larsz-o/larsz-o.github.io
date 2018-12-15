@@ -12,7 +12,7 @@ class HomePage extends Component {
                         <Grid>
                             <Row>
                             <Col xs={12} lg={6}>
-                                <Image src={require('../images/book.jpg')} alt="computer" height="400" rounded/>
+                                <Image src={require('../images/book.jpg')} alt="computer" height="400" rounded responsive/>
                             </Col>
                             <Col xs={12} lg={6}>
                                 <h2 className="col-md-4">Hello! I'm a full-stack software developer and I can help you build your professional or organizational web presence.</h2>
