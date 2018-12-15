@@ -10,10 +10,10 @@ class Projects extends Component {
             <Nav/>
             <Grid>
                 <Row>
-                    <Col xs={12} lg={6}>
+                    <Col xs={12} md={6} lg={4}>
                         <h2>Projects</h2>
                     </Col>
-                    <Col xs={12} lg={6}>
+                    <Col xs={12} md={6} lg={8}>
                         <img src={require('./apple.jpg')} height="500px" alt="computer" responsive/>
                     </Col>
                 </Row>
