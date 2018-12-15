@@ -21,7 +21,7 @@ class NonProfit extends Component {
                 <Row>
                  <Col xs={12} md={4} lg={4}>
                         <h2>Reach the communities and audiences that matter</h2>
-                        <p>You're already doing great work, but are you reaching the people you need to be reachign? A great website makes all the difference. I'll modernize your existing web presence or build you a new site from scratch to amplify your message and make it shine.</p>
+                        <p>You're already doing great work, but are you reaching the people you need to be reaching? A great website makes all the difference. I'll modernize your existing web presence or build you a new site from scratch to amplify your message and make it shine.</p>
                    </Col>
                    <Col xs={12} md={4} lg={4}>
                         <h2>Automate your most tedious processes</h2>
