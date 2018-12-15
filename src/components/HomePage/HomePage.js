@@ -8,10 +8,10 @@ class HomePage extends Component {
         return (
             <div>
                 <Nav/>
-                    <section>
+                    <section className="main">
                         <div className="flex-box margin-top">
                             <div className="col-md-4">
-                                <Image src="https://raw.githubusercontent.com/larsz-o/larsz-o.github.io/master/src/static/lars.jpg" alt="Lars headshot" height="350" rounded/>
+                                <Image src={require('../images/book.jpg')} alt="computer" height="400" rounded/>
                             </div>
                             <h2 className="col-md-4">Hello! I'm a full-stack software developer and I can help you build your professional or organizational web presence.</h2>
                         </div>

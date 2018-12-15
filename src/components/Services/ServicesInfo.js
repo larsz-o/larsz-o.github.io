@@ -14,10 +14,10 @@ class ServicesInfo extends Component {
         return(
             <section className="jumbotron text-center white">
                 <Nav/>
-                {this.props.services === 'Small Business' && <SmallBusiness/>}
-                {this.props.services === 'Non-Profit' && <NonProfit/>}
-                {this.props.services === 'Academic' && <Academic/>}
-                {this.props.services === 'Individuals' && <Individual/>}
+                {this.props.services === 'Small Business' && <SmallBusiness history={this.props.history}/>}
+                {this.props.services === 'Non-Profit' && <NonProfit history={this.props.history}/>}
+                {this.props.services === 'Academic' && <Academic history={this.props.history}/>}
+                {this.props.services === 'Individuals' && <Individual history={this.props.history}/>}
                 {this.props.services === '' && <div className="margin-top">
                             <p>Uh oh. Nothing to see here. <br/><br/><Button bsStyle="warning" onClick={()=>this.props.history.push('/')}>Return Home</Button></p>
                 </div>}

@@ -23,7 +23,7 @@ class Services extends Component {
     }
     render() {
         return (
-            <section>
+            <section className="main">
                 <Nav />
                 <div className="margin-top">
                     <h2 className="center">What are you here for?</h2>

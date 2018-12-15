@@ -32,6 +32,10 @@ a:hover{
   margin-right: 30vw; 
   margin-top: 10vh; 
 }
+.emphasis {
+  font-size: 1.3em;
+  font-weight: bold; 
+}
 .flex-box {
   display: flex;
   flex-direction: row;
@@ -63,14 +67,20 @@ a:hover{
   justify-content: center;
 }
 .float-bottom {
-  display: table-cell;
-  vertical-align: bottom; 
+  text-align: center;
 }
 footer {
-  margin-right: 5vw;
-  margin-top: 5vh;
-  height: 10vh;
-  text-align: right;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(88, 83, 83);
+  color: white;
+  display: flex;
+  flex-direction: row; 
+  justify-content: flex-end;
+  height: 5vh; 
+  padding: 10px; 
 }
 .github-link{
   margin-top: 5vh; 
@@ -104,11 +114,17 @@ html, body {
 .jumbotron{
   margin-bottom: 0px; 
 }
+.main {
+  margin-bottom: 25vh; 
+}
 .margin-bottom {
  margin-bottom: 4vh; 
 }
 .margin-top {
   margin-top: 15vh;
+}
+.nav-background {
+  margin-bottom: 10vh; 
 }
 .nav-item {
   font-size: 1.3em; 
@@ -124,19 +140,28 @@ html, body {
 .project-card-text{
   padding: 3px;
 }
+.relative {
+  width: 100%;
+}
 .row-padding {
-  padding: 50px; 
+  padding: 40px; 
 }
 .services-div {
   height: 500px; 
   padding: 5px; 
   margin-top: 10px; 
   margin-bottom: 10px; 
-  display: table;
+  text-align: center;
 }
 .subheading {
   font-style: italic; 
   margin-left: 5vw; 
+}
+.thumbnail {
+  height:50px;
+  width: 50px;
+  border: 1px black solid; 
+  margin: 3px; 
 }
 .white {
   background-color: #eaf9f9;

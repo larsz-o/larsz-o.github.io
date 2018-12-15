@@ -4,7 +4,7 @@ import { Grid, Col, Row, Image, Button } from 'react-bootstrap';
 class NonProfit extends Component {
     render() {
         return (
-            <Grid className="margin-top">
+            <Grid className="margin-top main">
                 <Row>
                 <Col xs={12} md={6} lg={4}>
                     <h2>For Non-Profits</h2>

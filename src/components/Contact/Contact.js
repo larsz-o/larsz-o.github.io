@@ -52,10 +52,10 @@ class Contact extends Component {
     }
     render() {
         return (
-            <section>
+            <section className="main">
                 <Nav/>
                 <form onSubmit={this.handleSubmit} className="contact-form">
-                <h3 className="center">Contact Lars</h3>
+                <h2 className="center">How can I help you?</h2>
                     <FormGroup>
                         <ControlLabel>Name</ControlLabel>
                         <FormControl type="text" value={this.state.name} onChange={(event) => this.handleChangeFor(event, 'name')} />
@@ -65,7 +65,7 @@ class Contact extends Component {
                         <FormControl type="email" value={this.state.email} onChange={(event) => this.handleChangeFor(event, 'email')} />
                     </FormGroup>
                     <FormGroup>
-                        <ControlLabel>Are you interested in particular product?</ControlLabel>
+                        <ControlLabel>Are you interested in a particular product?</ControlLabel>
                         <FormControl componentClass="select" placeholder="select one" value={this.state.product} onChange={(event) => this.handleChangeFor(event, 'product')}>
                             <option value=""></option>
                             <option value="Website Design (organization or business)">Website Design (organization or business)</option>
@@ -85,9 +85,8 @@ class Contact extends Component {
                         <FormControl componentClass="textarea" rows={10} value={this.state.message} onChange={(event) => this.handleChangeFor(event, 'message')} />
                     </FormGroup>
                     <div className="center">
-                        <Button bsStyle="large" type="submit" bsStyle="primary">Submit</Button>
+                        <Button bsSize="large" type="submit" bsStyle="primary">Submit</Button>
                     </div>
-                   
                 </form>
 
 

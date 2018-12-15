@@ -1,21 +1,65 @@
 import React, {Component} from 'react'; 
-import { connect } from 'react-redux'; 
-import Card from '../Card/Card'; 
+import { Grid, Row, Col, Button } from 'react-bootstrap'; 
 import Nav from '../Nav/Nav'; 
 
-const mapStateToProps = state => ({
-    projects: state.projects.projects
-})
+
 class Projects extends Component {
     render(){
         return(
-            <section>
+            <section className="main">
             <Nav/>
-            <p>I've worked with clients to build e-Commerce sites for small businesses, professional resume sites, and web portfolios community-oriented projects. 
-                I've also built stand-alone applications to help small businesses keep track of their clients.</p>
+            <Grid>
+                <Row>
+                    <Col xs={12} lg={6}>
+                        <h2>Projects</h2>
+                    </Col>
+                    <Col xs={12} lg={6}>
+                        <img src={require('./apple.jpg')} height="500px" alt="computer"/>
+                    </Col>
+                </Row>
+                <Row>
+                    <div className="row-padding"></div>
+                </Row>
+                <Row>
+                    <Col xs={12} md={10} lg={8}>
+                        <h3>I've worked with clients to build e-Commerce sites, professional resume sites, and web portfolios for community-oriented projects.</h3>
+                        <img src={require('../images/home.png')}  alt="cc designs homepage" className="relative"/>
+                    </Col>
+                </Row>
+                <Row>
+                    <div className="row-padding"></div>
+                </Row>
+                <Row>
+                    <Col xs={12} md={2} lg={4}>
+                    </Col>
+                    <Col xs={12} md={10} lg={8}>
+                        <h3>I've also built stand-alone applications to help small businesses keep track of their clients.</h3>
+                        <img src={require('../images/card.png')} alt="fitness meets wellness tracker" className="relative"/>
+                    </Col>
+                </Row>
+                <Row>
+                    <div className="row-padding"></div>
+                </Row>
+                <Row>
+                    <Col xs={12} lg={12}>
+                       <h3>I strive to build intuitive, beautiful, mobile-friendly applications that are both user-friendly and powerful.</h3>
+                    </Col>
+                </Row>
+                <Row>
+                    <div className="row-padding"></div>
+                </Row>
+                <Row>
+                    <Col xs={12} lg={12}>
+                       <div className="center">
+                        <h3>Interested in working with me? <Button bsSize="large" bsStyle="info" onClick={()=>this.props.history.push('/contact')}>Reach out</Button></h3>
+                       </div>
+                    </Col>
+                </Row>
+            </Grid>
+            
         </section>
         );
     }
 }
 
-export default connect(mapStateToProps)(Projects); 
+export default Projects; 
