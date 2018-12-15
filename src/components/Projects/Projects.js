@@ -4,7 +4,26 @@ import Nav from '../Nav/Nav';
 
 
 class Projects extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isDesktop: true
+        }
+    }
+    componentDidMount() {
+        this.updatePredicate();
+        window.addEventListener("resize", this.updatePredicate)
+    }
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.updatePredicate);
+    }
+    updatePredicate = () => {
+        this.setState({
+            isDesktop: window.innerWidth > 1024
+        })
+    }
     render(){
+        let isDesktop = this.state.isDesktop;
         return(
             <section className="main">
             <Nav/>
@@ -13,9 +32,9 @@ class Projects extends Component {
                     <Col xs={12} md={6} lg={4}>
                         <h2>Projects</h2>
                     </Col>
-                    <Col xs={12} md={6} lg={8}>
+                    {isDesktop ? (<Col xs={12} md={6} lg={8}>
                         <img src={require('./apple.jpg')} height="500px" alt="computer" responsive/>
-                    </Col>
+                    </Col>) : (<div></div>)}
                 </Row>
                 <Row>
                     <div className="row-padding"></div>
