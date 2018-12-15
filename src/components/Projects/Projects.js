@@ -23,7 +23,7 @@ class Projects extends Component {
                 <Row>
                     <Col xs={12} md={10} lg={8}>
                         <h3>I've worked with clients to build e-Commerce sites, professional resume sites, and web portfolios for community-oriented projects.</h3>
-                        <img src={require('../images/home.png')}  alt="cc designs homepage" className="relative"/>
+                        <img src={require('../images/home.png')}  alt="cc designs homepage" className="relative" responsive/>
                     </Col>
                 </Row>
                 <Row>
@@ -34,7 +34,7 @@ class Projects extends Component {
                     </Col>
                     <Col xs={12} md={10} lg={8}>
                         <h3>I've also built stand-alone applications to help small businesses keep track of their clients.</h3>
-                        <img src={require('../images/card.png')} alt="fitness meets wellness tracker" className="relative"/>
+                        <img src={require('../images/card.png')} alt="fitness meets wellness tracker" className="relative" responsive/>
                     </Col>
                 </Row>
                 <Row>
