@@ -46,7 +46,7 @@ class Contact extends Component {
             url: '/contact/confirmation',
             data: this.state
         }).then((response) => {
-            alert('Message sent! Check your inbox for a confirmation email.')
+            alert('Message sent! I will be in touch shortly. Check your inbox for a confirmation email.')
             this.setState({
                 name: '',
                 email: '',
