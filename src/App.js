@@ -8,6 +8,8 @@ import Resume from './components/Resume/Resume';
 import Services from './components/Services/Services'; 
 import ServicesInfo from './components/Services/ServicesInfo'; 
 import Footer from './components/Footer/Footer';
+import Packages from './components/Packages/Packages'; 
+
 class App extends Component {
   render() {
     return (
@@ -20,6 +22,7 @@ class App extends Component {
           <Route exact path="/about" component={Resume}/>
           <Route exact path="/services" component={Services}/>
           <Route exact path="/more-info" component={ServicesInfo}/>
+          <Route exact path="/packages" component={Packages}/>
           <Route render={() => <h1>404: Page not found</h1>} />
         </Switch>
       </Router>

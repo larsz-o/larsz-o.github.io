@@ -62,7 +62,7 @@ class Individual extends Component {
                 </Row>
                 <Row>
                     <Col xs={12}>
-                        <Button onClick={()=>this.props.history.push('/contact')} bsSize="large" bsStyle="info">Let's Talk</Button>
+                        <Button onClick={()=>this.props.history.push('/packages')} bsSize="large" bsStyle="info">View Packages</Button>
                     </Col>
                 </Row>
             </Grid>
