@@ -37,7 +37,7 @@ class Projects extends Component {
                     </Row>
                     {isDesktop ? (<Row>
                         <Col xs={12} md={6} lg={6}>
-                            <Image src="https://raw.githubusercontent.com/larsz-o/larsz-o.github.io/master/src/static/lars.jpg" alt="Lars headshot" height="350" rounded responsive />
+                            <Image src="https://ibb.co/yFSKCtk" alt="Lars headshot" height="350" rounded responsive />
                         </Col>
                         <Col xs={12} md={6} lg={6}>
                             <p>I am a full-stack software developer with a background in research, higher education, and social services. I love creating technology that can improve people's lives - from <span className="emphasis">automating tedious processes, to building platforms to connect people, to delivering meaningful insights from under-utilized data.</span></p>
