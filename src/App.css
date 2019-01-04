@@ -7,6 +7,9 @@ a:hover{
   text-decoration: none; 
 
 }
+.about-text {
+  font-size: 1.2em; 
+}
 .bottom {
   position: relative;
   bottom: 0;
@@ -177,6 +180,9 @@ html, body {
 .subheading {
   font-style: italic; 
   margin-left: 5vw; 
+}
+.spacing {
+  padding: 10px; 
 }
 .thumbnail {
   height:50px;
