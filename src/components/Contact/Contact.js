@@ -94,8 +94,8 @@ class Contact extends Component {
                         <FormControl type="text" value={this.state.subject} onChange={(event) => this.handleChangeFor(event, 'subject')} />
                     </FormGroup>
                     <FormGroup>
-                        <ControlLabel>Message</ControlLabel>
-                        <ControlLabel>Please be as detailed as possible to help me understand your needs. Do you have a deadline you're working with? Do you need a project built from scratch or do you have an existing product that needs improvement?</ControlLabel>
+                        <ControlLabel>Message</ControlLabel><br/>
+                        <ControlLabel>Please be as detailed as possible to help me understand your needs.</ControlLabel>
                         <FormControl componentClass="textarea" rows={10} value={this.state.message} onChange={(event) => this.handleChangeFor(event, 'message')} />
                     </FormGroup>
                     <div className="center">
@@ -128,8 +128,8 @@ class Contact extends Component {
                         <FormControl type="text" value={this.state.subject} onChange={(event) => this.handleChangeFor(event, 'subject')} />
                     </FormGroup>
                     <FormGroup>
-                        <ControlLabel>Message</ControlLabel>
-                        <ControlLabel>Please be as detailed as possible to help me understand your needs. Do you have a deadline you're working with? Do you need a project built from scratch or do you have an existing product that needs improvement?</ControlLabel>
+                        <ControlLabel>Message</ControlLabel><br/>
+                        <ControlLabel>Please be as detailed as possible to help me understand your needs.</ControlLabel>
                         <FormControl componentClass="textarea" rows={10} value={this.state.message} onChange={(event) => this.handleChangeFor(event, 'message')} />
                     </FormGroup>
                     <div className="center">
