@@ -16,7 +16,9 @@ app.use('/contact', contactRouter);
 
 // Serve static files
 app.use(express.static('build'));
-
+app.get('/.well-known/acme-challenge//.well-known/acme-challenge/', (req, res)=>{
+  res.send('ygaJgbbvivvP7KK8DCAnoiQUqynQteP46abOUdXVhxY.VjaiHBWQIqpCzLM13qdgpkm_QDC3R3fD_WV4AC2kFr4');
+ })
 // App Set //
 const PORT = process.env.PORT || 5000;
 

@@ -48,7 +48,7 @@ class Resume extends Component {
                     <Row>
                         <Col xs={12} md={6} lg={6}>
                             <div id="workshops">
-                                <h3>Selected Workshops + Trainings</h3>
+                                <h3 className="dashed-edge">Selected Workshops + Trainings</h3>
                                 <ul className="skills-list">
                                     <li>Creating a More Equitable Classroom, with Saumya Arora</li>
                                     <li>Feminist Interactive Modules 2.0, with Jigna Desai</li>
@@ -64,7 +64,7 @@ class Resume extends Component {
                         </Col>
                         <Col xs={12} md={6} lg={6}>
                             <div id="tech">
-                                <h3>Technical Skills</h3>
+                                <h3 className="dashed-edge">Technical Skills</h3>
                                 <ul className="skills-list">
                                     <li>Web Development: JavaScript, Python, HTML, CSS, SQL, MongoDB, RESTful APIs</li>
                                     <li>Data Visualization and Analysis: Chart.js, D3, Atlas.ti, NVivo, R, ArcGIS</li>
@@ -77,7 +77,7 @@ class Resume extends Component {
                     <Row>
                         <Col xs={12} md={6} lg={6}>
                             <div id="presentations">
-                                <h3>Selected Presentations</h3>
+                                <h3 className="dashed-edge">Selected Presentations</h3>
                                 <ul className="skills-list">
                                     <li>"Digitizing Difference: Fraudulence, Gender Non-Conformity, and Data." University of Minnesota, 2019.</li>
                                     <li>"Identity Thieves: Seizing the Means of Gender Self-Determination." University of Maryland, 2018.</li>
@@ -91,7 +91,7 @@ class Resume extends Component {
                         </Col>
                         <Col xs={12} md={6} lg={6}>
                             <div id="publications">
-                                <h3>Publications</h3>
+                                <h3 className="dashed-edge">Publications</h3>
                                 <ul className="skills-list">
                                     <li><a href="https://doi.org/10.1215/23289252-3711529">"The Afterlife of Data: Identity, Surveillance, and Capitalism in Trans Credit Reporting."</a> Transgender Studies Quarterly, 2017.</li>
                                     <li><a href="http://genderpolicyreport.umn.edu/too-costly-the-fight-for-trans-health-care-in-the-courts-and-legislature/">"Too Costly?: The Fight for Trans Healthcare in the Courts and Legislature."</a> The Gender Policy Report, 2017.</li>
@@ -103,7 +103,7 @@ class Resume extends Component {
                     <Row>
                         <Col xs={12} md={12} lg={12}>
                         <div id="awards">
-                            <h3>Selected Awards</h3>
+                            <h3 className="dashed-edge">Selected Awards</h3>
                             <ul className="skills-list">
                                 <li>Steven J. Schochet Interdisciplinary Fellowship in Queer + Trans Studies, 2018-2019</li>
                                 <li>Doctoral Dissertation Fellowship, 2017-2018</li>

@@ -30,7 +30,7 @@ router.post('/confirmation', (req, res) => {
     let mail = {
         from: `${process.env.gmail_username}`, 
         to: `${req.body.email}`, 
-        subject: `Confirmation of Message to Lars Mackenzie: ${req.body.subject}`, 
+        subject: `Message Confirmation to Lars Mackenzie: ${req.body.subject}`, 
         text: `Hi ${req.body.name}! Thanks for being in touch!  I'm reviewing your request and will get back to you as soon as I can. Here's what you had to say: ${req.body.message}. Thank you and have a great day! -Lars`, 
         html: `<p>Hi ${req.body.name}!</p><p> Thanks for being in touch!</p><p> I'm reviewing your request and will get back to you as soon as I can.</p><p> Here's what you had to say:</p><p> ${req.body.message}.</p><p> Thank you and have a great day!</p><p> -Lars</p>`, 
         replyTo: `${process.env.gmail_username}`
