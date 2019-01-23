@@ -13,12 +13,13 @@ const contactRouter = require('./routes/contact.router');
 
 //Routes
 app.use('/contact', contactRouter); 
+app.get('/.well-known/acme-challenge//.well-known/acme-challenge/Q3H3TlO3Ziyf4q-YafkYFYJRuTXKqg9nYb3bPq_ccF8.VjaiHBWQIqpCzLM13qdgpkm_QDC3R3fD_WV4AC2kFr4', (req, res)=>{
+  res.send('Q3H3TlO3Ziyf4q-YafkYFYJRuTXKqg9nYb3bPq_ccF8.VjaiHBWQIqpCzLM13qdgpkm_QDC3R3fD_WV4AC2kFr4');
+ })
 
 // Serve static files
 app.use(express.static('build'));
-app.get('/.well-known/acme-challenge//.well-known/acme-challenge/', (req, res)=>{
-  res.send('ygaJgbbvivvP7KK8DCAnoiQUqynQteP46abOUdXVhxY.VjaiHBWQIqpCzLM13qdgpkm_QDC3R3fD_WV4AC2kFr4');
- })
+
 // App Set //
 const PORT = process.env.PORT || 5000;
 

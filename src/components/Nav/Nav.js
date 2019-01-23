@@ -34,12 +34,11 @@ class Nav extends Component {
                     <div><a href="/#/resume">Resume</a></div>
                     <div><a href="/#/contact">Contact</a></div>
                 </nav>) : (<nav>
-                    <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-                        <MenuItem eventKey={3.1}>Action</MenuItem>
-                        <MenuItem eventKey={3.2}>Another action</MenuItem>
-                        <MenuItem eventKey={3.3}>Something else here</MenuItem>
-                        <MenuItem divider />
-                        <MenuItem eventKey={3.4}>Separated link</MenuItem>
+                    <NavDropdown eventKey={1} title="Menu" className="nav-drop" id="basic-nav-dropdown">
+                        <div className="mobile-nav-item"><a href="/">About</a></div>
+                        <div className="mobile-nav-item"><a href="/#/projects">Projects</a></div>
+                        <div className="mobile-nav-item"><a href="/#/resume">Resume</a></div>
+                        <div className="mobile-nav-item"><a href="/#/contact">Contact</a></div>
                     </NavDropdown>
                 </nav>)}
 
