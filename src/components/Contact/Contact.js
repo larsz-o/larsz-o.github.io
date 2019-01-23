@@ -72,19 +72,19 @@ class Contact extends Component {
                         <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer" ><img src={require('../images/linkedin2.png')} height="50px" alt="linkedin icon"/></a></div>
                     <FormGroup>
                         <ControlLabel>Name</ControlLabel>
-                        <FormControl type="text" value={this.state.name} onChange={(event) => this.handleChangeFor(event, 'name')} />
+                        <FormControl type="text" value={this.state.name} onChange={(event) => this.handleChangeFor(event, 'name')} required/>
                     </FormGroup>
                     <FormGroup>
                         <ControlLabel>Email</ControlLabel>
-                        <FormControl type="email" value={this.state.email} onChange={(event) => this.handleChangeFor(event, 'email')} />
+                        <FormControl type="email" value={this.state.email} onChange={(event) => this.handleChangeFor(event, 'email')} required/>
                     </FormGroup>
                     <FormGroup>
                         <ControlLabel>Subject</ControlLabel>
-                        <FormControl type="text" value={this.state.subject} onChange={(event) => this.handleChangeFor(event, 'subject')} />
+                        <FormControl type="text" value={this.state.subject} onChange={(event) => this.handleChangeFor(event, 'subject')} required/>
                     </FormGroup>
                     <FormGroup>
                         <ControlLabel>Message</ControlLabel><br />
-                        <FormControl componentClass="textarea" rows={10} value={this.state.message} onChange={(event) => this.handleChangeFor(event, 'message')} />
+                        <FormControl componentClass="textarea" rows={10} value={this.state.message} onChange={(event) => this.handleChangeFor(event, 'message')} required/>
                     </FormGroup>
                     <div className="center">
                         <Button bsSize="large" type="submit" bsStyle="primary">Submit</Button>
@@ -96,19 +96,19 @@ class Contact extends Component {
                         <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer"><img src={require('../images/linkedin2.png')} height="50px" alt="linkedin icon"/></a></div>
                     <FormGroup>
                         <ControlLabel>Name</ControlLabel>
-                        <FormControl type="text" value={this.state.name} onChange={(event) => this.handleChangeFor(event, 'name')} />
+                        <FormControl type="text" value={this.state.name} onChange={(event) => this.handleChangeFor(event, 'name')} required/>
                     </FormGroup>
                     <FormGroup>
                         <ControlLabel>Email</ControlLabel>
-                        <FormControl type="email" value={this.state.email} onChange={(event) => this.handleChangeFor(event, 'email')} />
+                        <FormControl type="email" value={this.state.email} onChange={(event) => this.handleChangeFor(event, 'email')} required/>
                     </FormGroup>
                     <FormGroup>
                         <ControlLabel>Subject</ControlLabel>
-                        <FormControl type="text" value={this.state.subject} onChange={(event) => this.handleChangeFor(event, 'subject')} />
+                        <FormControl type="text" value={this.state.subject} onChange={(event) => this.handleChangeFor(event, 'subject')} required/>
                     </FormGroup>
                     <FormGroup>
                         <ControlLabel>Message</ControlLabel><br />
-                        <FormControl componentClass="textarea" rows={10} value={this.state.message} onChange={(event) => this.handleChangeFor(event, 'message')} />
+                        <FormControl componentClass="textarea" rows={10} value={this.state.message} onChange={(event) => this.handleChangeFor(event, 'message')} required/>
                     </FormGroup>
                     <div className="center">
                         <Button bsSize="large" type="submit" bsStyle="primary">Submit</Button>
