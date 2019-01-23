@@ -96,6 +96,9 @@ footer {
 .github-link{
   margin-top: 5vh; 
 }
+.gimme-room{
+  height: 25vh; 
+}
 .header-link:hover{
   color: black; 
 }
@@ -188,6 +191,10 @@ html, body {
   margin-top: 10px; 
   margin-bottom: 10px; 
   text-align: center;
+}
+.skills-list{
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.2em; 
 }
 .subheading {
   font-style: italic; 
