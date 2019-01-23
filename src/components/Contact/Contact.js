@@ -67,7 +67,9 @@ class Contact extends Component {
             <section className="main">
                 <Nav />
                 {isDesktop ? (<form onSubmit={this.handleSubmit} className="contact-form">
-                    <h2 className="center">How can I help you?</h2>
+                    <h2 className="center">Let's connect!</h2>
+                    <div className="subheading"><a href="https://twitter.com/larszmac"><img src={require('../images/twitter.png')} height="50px" /></a>
+                        <a href="https://www.linkedin.com/in/lars-mackenzie/"><img src={require('../images/linkedin2.png')} height="50px" /></a></div>
                     <FormGroup>
                         <ControlLabel>Name</ControlLabel>
                         <FormControl type="text" value={this.state.name} onChange={(event) => this.handleChangeFor(event, 'name')} />
@@ -81,7 +83,7 @@ class Contact extends Component {
                         <FormControl type="text" value={this.state.subject} onChange={(event) => this.handleChangeFor(event, 'subject')} />
                     </FormGroup>
                     <FormGroup>
-                        <ControlLabel>Message</ControlLabel><br/>
+                        <ControlLabel>Message</ControlLabel><br />
                         <FormControl componentClass="textarea" rows={10} value={this.state.message} onChange={(event) => this.handleChangeFor(event, 'message')} />
                     </FormGroup>
                     <div className="center">
@@ -89,7 +91,9 @@ class Contact extends Component {
                     </div>
                 </form>
                 ) : (<form onSubmit={this.handleSubmit} className="full-width">
-                    <h2 className="center">How can I help you?</h2>
+                    <h2 className="center">Let's connect!</h2>
+                    <div className="subheading"><a href="https://twitter.com/larszmac"><img src={require('../images/twitter.png')} height="50px" /></a>
+                        <a href="https://www.linkedin.com/in/lars-mackenzie/"><img src={require('../images/linkedin2.png')} height="50px" /></a></div>
                     <FormGroup>
                         <ControlLabel>Name</ControlLabel>
                         <FormControl type="text" value={this.state.name} onChange={(event) => this.handleChangeFor(event, 'name')} />
@@ -103,7 +107,7 @@ class Contact extends Component {
                         <FormControl type="text" value={this.state.subject} onChange={(event) => this.handleChangeFor(event, 'subject')} />
                     </FormGroup>
                     <FormGroup>
-                        <ControlLabel>Message</ControlLabel><br/>
+                        <ControlLabel>Message</ControlLabel><br />
                         <FormControl componentClass="textarea" rows={10} value={this.state.message} onChange={(event) => this.handleChangeFor(event, 'message')} />
                     </FormGroup>
                     <div className="center">
