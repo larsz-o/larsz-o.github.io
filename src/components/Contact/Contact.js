@@ -68,8 +68,8 @@ class Contact extends Component {
                 <Nav />
                 {isDesktop ? (<form onSubmit={this.handleSubmit} className="contact-form">
                     <h2 className="center">Let's connect!</h2>
-                    <div className="subheading"><a href="https://twitter.com/larszmac"><img src={require('../images/twitter.png')} height="50px" /></a>
-                        <a href="https://www.linkedin.com/in/lars-mackenzie/"><img src={require('../images/linkedin2.png')} height="50px" /></a></div>
+                    <div className="headline"><a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer" ><img src={require('../images/twitter.png')} height="50px" alt="twitter icon"/></a>
+                        <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer" ><img src={require('../images/linkedin2.png')} height="50px" alt="linkedin icon"/></a></div>
                     <FormGroup>
                         <ControlLabel>Name</ControlLabel>
                         <FormControl type="text" value={this.state.name} onChange={(event) => this.handleChangeFor(event, 'name')} />
@@ -92,8 +92,8 @@ class Contact extends Component {
                 </form>
                 ) : (<form onSubmit={this.handleSubmit} className="full-width">
                     <h2 className="center">Let's connect!</h2>
-                    <div className="subheading"><a href="https://twitter.com/larszmac"><img src={require('../images/twitter.png')} height="50px" /></a>
-                        <a href="https://www.linkedin.com/in/lars-mackenzie/"><img src={require('../images/linkedin2.png')} height="50px" /></a></div>
+                    <div className="headline"><a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer"><img src={require('../images/twitter.png')} height="50px" alt="twitter icon"/></a>
+                        <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer"><img src={require('../images/linkedin2.png')} height="50px" alt="linkedin icon"/></a></div>
                     <FormGroup>
                         <ControlLabel>Name</ControlLabel>
                         <FormControl type="text" value={this.state.name} onChange={(event) => this.handleChangeFor(event, 'name')} />

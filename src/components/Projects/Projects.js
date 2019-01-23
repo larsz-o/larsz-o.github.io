@@ -34,12 +34,18 @@ class Projects extends Component {
                         </Col>
                     </Row>
                     <Row>
-                        {/* temporary fix for a picture that refuses to resize! */}
-                        {isDesktop ? (<div> <Col xs={12} md={6} lg={4}>
-                            <h3>I've worked on a number of projects where I've been responsible for integrating technology into teaching, building web applications, and promoting research through technology.</h3>
-                        </Col><Col xs={12} md={6} lg={8}>
+                        {isDesktop ? (<div>
+                            <Col xs={12} md={6} lg={4}>
+                                <h3>I've worked on a number of projects where I've been responsible for integrating technology into teaching, building web applications, and promoting research through technology.</h3>
+                            </Col>
+                            <Col xs={12} md={6} lg={8}>
                                 <img src={require('./apple.jpg')} height="500px" alt="computer" responsive />
-                            </Col></div>) : (<div><h3>I've worked on a number of projects where I've been responsible for integrating technology into teaching, building web applications, and promoting research through technology.</h3></div>)}
+                            </Col></div>) :
+                            (<div>
+                                <Col xs={12} md={6} lg={4}>
+                                    <h3>I've worked on a number of projects where I've been responsible for integrating technology into teaching, building web applications, and promoting research through technology.</h3>
+                                </Col>
+                            </div>)}
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
@@ -49,8 +55,60 @@ class Projects extends Component {
                     </Row>
                     <Row>
                         <Col xs={12} md={10} lg={8}>
-                            <h3>I've led trainings about digital storytelling and podcasting...</h3>
+                            <h3>I've developed and faciliated trainings about digital storytelling and podcasting...</h3>
                             <img src={require('../images/imovie.png')} alt="iMovie screenshot" className="relative" responsive />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <div className="row-padding"></div>
+                    </Row>
+                    <Row>
+                        <div className="row-padding"></div>
+                    </Row>
+                    <Row>
+                        <Col xs={12} md={2} lg={4}>
+                        </Col>
+                        <Col xs={12} md={10} lg={8}>
+                            <h3>...and helped students create narrative digital maps.</h3>
+                            <img src={require('../images/storymap.png')} alt="a storymap about quinoa" className="relative" responsive />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <div className="row-padding"></div>
+                    </Row>
+                    <Row>
+                        <div className="row-padding"></div>
+                    </Row>
+                    <Row>
+                        <Col xs={12} md={10} lg={8}>
+                            <h3>I've supported the production of eLearning modules...</h3>
+                            <img src={require('../images/module.png')} alt="eLearning module" className="relative" responsive />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <div className="row-padding"></div>
+                    </Row>
+                    <Row>
+                        <div className="row-padding"></div>
+                    </Row>
+                    <Row>
+                        <Col xs={12} md={2} lg={4}>
+                        </Col>
+                        <Col xs={12} md={10} lg={8}>
+                        <h3>...and designed and taught online courses.</h3>
+                            <img src={require('../images/transhealth.png')} alt="online class" className="relative" responsive />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <div className="row-padding"></div>
+                    </Row>
+                    <Row>
+                        <div className="row-padding"></div>
+                    </Row>
+                    <Row>
+                        <Col xs={12} md={10} lg={8}>
+                            <h3>I've built full-stack web applications to help improve information tracking...</h3>
+                            <img src={require('../images/card.png')} alt="fitness tracker software" className="relative" responsive />
                         </Col>
                     </Row>
                     <Row>
@@ -75,35 +133,8 @@ class Projects extends Component {
                     </Row>
                     <Row>
                         <Col xs={12} md={10} lg={8}>
-                            <h3>I've supported the production of eLearning modules...</h3>
-                            <img src={require('../images/module.png')} alt="eLearning module" className="relative" responsive />
-                        </Col>
-                    </Row>
-                    <Row>
-                        <div className="row-padding"></div>
-                    </Row>
-                    <Row>
-                        <div className="row-padding"></div>
-                    </Row>
-                    <Row>
-                    <Col xs={12} md={2} lg={4}>
-                        </Col>
-                        <Col xs={12} md={10} lg={8}>
-                            <h3>...and helped students create narrative digital maps.</h3>
-                            <img src={require('../images/storymap.png')} alt="a storymap about quinoa" className="relative" responsive />
-
-                        </Col>
-                    </Row>
-                    <Row>
-                        <div className="row-padding"></div>
-                    </Row>
-                    <Row>
-                        <div className="row-padding"></div>
-                    </Row>
-                    <Row>
-                        <Col xs={12} md={10} lg={8}>
-                            <h3>I've also designed and taught online courses.</h3>
-                            <img src={require('../images/transhealth.png')} alt="online class" className="relative" responsive />
+                            <h3>I've also conducted my own digital research on social media communication; writing scripts to collect data and software to code and analyze data.</h3>
+                            <img src={require('../images/twitter-full.jpg')} alt="many birds flying with twitter icons" className="relative" responsive />
                         </Col>
                     </Row>
                     <Row>
@@ -114,7 +145,7 @@ class Projects extends Component {
                     </Row>
                     <Row>
                         <Col xs={12} lg={12}>
-                            <h3>As an academic technologist, I aim to utilize tools, platforms, and methodologies that foster critical thinking and information literacy skills while also centering accessibility and usability.</h3>
+                            <h3>As an academic/technologist, I aim to utilize tools, platforms, and methodologies that foster critical thinking and information literacy skills while also centering accessibility and usability.</h3>
                         </Col>
                     </Row>
                     <Row>
