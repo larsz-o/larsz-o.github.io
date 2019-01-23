@@ -9,7 +9,6 @@ class Contact extends Component {
         this.state = {
             name: '',
             email: '',
-            product: '',
             subject: '',
             message: '',
             isDesktop: true
@@ -50,7 +49,6 @@ class Contact extends Component {
             this.setState({
                 name: '',
                 email: '',
-                product: '',
                 subject: '',
                 message: ''
             });
@@ -79,23 +77,11 @@ class Contact extends Component {
                         <FormControl type="email" value={this.state.email} onChange={(event) => this.handleChangeFor(event, 'email')} />
                     </FormGroup>
                     <FormGroup>
-                        <ControlLabel>Are you interested in a particular product?</ControlLabel>
-                        <FormControl componentClass="select" placeholder="select one" value={this.state.product} onChange={(event) => this.handleChangeFor(event, 'product')}>
-                            <option value=""></option>
-                            <option value="Website Design (organization or business)">Website Design (organization or business)</option>
-                            <option value="Professional Portfolio (individual)">Professional Portfolio or Resume Site (individual)</option>
-                            <option value="Data Storytelling and Management Tools">Data Storytelling and Management Tools</option>
-                            <option value="Customer/Stakeholder Management Tools">Customer/Stakeholder Management Tools</option>
-                            <option value="Other">Other</option>
-                        </FormControl>
-                    </FormGroup>
-                    <FormGroup>
                         <ControlLabel>Subject</ControlLabel>
                         <FormControl type="text" value={this.state.subject} onChange={(event) => this.handleChangeFor(event, 'subject')} />
                     </FormGroup>
                     <FormGroup>
                         <ControlLabel>Message</ControlLabel><br/>
-                        <ControlLabel>Please be as detailed as possible to help me understand your needs.</ControlLabel>
                         <FormControl componentClass="textarea" rows={10} value={this.state.message} onChange={(event) => this.handleChangeFor(event, 'message')} />
                     </FormGroup>
                     <div className="center">
@@ -113,23 +99,11 @@ class Contact extends Component {
                         <FormControl type="email" value={this.state.email} onChange={(event) => this.handleChangeFor(event, 'email')} />
                     </FormGroup>
                     <FormGroup>
-                        <ControlLabel>Are you interested in a particular product?</ControlLabel>
-                        <FormControl componentClass="select" placeholder="select one" value={this.state.product} onChange={(event) => this.handleChangeFor(event, 'product')}>
-                            <option value=""></option>
-                            <option value="Website Design (organization or business)">Website Design (organization or business)</option>
-                            <option value="Professional Portfolio (individual)">Professional Portfolio or Resume Site (individual)</option>
-                            <option value="Data Storytelling and Management Tools">Data Storytelling and Management Tools</option>
-                            <option value="Customer/Stakeholder Management Tools">Customer/Stakeholder Management Tools</option>
-                            <option value="Other">Other</option>
-                        </FormControl>
-                    </FormGroup>
-                    <FormGroup>
                         <ControlLabel>Subject</ControlLabel>
                         <FormControl type="text" value={this.state.subject} onChange={(event) => this.handleChangeFor(event, 'subject')} />
                     </FormGroup>
                     <FormGroup>
                         <ControlLabel>Message</ControlLabel><br/>
-                        <ControlLabel>Please be as detailed as possible to help me understand your needs.</ControlLabel>
                         <FormControl componentClass="textarea" rows={10} value={this.state.message} onChange={(event) => this.handleChangeFor(event, 'message')} />
                     </FormGroup>
                     <div className="center">
