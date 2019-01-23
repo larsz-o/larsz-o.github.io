@@ -42,9 +42,9 @@ class Projects extends Component {
                         <Col xs={12} md={6} lg={6} className="dashed-edge">
                             <p className="about-text">I am an academic technologist and a web developer. I love creating technology that can improve people's lives - from <span className="emphasis">automating tedious processes, to building platforms to connect people, to delivering meaningful insights from under-utilized data.</span></p>
                             <div className="spacing"></div>
-                            <p className="about-text">For the past six years, I've been pursuing a PhD at the University of Minnesota, where I studied how software and data-driven decision-making impact marginalized people. Specifically, I closely examined civil rights implications resulting from big data surveillance in healthcare, financial industries, and law.</p>
+                            <p className="about-text">For the past six years, I've been pursuing a PhD at the University of Minnesota, where I studied how software and data-driven decision-making impact marginalized people. Specifically, I closely examined social justice implications of big data surveillance in healthcare, financial industries, and law as they relate to gender and race.</p>
                             <div className="spacing"></div>
-                            <p className="about-text">During that time, I was deeply involved with educational technology: helping faculty to integrate digital technology into their research and teaching, and training students to produce digital media projects. I've tackled big problems in this work, like figuring out how to <span className="emphasis">archive hundreds of student-made video projects while protecting their privacy,</span> or how to best highlight research insights from qualitative studies in <span className="emphasis">narrative digital maps.</span></p>
+                            <p className="about-text">During this time, I've been deeply involved with educational technology: helping faculty to integrate digital technology into their research and teaching, and training students to produce digital media projects. I've tackled big problems in this work, like figuring out how to <span className="emphasis">archive hundreds of student-made video projects while protecting their privacy,</span> or how to best highlight research insights from qualitative studies in <span className="emphasis">narrative digital maps.</span></p>
                             <div className="spacing"></div>
                             <p className="about-text">I'm passionate about fostering critical data literacy while also helping people to build tools, platforms, and portfolios to showcase their ideas and forge connections.</p>
                         </Col>
@@ -62,13 +62,13 @@ class Projects extends Component {
                      
                         <Row>
                             <Col xs={12} md={6} lg={6}>
-                                <h4>For the past six years, I've been pursuing a PhD at the University of Minnesota, where I studied how software and data-driven decision-making impact marginalized people. Specifically, I closely examined civil rights implications resulting from big data surveillance in healthcare, financial industries, and law.</h4>
+                                <h4>For the past six years, I've been pursuing a PhD at the University of Minnesota, where I studied how software and data-driven decision-making impact marginalized people. Specifically, I closely examined social justice implications of big data surveillance in healthcare, financial industries, and law as they relate to gender and race.</h4>
                             </Col>
                         </Row>
                         
                         <Row>
                             <Col xs={12} md={6} lg={6}>
-                                <h4>During that time, I was deeply involved with educational technology: helping faculty to integrate digital technology into their research and teaching, and training students to produce digital media projects.</h4>
+                                <h4>During this time, I've been deeply involved with educational technology: helping faculty to integrate digital technology into their research and teaching, and training students to produce digital media projects.</h4>
                             </Col>
                         </Row>
                       
