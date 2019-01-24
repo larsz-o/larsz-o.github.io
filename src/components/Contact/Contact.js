@@ -31,7 +31,7 @@ class Contact extends Component {
     handleClose = (event) => {
         event.preventDefault();
         this.setState({
-            ...this.state, 
+            ...this.state,
             success: false,
             name: '',
             email: '',
@@ -46,6 +46,13 @@ class Contact extends Component {
             url: '/contact',
             data: this.state
         }).then((response) => {
+            if (this.state.isDesktop) {
+                this.setState({
+                    success: true
+                });
+            } else {
+                alert('Thank you for your note! I will reply as soon as I can.');
+            }
             this.sendConfirmation();
         }).catch((error) => {
             console.log('Error submitting form.', error);
@@ -58,20 +65,13 @@ class Contact extends Component {
             url: '/contact/confirmation',
             data: this.state
         }).then((response) => {
-            if(this.state.isDesktop){
-                this.setState({
-                    success: true
-                });
-            } else {
-                alert('Thank you for your note! I will reply as soon as I can.');
-                this.setState({
-                    ...this.state, 
-                    name: '',
-                    email: '',
-                    subject: '',
-                    message: ''
-                })
-            }
+            this.setState({
+                ...this.state,
+                name: '',
+                email: '',
+                subject: '',
+                message: ''
+            })
         }).catch((error) => {
             console.log('Error posting confirmation', error);
         })
@@ -86,7 +86,7 @@ class Contact extends Component {
         return (
             <section className="main">
                 <Nav />
-                {isDesktop ? (<form className="contact-form">
+                {isDesktop ? (<form onSubmit={(event) => this.handleSubmit(event)} className="contact-form">
                     <h2 className="center">Let's connect!</h2>
                     <div className="headline"><a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer" ><img src={require('../images/twitter-min.png')} height="50px" alt="twitter icon" /></a>
                         <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer" ><img src={require('../images/linkedin2.png')} height="50px" alt="linkedin icon" /></a>
@@ -108,10 +108,11 @@ class Contact extends Component {
                         <FormControl componentClass="textarea" rows={10} value={this.state.message} onChange={(event) => this.handleChangeFor(event, 'message')} required />
                     </FormGroup>
                     <div className="center">
-                        <Button bsSize="large" onClick={(event)=>this.handleSubmit(event)} bsStyle="primary">Submit</Button>
+                        <div class="g-recaptcha" data-sitekey="6LeZTowUAAAAAIq7N6vqBAibgz4joIcpBT1NShel"></div>
+                        <Button bsSize="large" type="submit" bsStyle="primary">Submit</Button>
                     </div>
                 </form>
-                ) : (<form className="full-width">
+                ) : (<form onSubmit={(event) => this.handleSubmit(event)} className="full-width">
                     <h2 className="center">Let's connect!</h2>
                     <div className="headline"><a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer"><img src={require('../images/twitter-min.png')} height="50px" alt="twitter icon" /></a>
                         <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer"><img src={require('../images/linkedin2.png')} height="50px" alt="linkedin icon" /></a>
@@ -133,15 +134,15 @@ class Contact extends Component {
                         <FormControl componentClass="textarea" rows={10} value={this.state.message} onChange={(event) => this.handleChangeFor(event, 'message')} required />
                     </FormGroup>
                     <div className="center">
-                        <Button bsSize="large" onClick={(event)=>this.handleSubmit(event)} bsStyle="primary">Submit</Button>
+                        <Button bsSize="large" type="submit" bsStyle="primary">Submit</Button>
                     </div>
                 </form>)}
-                <Modal show={this.state.success} onHide={(event)=>this.handleClose(event)}>
+                <Modal show={this.state.success} onHide={(event) => this.handleClose(event)}>
                     <Modal.Header>
                         <h3>Success!</h3>
-                </Modal.Header>
-                    <Modal.Body className="center"><p className="skills-list">Message sent! Check your inbox for a confirmation email.</p><img src={require('../images/emails.gif')} alt="email gif"/></Modal.Body>
-                    <div className="center spacing"><Button bsStyle="info" onClick={(event)=>this.handleClose(event)}>Close</Button></div>
+                    </Modal.Header>
+                    <Modal.Body className="center"><p className="skills-list">Message sent! Check your inbox for a confirmation email.</p><img src={require('../images/emails.gif')} alt="email gif" /></Modal.Body>
+                    <div className="center spacing"><Button bsStyle="info" onClick={(event) => this.handleClose(event)}>Close</Button></div>
                 </Modal>
 
             </section>
