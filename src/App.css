@@ -99,8 +99,8 @@ footer {
   color: white;
   display: flex;
   flex-direction: row; 
-  justify-content: space-evenly;
-  height: 5vh; 
+  justify-content: flex-end;
+  height: 7vh; 
   padding: 10px; 
 }
 .full-width {
