@@ -39,7 +39,8 @@ class Contact extends Component {
             message: ''
         })
     }
-    handleSubmit = () => {
+    handleSubmit = (event) => {
+        event.preventDefault()
         axios({
             method: 'POST',
             url: '/contact',
@@ -85,7 +86,7 @@ class Contact extends Component {
         return (
             <section className="main">
                 <Nav />
-                {isDesktop ? (<form onSubmit={this.handleSubmit} className="contact-form">
+                {isDesktop ? (<form onSubmit={(event)=>this.handleSubmit(event)} className="contact-form">
                     <h2 className="center">Let's connect!</h2>
                     <div className="headline"><a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer" ><img src={require('../images/twitter-min.png')} height="50px" alt="twitter icon" /></a>
                         <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer" ><img src={require('../images/linkedin2.png')} height="50px" alt="linkedin icon" /></a>
@@ -110,7 +111,7 @@ class Contact extends Component {
                         <Button bsSize="large" type="submit" bsStyle="primary">Submit</Button>
                     </div>
                 </form>
-                ) : (<form onSubmit={this.handleSubmit} className="full-width">
+                ) : (<form onSubmit={(event)=>this.handleSubmit(event)} className="full-width">
                     <h2 className="center">Let's connect!</h2>
                     <div className="headline"><a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer"><img src={require('../images/twitter-min.png')} height="50px" alt="twitter icon" /></a>
                         <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer"><img src={require('../images/linkedin2.png')} height="50px" alt="linkedin icon" /></a>
