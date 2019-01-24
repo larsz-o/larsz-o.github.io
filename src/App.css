@@ -44,6 +44,16 @@ a:hover{
   border: 2px lightblue dashed;
   border-radius: 5px; 
 }
+.dashed-edge-tight{
+  border: 2px lightblue solid;
+  border-radius: 5px; 
+  padding: 10px; 
+  margin-bottom: 15vw;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  background-color: whitesmoke;
+  
+}
 .emphasis {
   font-weight: bold; 
 }
@@ -118,6 +128,8 @@ footer {
 }
 .headline{
   text-align: center;
+  margin-top: 5px;
+  padding-top: 5vh;
   margin-bottom: 5px; 
   padding-bottom: 5vh; 
 }

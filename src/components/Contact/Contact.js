@@ -86,12 +86,16 @@ class Contact extends Component {
         return (
             <section className="main">
                 <Nav />
-                {isDesktop ? (<form onSubmit={(event) => this.handleSubmit(event)} className="contact-form">
-                    <h2 className="center">Let's connect!</h2>
-                    <div className="headline"><a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer" ><img src={require('../images/twitter-min.png')} height="50px" alt="twitter icon" /></a>
-                        <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer" ><img src={require('../images/linkedin2.png')} height="50px" alt="linkedin icon" /></a>
-                        <a href="https://github.com/larsz-o" target="_blank" rel="noopener noreferrer"><img src={require('../images/Octocat-min.png')} height="50px" alt="github icon" /></a></div>
-                        <h3>Send me an <a href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">email!</a></h3>
+                {isDesktop ? (<form onSubmit={(event) => this.handleSubmit(event)} className="center">
+                    <div className="dashed-edge-tight">
+                        <h2>Let's connect</h2>
+                        <h3>Find me on social media</h3>
+                        <div className="headline"><a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer"><img src={require('../images/twitter-min.png')} height="50px" alt="twitter icon" /></a>
+                            <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer"><img src={require('../images/linkedin2.png')} height="50px" alt="linkedin icon" /></a>
+                            <a href="https://github.com/larsz-o" target="_blank" rel="noopener noreferrer"><img src={require('../images/Octocat-min.png')} height="50px" alt="github icon" /></a></div>
+                        <h3>or send me an <a className="link" href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">email!</a></h3>
+                    </div>
+
                     {/* <FormGroup>
                         <ControlLabel>Name</ControlLabel>
                         <FormControl type="text" value={this.state.name} onChange={(event) => this.handleChangeFor(event, 'name')} required />
@@ -112,14 +116,18 @@ class Contact extends Component {
                         <div class="g-recaptcha" data-sitekey="6LeZTowUAAAAAIq7N6vqBAibgz4joIcpBT1NShel"></div>
                         <Button bsSize="large" type="submit" bsStyle="primary">Submit</Button>
                     </div> */}
-                   
+
                 </form>
-                ) : (<form onSubmit={(event) => this.handleSubmit(event)} className="full-width">
-                    <h2 className="center">Let's connect!</h2>
-                    <div className="headline"><a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer"><img src={require('../images/twitter-min.png')} height="50px" alt="twitter icon" /></a>
-                        <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer"><img src={require('../images/linkedin2.png')} height="50px" alt="linkedin icon" /></a>
-                        <a href="https://github.com/larsz-o" target="_blank" rel="noopener noreferrer"><img src={require('../images/Octocat-min.png')} height="50px" alt="github icon" /></a></div>
-                        <h3>Send me an <a href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">email!</a></h3>
+                ) : (<form onSubmit={(event) => this.handleSubmit(event)} className="full-width center">
+                    <div className="dashed-edge-tight">
+                        <h2>Let's connect</h2>
+                        <h3>Find me on social media</h3>
+                        <div className="headline"><a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer"><img src={require('../images/twitter-min.png')} height="50px" alt="twitter icon" /></a>
+                            <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer"><img src={require('../images/linkedin2.png')} height="50px" alt="linkedin icon" /></a>
+                            <a href="https://github.com/larsz-o" target="_blank" rel="noopener noreferrer"><img src={require('../images/Octocat-min.png')} height="50px" alt="github icon" /></a></div>
+                        <h3 className="center">or send me an <a className="link" href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">email!</a></h3>
+                    </div>
+
                     {/* <FormGroup>
                         <ControlLabel>Name</ControlLabel>
                         <FormControl type="text" value={this.state.name} onChange={(event) => this.handleChangeFor(event, 'name')} required />
