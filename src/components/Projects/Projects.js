@@ -70,7 +70,7 @@ class Projects extends Component {
                         </Col>
                         <Col xs={12} md={10} lg={8}>
                             <h3>...and helped students create narrative digital maps.</h3>
-                            <img src={require('../images/storymap.png')} alt="a storymap about quinoa" className="relative" responsive />
+                            <img src={require('../images/storymap-min.png')} alt="a storymap about quinoa" className="relative" responsive />
                         </Col>
                     </Row>
                     <Row>
