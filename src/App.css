@@ -178,7 +178,7 @@ html, body {
 }
 .nav-item {
   font-size: 1.5em; 
-  color: white;
+  font-family: 'Inconsolata', monospace;
   padding: 10px; 
   border: 2px lightblue dashed;
   border-radius: 5px; 
