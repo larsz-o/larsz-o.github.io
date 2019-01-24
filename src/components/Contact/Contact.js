@@ -28,10 +28,15 @@ class Contact extends Component {
             [property]: event.target.value
         })
     }
-    handleClose = () => {
+    handleClose = (event) => {
+        event.preventDefault()
         this.setState({
             ...this.state, 
-            success: false
+            success: false,
+            name: '',
+            email: '',
+            subject: '',
+            message: ''
         })
     }
     handleSubmit = () => {
@@ -53,10 +58,6 @@ class Contact extends Component {
             data: this.state
         }).then((response) => {
             this.setState({
-                name: '',
-                email: '',
-                subject: '',
-                message: '',
                 success: true
             });
         }).catch((error) => {
@@ -121,12 +122,12 @@ class Contact extends Component {
                         <Button bsSize="large" type="submit" bsStyle="primary">Submit</Button>
                     </div>
                 </form>)}
-                <Modal show={this.state.success} onHide={this.handleClose}>
+                <Modal show={this.state.success} onHide={(event)=>this.handleClose(event)}>
                     <Modal.Header>
                         <h3>Success!</h3>
                 </Modal.Header>
                     <Modal.Body className="center"><p className="skills-list">Message sent! Check your inbox for a confirmation email.</p><img src={require('../images/emails.gif')} alt="email gif"/></Modal.Body>
-                    <div className="center spacing"><Button bsStyle="info" onClick={this.handleClose}>Close</Button></div>
+                    <div className="center spacing"><Button bsStyle="info" onClick={(event)=>this.handleClose(event)}>Close</Button></div>
                 </Modal>
 
             </section>
