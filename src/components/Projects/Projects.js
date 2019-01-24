@@ -43,13 +43,16 @@ class Projects extends Component {
                             </Col></div>) :
                             (<div>
                                 <Col xs={12} md={6} lg={4}>
-                                    <h3>I've worked on a number of projects where I've been responsible for integrating technology into teaching, building web applications, and promoting research through technology.</h3>
+                                    <h3 className="dashed-edge">I've worked on a number of projects where I've been responsible for integrating technology into teaching, building web applications, and promoting research through technology.</h3>
+                                </Col>
+                                <Col xs={12} md={6} lg={4}>
+                                  <div className="margin-top center"><img src={require('../images/diamond1.png')} alt="diamond"/><img src={require('../images/diamond1.png')} alt="diamond"/><img src={require('../images/diamond1.png')} alt="diamond"/></div>
                                 </Col>
                             </div>)}
                     </Row>
-                    <Row>
+                    {isDesktop && <Row>
                         <div className="row-padding"></div>
-                    </Row>
+                    </Row>}
                     <Row>
                         <div className="row-padding"></div>
                     </Row>
@@ -61,6 +64,7 @@ class Projects extends Component {
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
+                        {!isDesktop && <div className="center"><img className="center" src={require('../images/diamond1.png')} alt="diamond"/></div>}
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
@@ -75,6 +79,7 @@ class Projects extends Component {
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
+                        {!isDesktop && <div className="center"><img className="center" src={require('../images/diamond1.png')} alt="diamond"/></div>}
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
@@ -87,6 +92,7 @@ class Projects extends Component {
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
+                        {!isDesktop && <div className="center"><img className="center" src={require('../images/diamond1.png')} alt="diamond"/></div>}
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
@@ -101,6 +107,7 @@ class Projects extends Component {
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
+                        {!isDesktop && <div className="center"><img className="center" src={require('../images/diamond1.png')} alt="diamond"/></div>}
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
@@ -113,6 +120,7 @@ class Projects extends Component {
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
+                        {!isDesktop && <div className="center"><img className="center" src={require('../images/diamond1.png')} alt="diamond"/></div>}
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
@@ -127,6 +135,7 @@ class Projects extends Component {
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
+                        {!isDesktop && <div className="center"><img className="center" src={require('../images/diamond1.png')} alt="diamond"/></div>}
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
@@ -139,6 +148,7 @@ class Projects extends Component {
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
+                        {!isDesktop && <div className="center"><img className="center" src={require('../images/diamond1.png')} alt="diamond"/></div>}
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
