@@ -37,7 +37,7 @@ class Resume extends Component {
                             <p>Last updated January 2019</p>
                             <Row>
                                 <Col xs={12} md={12} lg={12}>
-                                    <h3>Or read about my <Link className="link" to="/resume#workshops"> workshops and trainings,</Link><Link className="link" to="/resume#tech"> technical skills,</Link><Link className="link" to="/resume#presentations"> presentations</Link>,<Link className="link" to="/resume#publications"> publications,</Link><Link className="link" to="/resume#awards"> and awards.</Link></h3>
+                                    <h3>Or read about my <Link className="link" to="/resume#workshops"> workshops and trainings,</Link><Link className="link" to="/resume#tech"> technical skills,</Link><Link className="link" to="/resume#presentations"> presentations</Link>,<Link className="link" to="/resume#publications"> publications,</Link><Link className="link" to="/resume#multimedia"> multimedia projects,</Link><Link className="link" to="/resume#awards"> and awards.</Link></h3>
                                 </Col>
                             </Row>
                         </Col>
@@ -101,16 +101,26 @@ class Resume extends Component {
                         </Col>
                     </Row>
                     <Row>
-                        <Col xs={12} md={12} lg={12}>
-                        <div id="awards">
-                            <h3 className="dashed-edge">Selected Awards</h3>
-                            <ul className="skills-list">
-                                <li>Steven J. Schochet Interdisciplinary Fellowship in Queer + Trans Studies, 2018-2019</li>
-                                <li>Doctoral Dissertation Fellowship, 2017-2018</li>
-                                <li>Gender Policy Report Fellow, Summer 2017</li>
-                                <li>Critical Data Studies Fellow, Informatics Institute, Summer 2016</li>
-                            </ul>
-                        </div>
+                        <Col xs={12} md={6} lg={6}>
+                            <div id="multimedia">
+                            <h3 className="dashed-edge">Multimedia Projects</h3>
+                                <ul className="skills-list">
+                                    <li>Feminist eLearning Modules, with Jigna Desai, Ann Fandrey, and Colin McFadden, 2015.</li>
+                                    <li>Mapping Immigration History in the Twin Cities, with Sarah Atwood-Hoffman and Kong Pha, 2015. </li>
+                                    <li>Word Matters: Narratives of Commercial Sex, Institute for Advanced Study Collaborative project, 2014.</li>
+                                </ul>
+                            </div>
+                        </Col>
+                        <Col xs={12} md={6} lg={6}>
+                            <div id="awards">
+                                <h3 className="dashed-edge">Selected Awards</h3>
+                                <ul className="skills-list">
+                                    <li>Steven J. Schochet Interdisciplinary Fellowship in Queer + Trans Studies, 2018-2019</li>
+                                    <li>Doctoral Dissertation Fellowship, 2017-2018</li>
+                                    <li>Gender Policy Report Fellow, Summer 2017</li>
+                                    <li>Critical Data Studies Fellow, Informatics Institute, Summer 2016</li>
+                                </ul>
+                            </div>
                         </Col>
                     </Row>
                 </Grid>
