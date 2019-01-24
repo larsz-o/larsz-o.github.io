@@ -57,9 +57,13 @@ class Contact extends Component {
             url: '/contact/confirmation',
             data: this.state
         }).then((response) => {
-            this.setState({
-                success: true
-            });
+            if(this.state.isDesktop){
+                this.setState({
+                    success: true
+                });
+            } else {
+                alert('Thank you for your note! I will reply as soon as I can.');
+            }
         }).catch((error) => {
             console.log('Error posting confirmation', error);
         })
