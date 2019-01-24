@@ -77,7 +77,8 @@ class Contact extends Component {
                 {isDesktop ? (<form onSubmit={this.handleSubmit} className="contact-form">
                     <h2 className="center">Let's connect!</h2>
                     <div className="headline"><a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer" ><img src={require('../images/twitter.png')} height="50px" alt="twitter icon" /></a>
-                        <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer" ><img src={require('../images/linkedin2.png')} height="50px" alt="linkedin icon" /></a></div>
+                        <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer" ><img src={require('../images/linkedin2.png')} height="50px" alt="linkedin icon" /></a>
+                        <a href="https://github.com/larsz-o" target="_blank" rel="noopener noreferrer"><img src={require('../images/Octocat.png')} height="50px" alt="github icon" /></a></div>
                     <FormGroup>
                         <ControlLabel>Name</ControlLabel>
                         <FormControl type="text" value={this.state.name} onChange={(event) => this.handleChangeFor(event, 'name')} required />
@@ -101,7 +102,8 @@ class Contact extends Component {
                 ) : (<form onSubmit={this.handleSubmit} className="full-width">
                     <h2 className="center">Let's connect!</h2>
                     <div className="headline"><a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer"><img src={require('../images/twitter.png')} height="50px" alt="twitter icon" /></a>
-                        <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer"><img src={require('../images/linkedin2.png')} height="50px" alt="linkedin icon" /></a></div>
+                        <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer"><img src={require('../images/linkedin2.png')} height="50px" alt="linkedin icon" /></a>
+                        <a href="https://github.com/larsz-o" target="_blank" rel="noopener noreferrer"><img src={require('../images/Octocat.png')} height="50px" alt="github icon" /></a></div>
                     <FormGroup>
                         <ControlLabel>Name</ControlLabel>
                         <FormControl type="text" value={this.state.name} onChange={(event) => this.handleChangeFor(event, 'name')} required />
