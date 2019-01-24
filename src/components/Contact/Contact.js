@@ -29,7 +29,7 @@ class Contact extends Component {
         })
     }
     handleClose = (event) => {
-        event.preventDefault()
+        event.preventDefault();
         this.setState({
             ...this.state, 
             success: false,
@@ -40,7 +40,7 @@ class Contact extends Component {
         })
     }
     handleSubmit = (event) => {
-        event.preventDefault()
+        event.preventDefault();
         axios({
             method: 'POST',
             url: '/contact',
@@ -86,7 +86,7 @@ class Contact extends Component {
         return (
             <section className="main">
                 <Nav />
-                {isDesktop ? (<form onSubmit={(event)=>this.handleSubmit(event)} className="contact-form">
+                {isDesktop ? (<form className="contact-form">
                     <h2 className="center">Let's connect!</h2>
                     <div className="headline"><a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer" ><img src={require('../images/twitter-min.png')} height="50px" alt="twitter icon" /></a>
                         <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer" ><img src={require('../images/linkedin2.png')} height="50px" alt="linkedin icon" /></a>
@@ -108,10 +108,10 @@ class Contact extends Component {
                         <FormControl componentClass="textarea" rows={10} value={this.state.message} onChange={(event) => this.handleChangeFor(event, 'message')} required />
                     </FormGroup>
                     <div className="center">
-                        <Button bsSize="large" type="submit" bsStyle="primary">Submit</Button>
+                        <Button bsSize="large" onClick={(event)=>this.handleSubmit(event)} bsStyle="primary">Submit</Button>
                     </div>
                 </form>
-                ) : (<form onSubmit={(event)=>this.handleSubmit(event)} className="full-width">
+                ) : (<form className="full-width">
                     <h2 className="center">Let's connect!</h2>
                     <div className="headline"><a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer"><img src={require('../images/twitter-min.png')} height="50px" alt="twitter icon" /></a>
                         <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer"><img src={require('../images/linkedin2.png')} height="50px" alt="linkedin icon" /></a>
@@ -133,7 +133,7 @@ class Contact extends Component {
                         <FormControl componentClass="textarea" rows={10} value={this.state.message} onChange={(event) => this.handleChangeFor(event, 'message')} required />
                     </FormGroup>
                     <div className="center">
-                        <Button bsSize="large" type="submit" bsStyle="primary">Submit</Button>
+                        <Button bsSize="large" onClick={(event)=>this.handleSubmit(event)} bsStyle="primary">Submit</Button>
                     </div>
                 </form>)}
                 <Modal show={this.state.success} onHide={(event)=>this.handleClose(event)}>
