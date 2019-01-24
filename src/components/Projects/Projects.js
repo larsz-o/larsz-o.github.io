@@ -39,7 +39,7 @@ class Projects extends Component {
                                 <h3>I've worked on a number of projects where I've been responsible for integrating technology into teaching, building web applications, and promoting research through technology.</h3>
                             </Col>
                             <Col xs={12} md={6} lg={8}>
-                                <img src={require('./apple.jpg')} height="500px" alt="computer" responsive />
+                                <img src={require('./apple-min.jpg')} height="500px" alt="computer" responsive />
                             </Col></div>) :
                             (<div>
                                 <Col xs={12} md={6} lg={4}>
@@ -56,7 +56,7 @@ class Projects extends Component {
                     <Row>
                         <Col xs={12} md={10} lg={8}>
                             <h3>I've developed and faciliated trainings about digital storytelling and podcasting...</h3>
-                            <img src={require('../images/imovie.png')} alt="iMovie screenshot" className="relative" responsive />
+                            <img src={require('../images/imovie-min.png')} alt="iMovie screenshot" className="relative" responsive />
                         </Col>
                     </Row>
                     <Row>
@@ -82,7 +82,7 @@ class Projects extends Component {
                     <Row>
                         <Col xs={12} md={10} lg={8}>
                             <h3>I've supported the production of eLearning modules...</h3>
-                            <img src={require('../images/module.png')} alt="eLearning module" className="relative" responsive />
+                            <img src={require('../images/module-min.png')} alt="eLearning module" className="relative" responsive />
                         </Col>
                     </Row>
                     <Row>
@@ -96,7 +96,7 @@ class Projects extends Component {
                         </Col>
                         <Col xs={12} md={10} lg={8}>
                         <h3>...and designed and taught online courses.</h3>
-                            <img src={require('../images/transhealth.png')} alt="online class" className="relative" responsive />
+                            <img src={require('../images/transhealth-min.png')} alt="online class" className="relative" responsive />
                         </Col>
                     </Row>
                     <Row>
@@ -108,7 +108,7 @@ class Projects extends Component {
                     <Row>
                         <Col xs={12} md={10} lg={8}>
                             <h3>I've built full-stack web applications to help improve information tracking...</h3>
-                            <img src={require('../images/card.png')} alt="fitness tracker software" className="relative" responsive />
+                            <img src={require('../images/card-min.png')} alt="fitness tracker software" className="relative" responsive />
                         </Col>
                     </Row>
                     <Row>
@@ -122,7 +122,7 @@ class Projects extends Component {
                         </Col>
                         <Col xs={12} md={10} lg={8}>
                             <h3>...and maintained web portfolios for community-oriented research projects.</h3>
-                            <img src={require('../images/digitalstories.png')} alt="digital stories grid for MYSS project" className="relative" responsive />
+                            <img src={require('../images/digitalstories-min.png')} alt="digital stories grid for MYSS project" className="relative" responsive />
                         </Col>
                     </Row>
                     <Row>
@@ -134,7 +134,7 @@ class Projects extends Component {
                     <Row>
                         <Col xs={12} md={10} lg={8}>
                             <h3>I've also conducted my own digital research on social media communication; writing scripts to collect data and software to code and analyze data.</h3>
-                            <img src={require('../images/twitter-full.jpg')} alt="many birds flying with twitter icons" className="relative" responsive />
+                            <img src={require('../images/twitter-full-min.jpg')} alt="many birds flying with twitter icons" className="relative" responsive />
                         </Col>
                     </Row>
                     <Row>

@@ -30,7 +30,7 @@ class Resume extends Component {
                 <Grid>
                     <Row className="center">
                         <Col xs={12} md={6} lg={8}>
-                            {isDesktop ? (<img src={require('../images/code.jpg')} height="500px" alt="computer" responsive />) : (<img src={require('../images/code.jpg')} width="300px" alt="computer" responsive />)}
+                            {isDesktop ? (<img src={require('../images/code-min.jpg')} height="500px" alt="computer" responsive />) : (<img src={require('../images/code-min.jpg')} width="300px" alt="computer" responsive />)}
                         </Col>
                         <Col xs={12} md={6} lg={4}>
                             <h3>Download my <a className="link" href={require('../images/Mackenzie_Resume.pdf')}>resume</a></h3>

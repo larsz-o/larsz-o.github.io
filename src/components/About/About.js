@@ -37,7 +37,7 @@ class Projects extends Component {
                     </Row>
                     {isDesktop ? (<Row>
                         <Col xs={12} md={6} lg={6}>
-                            <Image src={require('./lars.jpg')} alt="Lars headshot" height="350" rounded responsive />
+                            <Image src={require('./lars-min.jpg')} alt="Lars headshot" height="350" rounded responsive />
                         </Col>
                         <Col xs={12} md={6} lg={6} className="dashed-edge">
                             <p className="about-text">I am an academic technologist and a web developer. I love creating technology that can improve people's lives - from <span className="emphasis">automating tedious processes, to building platforms to connect people, to delivering meaningful insights from under-utilized data.</span></p>
@@ -50,7 +50,7 @@ class Projects extends Component {
                         </Col>
                     </Row>) : (<div className="dashed-edge"><Row>
                         <Col xs={12} md={6} lg={6}>
-                            <Image src={require('./lars.jpg')} alt="Lars headshot" height="350" rounded responsive />
+                            <Image src={require('./lars-min.jpg')} alt="Lars headshot" height="350" rounded responsive />
                         </Col>
                     </Row>
                    
