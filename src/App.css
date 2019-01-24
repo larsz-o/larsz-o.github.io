@@ -98,6 +98,9 @@ footer {
   margin-left: 10vw;
   margin-right: 10vw;
 }
+.g-recaptcha{
+  margin-bottom: 5px; 
+}
 .github-link{
   margin-top: 5vh; 
 }

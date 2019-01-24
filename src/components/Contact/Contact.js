@@ -108,9 +108,10 @@ class Contact extends Component {
                         <FormControl componentClass="textarea" rows={10} value={this.state.message} onChange={(event) => this.handleChangeFor(event, 'message')} required />
                     </FormGroup>
                     <div className="center">
+                        <div class="g-recaptcha" data-sitekey="6LeZTowUAAAAAIq7N6vqBAibgz4joIcpBT1NShel"></div>
                         <Button bsSize="large" type="submit" bsStyle="primary">Submit</Button>
                     </div>
-                    <div class="g-recaptcha" data-sitekey="6LeZTowUAAAAAIq7N6vqBAibgz4joIcpBT1NShel"></div>
+                   
                 </form>
                 ) : (<form onSubmit={(event) => this.handleSubmit(event)} className="full-width">
                     <h2 className="center">Let's connect!</h2>
@@ -134,9 +135,10 @@ class Contact extends Component {
                         <FormControl componentClass="textarea" rows={10} value={this.state.message} onChange={(event) => this.handleChangeFor(event, 'message')} required />
                     </FormGroup>
                     <div className="center">
+                        <div class="g-recaptcha" data-sitekey="6LeZTowUAAAAAIq7N6vqBAibgz4joIcpBT1NShel">
                         <Button bsSize="large" type="submit" bsStyle="primary">Submit</Button>
                     </div>
-                    <div class="g-recaptcha" data-sitekey="6LeZTowUAAAAAIq7N6vqBAibgz4joIcpBT1NShel"></div>
+                    </div>
                 </form>)}
                 <Modal show={this.state.success} onHide={(event) => this.handleClose(event)}>
                     <Modal.Header>
