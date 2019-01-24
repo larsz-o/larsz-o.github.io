@@ -63,6 +63,13 @@ class Contact extends Component {
                 });
             } else {
                 alert('Thank you for your note! I will reply as soon as I can.');
+                this.setState({
+                    ...this.state, 
+                    name: '',
+                    email: '',
+                    subject: '',
+                    message: ''
+                })
             }
         }).catch((error) => {
             console.log('Error posting confirmation', error);
