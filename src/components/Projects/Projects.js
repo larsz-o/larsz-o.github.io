@@ -56,7 +56,7 @@ class Projects extends Component {
                     <Row>
                         <Col xs={12} md={10} lg={8}>
                             <h3>I've developed and faciliated trainings about digital storytelling and podcasting...</h3>
-                            <img src={require('../images/imovie-min.png')} alt="iMovie screenshot" className="relative" responsive />
+                            <img src="https://res.cloudinary.com/dnrk3irn4/image/upload/v1548291805/imovie-min.png" alt="iMovie screenshot" className="relative" responsive />
                         </Col>
                     </Row>
                     <Row>
@@ -70,7 +70,7 @@ class Projects extends Component {
                         </Col>
                         <Col xs={12} md={10} lg={8}>
                             <h3>...and helped students create narrative digital maps.</h3>
-                            <img src={require('../images/storymap-min.png')} alt="a storymap about quinoa" className="relative" responsive />
+                            <img src="https://res.cloudinary.com/dnrk3irn4/image/upload/v1548291769/storymap-min.png" alt="a storymap about quinoa" className="relative" responsive />
                         </Col>
                     </Row>
                     <Row>
@@ -82,7 +82,7 @@ class Projects extends Component {
                     <Row>
                         <Col xs={12} md={10} lg={8}>
                             <h3>I've supported the production of eLearning modules...</h3>
-                            <img src={require('../images/module-min.png')} alt="eLearning module" className="relative" responsive />
+                            <img src="https://res.cloudinary.com/dnrk3irn4/image/upload/v1548291858/module-min.png" alt="eLearning module" className="relative" responsive />
                         </Col>
                     </Row>
                     <Row>
@@ -96,7 +96,7 @@ class Projects extends Component {
                         </Col>
                         <Col xs={12} md={10} lg={8}>
                         <h3>...and designed and taught online courses.</h3>
-                            <img src={require('../images/transhealth-min.png')} alt="online class" className="relative" responsive />
+                            <img src="https://res.cloudinary.com/dnrk3irn4/image/upload/v1548291975/transhealth-min.png" alt="online class" className="relative" responsive />
                         </Col>
                     </Row>
                     <Row>
@@ -108,7 +108,7 @@ class Projects extends Component {
                     <Row>
                         <Col xs={12} md={10} lg={8}>
                             <h3>I've built full-stack web applications to help improve information tracking...</h3>
-                            <img src={require('../images/card-min.png')} alt="fitness tracker software" className="relative" responsive />
+                            <img src="https://res.cloudinary.com/dnrk3irn4/image/upload/v1548291797/card-min.png" alt="fitness tracker software" className="relative" responsive />
                         </Col>
                     </Row>
                     <Row>
@@ -122,7 +122,7 @@ class Projects extends Component {
                         </Col>
                         <Col xs={12} md={10} lg={8}>
                             <h3>...and maintained web portfolios for community-oriented research projects.</h3>
-                            <img src={require('../images/digitalstories-min.png')} alt="digital stories grid for MYSS project" className="relative" responsive />
+                            <img src="https://res.cloudinary.com/dnrk3irn4/image/upload/v1548291844/digitalstories-min.png" alt="digital stories grid for MYSS project" className="relative" responsive />
                         </Col>
                     </Row>
                     <Row>
@@ -134,7 +134,7 @@ class Projects extends Component {
                     <Row>
                         <Col xs={12} md={10} lg={8}>
                             <h3>I've also conducted my own digital research on social media communication; writing scripts to collect data and software to code and analyze data.</h3>
-                            <img src={require('../images/twitter-full-min.jpg')} alt="many birds flying with twitter icons" className="relative" responsive />
+                            <img src="https://res.cloudinary.com/dnrk3irn4/image/upload/v1548291805/twitter-full-min.jpg" alt="many birds flying with twitter icons" className="relative" responsive />
                         </Col>
                     </Row>
                     <Row>
