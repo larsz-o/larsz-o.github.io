@@ -33,7 +33,7 @@ class Resume extends Component {
                             {isDesktop ? (<img src="https://res.cloudinary.com/dnrk3irn4/image/upload/v1548291867/code-min.jpg" height="500px" alt="computer" responsive />) : (<img src="https://res.cloudinary.com/dnrk3irn4/image/upload/v1548291867/code-min.jpg" width="300px" alt="computer" responsive />)}
                         </Col>
                         <Col xs={12} md={6} lg={4}>
-                            <h3>Download my <a className="link" href={require('../images/Mackenzie_Resume.pdf')}>resume</a></h3>
+                            <h3>Download my <a className="link" href={require('../images/Mackenzie_Resume2019.pdf')}>resume</a></h3>
                             <p>Last updated January 2019</p>
                             <Row>
                                 <Col xs={12} md={12} lg={12}>
