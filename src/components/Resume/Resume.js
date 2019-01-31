@@ -79,6 +79,7 @@ class Resume extends Component {
                             <div id="presentations">
                                 <h3 className="dashed-edge">Selected Presentations</h3>
                                 <ul className="skills-list">
+                                    <li>"Dangerous Data: The Gendered and Racialized Politics of Ethical Data Reduction." University of Minnesota Endangered Data Week, 2019.</li>
                                     <li>"Digitizing Difference: Fraudulence, Gender Non-Conformity, and Data." University of Minnesota, 2019.</li>
                                     <li>"Identity Thieves: Seizing the Means of Gender Self-Determination." University of Maryland, 2018.</li>
                                     <li>"Seeing Systems/Seeing Gender." Latitude, 2017.</li>
