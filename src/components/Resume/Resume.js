@@ -66,7 +66,7 @@ class Resume extends Component {
                             <div id="tech">
                                 <h3 className="dashed-edge">Technical Skills</h3>
                                 <ul className="skills-list">
-                                    <li>Web Development: JavaScript, Python, HTML, CSS, SQL, MongoDB, RESTful APIs</li>
+                                    <li>Web Development: JavaScript, Python, HTML, CSS, SQL, MongoDB, RESTful APIs, XML</li>
                                     <li>Data Visualization and Analysis: Chart.js, D3, Atlas.ti, NVivo, R, ArcGIS</li>
                                     <li>Media Production: iMovie, Final Cut Pro, GarageBand, ArcGIS StoryMaps, Audacity</li>
                                     <li>Content Management Systems: WordPress, Scalar, Drupal, Omeka, Moodle, Canvas, Articulate Storyline</li>
