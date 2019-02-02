@@ -5,7 +5,7 @@ A professional website for me
 * React
 * Express
 * Node 
-* Nodemailer
+* Prender.io
 * React-Bootstrap
 * React Hash Router 
 * React Router Hash Link

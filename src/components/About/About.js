@@ -49,8 +49,8 @@ class Projects extends Component {
                             <p className="about-text">I'm passionate about fostering critical data literacy while also helping people to build tools, platforms, and portfolios to showcase their ideas and forge connections.</p>
                         </Col>
                     </Row>) : (<div className="dashed-edge"><Row>
-                        <Col xs={12} md={6} lg={6}>
-                            <Image src="https://res.cloudinary.com/dnrk3irn4/image/upload/c_scale,h_350/v1548291363/lars.jpg" alt="Lars headshot" height="350" rounded responsive />
+                        <Col xs={12} md={12} lg={12}>
+                            <Image className="center" src="https://res.cloudinary.com/dnrk3irn4/image/upload/c_scale,h_350/v1548291363/lars.jpg" alt="Lars headshot" height="350" rounded responsive />
                         </Col>
                     </Row>
                    
