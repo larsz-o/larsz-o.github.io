@@ -32,6 +32,7 @@ a:hover{
 }
 .emphasis {
   font-weight: bold; 
+ /* think about changing this to a better color  */
 }
 .flex-box {
   display: flex;

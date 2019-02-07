@@ -34,7 +34,7 @@ class Resume extends Component {
                         </Col>
                         <Col xs={12} md={6} lg={4}>
                             <h3>Download my <a className="link" href={require('../images/Mackenzie_Resume2019.pdf')}>resume</a></h3>
-                            <p>Last updated January 2019</p>
+                            <p>Last updated February 2019</p>
                             <Row>
                                 <Col xs={12} md={12} lg={12}>
                                     <h3>Or read about my <Link className="link" to="/resume#workshops"> workshops and trainings,</Link><Link className="link" to="/resume#tech"> technical skills,</Link><Link className="link" to="/resume#presentations"> presentations</Link>,<Link className="link" to="/resume#publications"> publications,</Link><Link className="link" to="/resume#multimedia"> multimedia projects,</Link><Link className="link" to="/resume#awards"> and awards.</Link></h3>
