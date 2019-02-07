@@ -44,7 +44,7 @@ class Projects extends Component {
                             <div className="spacing"></div>
                             <p className="about-text">I earned my PhD at the University of Minnesota, where I studied how software and data-driven decision-making impact marginalized people. Specifically, I closely examined social justice implications of big data surveillance and software design in healthcare, financial industries, and law as they relate to gender and race.</p>
                             <div className="spacing"></div>
-                            <p className="about-text">During this time, I've been deeply involved with educational technology: helping faculty to integrate digital technology into their research and teaching, and training students to produce digital media projects. I've tackled big problems in this work, like figuring out how to <span className="emphasis">archive hundreds of student-made video projects while protecting their privacy,</span> or how to best highlight research insights from qualitative studies in <span className="emphasis">narrative digital maps.</span></p>
+                            <p className="about-text">During this time, I was deeply involved with educational technology: helping faculty to integrate digital technology into their research and teaching, and training students to produce digital media projects. I've tackled big problems in this work, like figuring out how to <span className="emphasis">archive hundreds of student-made video projects while protecting their privacy,</span> or how to best highlight research insights from qualitative studies in <span className="emphasis">narrative digital maps.</span></p>
                             <div className="spacing"></div>
                             <p className="about-text">I'm passionate about fostering critical data literacy while also helping people to build tools, platforms, and portfolios to showcase their ideas and forge connections.</p>
                         </Col>
@@ -68,7 +68,7 @@ class Projects extends Component {
                         <div className="spacing"></div>
                         <Row>
                             <Col xs={12} md={6} lg={6}>
-                                <h4 className="about-text">During this time, I've been deeply involved with educational technology: helping faculty to integrate digital technology into their research and teaching, and training students to produce digital media projects.</h4>
+                                <h4 className="about-text">During this time, I was deeply involved with educational technology: helping faculty to integrate digital technology into their research and teaching, and training students to produce digital media projects.</h4>
                             </Col>
                         </Row>
                         <div className="spacing"></div>

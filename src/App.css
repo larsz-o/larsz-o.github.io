@@ -31,8 +31,8 @@ a:hover{
   background-color: whitesmoke;
 }
 .emphasis {
-  font-weight: bold; 
- /* think about changing this to a better color  */
+  font-weight: 500; 
+  color: #FA771E; 
 }
 .flex-box {
   display: flex;
