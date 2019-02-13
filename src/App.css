@@ -7,11 +7,14 @@ a:hover{
   text-decoration: none; 
 }
 .about-text {
-  font-size: 1.2em; 
+  font-size: 1.4em; 
 }
 .bottom {
   position: relative;
   bottom: 0;
+}
+.breathing-room {
+  margin-top: 5vh; 
 }
 .center {
   text-align: center; 
@@ -30,10 +33,9 @@ a:hover{
   margin-right: 25vw;
   background-color: whitesmoke;
 }
-.emphasis {
-  font-weight: 500; 
-  color: #FA771E; 
-}
+/* .emphasis {
+  font-weight: bold; 
+} */
 .flex-box {
   display: flex;
   flex-direction: row;
@@ -51,6 +53,12 @@ a:hover{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+.flex-box-left {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 .float-bottom {
   text-align: center;
@@ -76,6 +84,7 @@ footer {
   margin-left: 5vh; 
   margin-bottom: 5px; 
   padding-bottom: 5vh; 
+  margin-top: 5vh;
 }
 .headline{
   text-align: center;
@@ -129,6 +138,10 @@ html, body {
   font-size: 1.5em;
   margin: 0; 
   text-align: center; 
+}
+.mobile-h1 {
+  font-size: 1.3em; 
+  font-weight: 600;
 }
 .nav-background {
   margin-bottom: 10vh; 

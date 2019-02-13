@@ -17,7 +17,7 @@ class Nav extends Component {
     }
     updatePredicate = () => {
         this.setState({
-            isDesktop: window.innerWidth > 1024
+            isDesktop: window.innerWidth >= 1024
         })
     }
     render() {
@@ -25,7 +25,7 @@ class Nav extends Component {
         return (
             <div className="nav-background">
                 <a className="header-link" href="/#/"><div className="header-padding">
-                    <h1><img src={require('./programmer.svg')} alt="select logo" height="75px" width="75px" />Lars Mackenzie, PhD</h1>
+                    {isDesktop ? (<div className="flex-box-left"><img src={require('./programmer.svg')} alt="select logo" height="75px" width="75px" /><h1>Lars Mackenzie, PhD</h1></div>) : (<div className="flex-box-evenly"><h1 className="mobile-h1">Lars Mackenzie, PhD</h1><img src={require('./programmer.svg')} alt="select logo" height="75px" width="75px" /></div>)}
                 </div></a>
                 {isDesktop ? (<nav className="flex-box-evenly nav-item">
                     <div><a href="/">About</a></div>

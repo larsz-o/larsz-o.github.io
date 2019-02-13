@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col, Button } from 'react-bootstrap';
 import Nav from '../Nav/Nav';
-
+import Diamonds from '../Diamonds/Diamonds'; 
 
 class Projects extends Component {
     constructor(props) {
@@ -19,7 +19,7 @@ class Projects extends Component {
     }
     updatePredicate = () => {
         this.setState({
-            isDesktop: window.innerWidth > 1024
+            isDesktop: window.innerWidth >= 1024
         })
     }
     render() {
@@ -30,7 +30,7 @@ class Projects extends Component {
                 <Grid>
                     <Row>
                         <Col xs={12} md={6} lg={4}>
-                            <h2>Projects</h2>
+                            <h2 className="center">Projects</h2>
                         </Col>
                     </Row>
                     <Row>
@@ -43,10 +43,11 @@ class Projects extends Component {
                             </Col></div>) :
                             (<div>
                                 <Col xs={12} md={6} lg={4}>
-                                    <h3 className="dashed-edge">I've worked on a number of projects where I've been responsible for integrating technology into teaching, building web applications, and promoting research through technology.</h3>
+                                    <h3>I've worked on a number of projects where I've been responsible for integrating technology into teaching, building web applications, and promoting research through technology.</h3>
                                 </Col>
                                 <Col xs={12} md={6} lg={4}>
-                                  <div className="margin-top center"><img src={require('../images/diamond1.png')} alt="diamond"/><img src={require('../images/diamond1.png')} alt="diamond"/><img src={require('../images/diamond1.png')} alt="diamond"/></div>
+                                <div className="row-padding"></div>
+                                 <Diamonds/>
                                 </Col>
                             </div>)}
                     </Row>
@@ -64,7 +65,7 @@ class Projects extends Component {
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
-                        {!isDesktop && <div className="center"><img className="center" src={require('../images/diamond1.png')} alt="diamond"/></div>}
+                        {!isDesktop && <Diamonds/>}
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
@@ -79,7 +80,7 @@ class Projects extends Component {
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
-                        {!isDesktop && <div className="center"><img className="center" src={require('../images/diamond1.png')} alt="diamond"/></div>}
+                        {!isDesktop && <Diamonds/>}
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
@@ -92,7 +93,7 @@ class Projects extends Component {
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
-                        {!isDesktop && <div className="center"><img className="center" src={require('../images/diamond1.png')} alt="diamond"/></div>}
+                        {!isDesktop && <Diamonds/>}
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
@@ -107,7 +108,7 @@ class Projects extends Component {
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
-                        {!isDesktop && <div className="center"><img className="center" src={require('../images/diamond1.png')} alt="diamond"/></div>}
+                        {!isDesktop && <Diamonds/>}
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
@@ -120,7 +121,7 @@ class Projects extends Component {
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
-                        {!isDesktop && <div className="center"><img className="center" src={require('../images/diamond1.png')} alt="diamond"/></div>}
+                        {!isDesktop && <Diamonds/>}
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
@@ -135,7 +136,7 @@ class Projects extends Component {
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
-                        {!isDesktop && <div className="center"><img className="center" src={require('../images/diamond1.png')} alt="diamond"/></div>}
+                        {!isDesktop && <Diamonds/>}
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
@@ -148,14 +149,14 @@ class Projects extends Component {
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
-                        {!isDesktop && <div className="center"><img className="center" src={require('../images/diamond1.png')} alt="diamond"/></div>}
+                        {!isDesktop && <Diamonds/>}
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
                     </Row>
                     <Row>
                         <Col xs={12} lg={12}>
-                            <h3>As an academic/technologist, I aim to utilize tools, platforms, and methodologies that foster critical thinking and information literacy skills while also centering accessibility and usability.</h3>
+                            <h3>As an academic + technologist, I aim to utilize tools, platforms, and methodologies that foster critical thinking and information literacy skills while also centering accessibility and usability.</h3>
                         </Col>
                     </Row>
                     <Row>
@@ -164,7 +165,7 @@ class Projects extends Component {
                     <Row>
                         <Col xs={12} lg={12}>
                             <div className="center">
-                                <h3>Interested in working with me? <Button bsSize="large" bsStyle="info" onClick={() => this.props.history.push('/contact')}>Reach out</Button></h3>
+                                <h3>Interested in working with me? <br/><Button bsSize="large" bsStyle="info" className="breathing-room" onClick={() => this.props.history.push('/contact')}>Reach out</Button></h3>
                             </div>
                         </Col>
                     </Row>

@@ -19,7 +19,7 @@ class Resume extends Component {
     }
     updatePredicate = () => {
         this.setState({
-            isDesktop: window.innerWidth > 1024
+            isDesktop: window.innerWidth >= 1024
         })
     }
     render() {
@@ -43,7 +43,7 @@ class Resume extends Component {
                         </Col>
                     </Row>
                     <Row>
-                        <div className="gimme-room"></div>
+                        <div className="row-padding"></div>
                     </Row>
                     <Row>
                         <Col xs={12} md={6} lg={6}>
@@ -81,7 +81,6 @@ class Resume extends Component {
                                 <ul className="skills-list">
                                     <li>"Dangerous Data: The Gendered and Racialized Politics of Ethical Data Reduction." University of Minnesota Endangered Data Week, 2019.</li>
                                     <li>"Digitizing Difference: Fraudulence, Gender Non-Conformity, and Data." University of Minnesota, 2019.</li>
-                                    <li>"Identity Thieves: Seizing the Means of Gender Self-Determination." University of Maryland, 2018.</li>
                                     <li>"Seeing Systems/Seeing Gender." Latitude, 2017.</li>
                                     <li>"Haunted By Data: Trans Digital Deceptions." American Anthropological Association, 2017</li>
                                     <li>"Data Anamolies: Identity Fraud Detection, Gender Non-Conformity, and the Trouble with Authenticity." University of Illinois, Urbana-Champaign, 2017.</li>

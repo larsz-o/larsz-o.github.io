@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Image, Grid, Row, Col } from 'react-bootstrap';
 import Nav from '../Nav/Nav';
+import Diamonds from '../Diamonds/Diamonds'; 
 
-// todo: add isDesktop? here too and break into rows for mobile 
 class Projects extends Component {
     constructor(props) {
         super(props);
@@ -20,7 +20,7 @@ class Projects extends Component {
     }
     updatePredicate = () => {
         this.setState({
-            isDesktop: window.innerWidth > 1024
+            isDesktop: window.innerWidth >= 1024
         })
     }
     render() {
@@ -40,23 +40,27 @@ class Projects extends Component {
                             <Image src="https://res.cloudinary.com/dnrk3irn4/image/upload/c_scale,h_350/v1548291363/lars.jpg" alt="Lars headshot" height="350" rounded responsive />
                         </Col>
                         <Col xs={12} md={6} lg={6} className="dashed-edge">
-                            <p className="about-text">I am an academic technologist and a web developer. I love creating technology that can improve people's lives - from <span className="emphasis">automating tedious processes, to building platforms to connect people, to delivering meaningful insights from under-utilized data.</span></p>
+                            <p className="about-text">I am an academic technologist and a web developer. I love creating technology that can improve people's lives - from automating tedious processes, to building platforms to connect people, to delivering meaningful insights from under-utilized data.</p>
                             <div className="spacing"></div>
                             <p className="about-text">I earned my PhD at the University of Minnesota, where I studied how software and data-driven decision-making impact marginalized people from a critical perspective. Specifically, I closely examined social justice implications of big data surveillance and software design in healthcare, financial industries, and law as they relate to gender and race.</p>
                             <div className="spacing"></div>
                             <p className="about-text">During this time, I was deeply involved with educational technology: helping faculty to integrate digital technology into their research and teaching, and training students to produce digital media projects. I've tackled big problems in this work, like figuring out how to <span className="emphasis">archive hundreds of student-made video projects while protecting their privacy,</span> or how to best highlight research insights from qualitative studies in <span className="emphasis">narrative digital maps.</span></p>
                             <div className="spacing"></div>
                             <p className="about-text">I'm passionate about fostering critical data literacy while also helping people to build tools, platforms, and portfolios to showcase their ideas and forge connections.</p>
+                            <div className="spacing"></div>
+                            <p className="about-text">Learn more about some of my <a href="/#/projects" className="link">projects</a> or check out my <a href="/#/resume" className="link">resume.</a></p>
                         </Col>
-                    </Row>) : (<div className="dashed-edge"><Row>
+                    </Row>) : (<div className="center">
+                        
+                    <Row>
                         <Col xs={12} md={12} lg={12}>
                             <Image className="center" src="https://res.cloudinary.com/dnrk3irn4/image/upload/c_scale,h_350/v1548291363/lars.jpg" alt="Lars headshot" height="350" rounded responsive />
                         </Col>
                     </Row>
-                   
+                    <div className="spacing"></div>
                         <Row>
                             <Col xs={12} md={6} lg={6}>
-                                <h4 className="about-text">I am an academic technologist and a web developer. I love creating technology that can improve people's lives - from <span className="emphasis">automating tedious processes, to building platforms to connect people, to delivering meaningful insights from under-utilized data.</span></h4>
+                                <h4 className="about-text">I am an academic technologist and a web developer. I love creating technology that can improve people's lives - from automating tedious processes, to building platforms to connect people, to delivering meaningful insights from under-utilized data.</h4>
                             </Col>
                         </Row>
                         <div className="spacing"></div>
@@ -82,7 +86,15 @@ class Projects extends Component {
                             <Col xs={12} md={6} lg={6}>
                                 <h4 className="about-text">I'm passionate about fostering critical data literacy while also helping people to build tools, platforms, and portfolios to showcase their ideas and forge connections.</h4>
                             </Col>
-                        </Row></div>)}
+                        </Row>
+                        <Row>
+                            <Col xs={12} md={6} lg={6}>
+                                <h4 className="about-text">Learn more about some of my <a href="/#/projects" className="link">projects</a> or check out my <a href="/#/resume" className="link">resume.</a></h4>
+                            </Col>
+                        </Row>
+                        <div className="spacing"></div>
+                        <Diamonds/>
+                        </div>)}
                 </Grid>
 
             </section>
