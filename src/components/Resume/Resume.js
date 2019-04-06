@@ -33,8 +33,8 @@ class Resume extends Component {
                             {isDesktop ? (<img src="https://res.cloudinary.com/dnrk3irn4/image/upload/v1548291867/code-min.jpg" height="500px" alt="computer" responsive />) : (<img src="https://res.cloudinary.com/dnrk3irn4/image/upload/v1548291867/code-min.jpg" width="300px" alt="computer" responsive />)}
                         </Col>
                         <Col xs={12} md={6} lg={4}>
-                            <h3>Download my <a className="link" href={require('../images/Mackenzie_Resume2019.pdf')}>resume</a></h3>
-                            <p>Last updated February 2019</p>
+                            <h3>Download my <a className="link" href={require('../images/Mackenzie_Resume_2019_April.pdf')}>resume</a></h3>
+                            <p>Last updated April 2019</p>
                             <Row>
                                 <Col xs={12} md={12} lg={12}>
                                     <h3>Or read about my <Link className="link" to="/resume#workshops"> workshops and trainings,</Link><Link className="link" to="/resume#tech"> technical skills,</Link><Link className="link" to="/resume#presentations"> presentations</Link>,<Link className="link" to="/resume#publications"> publications,</Link><Link className="link" to="/resume#multimedia"> multimedia projects,</Link><Link className="link" to="/resume#awards"> and awards.</Link></h3>
