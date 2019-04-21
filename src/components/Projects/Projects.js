@@ -172,7 +172,7 @@ class Projects extends Component {
                         </Col>
                     </Row>
                     <div className="right">
-                        <Link className="link" to="/projects#back-arrow"><img src={require('../images/up-arrow.png')} alt="back-to-top-icon"/></Link><p>back to top</p>
+                        <Link className="link" aria-labelledby="back-to-top-icon" to="/projects#back-arrow"><img src={require('../images/up-arrow.png')} alt="back-to-top-icon"/></Link><p>back to top</p>
                     </div>
                 </Grid>
             </section>

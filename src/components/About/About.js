@@ -51,7 +51,7 @@ class Projects extends Component {
                                 <li>- I like reading <a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer">Twitter</a> but usually just delete my tweets</li>
                                 <li>- I am working on leveling up my skills in Python</li>
                                 <li>- I look at my <a className="link" href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">email</a> a lot and love to connect with new people</li>
-                                <li>- I am training myself to make the perfect pizza</li>
+                                <li>- I am training to make the perfect pizza</li>
                                 <li>- I already have the perfect <a href="https://res.cloudinary.com/dnrk3irn4/image/upload/v1555811740/IMG_0366.jpg" target="_blank" rel="noopener noreferrer">dog</a></li>
                             </ul>
                         </Col>
@@ -77,7 +77,7 @@ class Projects extends Component {
                                 <li>- I like reading <a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer">Twitter</a> but usually just delete my tweets</li>
                                 <li>- I am working on leveling up my skills in Python</li>
                                 <li>- I look at my <a className="link" href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">email</a> a lot and love to connect with new people</li>
-                                <li>- I am training myself to make the perfect pizza</li>
+                                <li>- I am training to make the perfect pizza</li>
                                 <li>- I already have the perfect <a href="https://res.cloudinary.com/dnrk3irn4/image/upload/v1555811740/IMG_0366.jpg" target="_blank" rel="noopener noreferrer">dog</a></li>
                             </ul>
                         </Col>
