@@ -81,7 +81,8 @@ class Projects extends Component {
                                 <li>- I already have the perfect <a href="https://res.cloudinary.com/dnrk3irn4/image/upload/v1555811740/IMG_0366.jpg" target="_blank" rel="noopener noreferrer">dog</a></li>
                             </ul>
                         </Col>
-                        <Diamonds/>
+                        <div className="margin-top"><Diamonds/></div>
+                       
                         </div>)}
                 </Grid>
 
