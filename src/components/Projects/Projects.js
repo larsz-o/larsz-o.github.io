@@ -41,7 +41,7 @@ class Projects extends Component {
                                 <h3>I've worked on a number of projects where I've been responsible for integrating technology into teaching, building web applications, and promoting research through technology.</h3>
                             </Col>
                             <Col xs={12} md={6} lg={8}>
-                                <img src="https://res.cloudinary.com/dnrk3irn4/image/upload/c_scale,h_500/v1548291380/apple.jpg" alt="computer" responsive />
+                                <img className="no-borders" src="https://res.cloudinary.com/dnrk3irn4/image/upload/c_scale,h_500/v1548291380/apple.jpg" alt="computer" responsive />
                             </Col></div>) :
                             (<div>
                                 <Col xs={12} md={6} lg={4}>
