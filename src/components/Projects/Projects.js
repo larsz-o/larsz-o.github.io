@@ -171,6 +171,7 @@ class Projects extends Component {
                             </div>
                         </Col>
                     </Row>
+                    <div className="row-padding"></div>
                     <div className="right">
                         <Link className="link" aria-labelledby="back-to-top-icon" to="/projects#back-arrow"><img className="no-borders" src={require('../images/up-arrow.png')} alt="back-to-top-icon"/></Link><p>back to top</p>
                     </div>
