@@ -27,7 +27,7 @@ class Projects extends Component {
         return (
             <section className="main">
             <div id="back-arrow">
-                <a href="#"><img src={require('../images/left-arrow.png')} className="no-borders" alt="back-arrow"/> back home</a>
+                <a href="/#/"><img src={require('../images/left-arrow.png')} className="no-borders" alt="back-arrow"/> back home</a>
             </div>
                 <Grid>
                     <Row>
@@ -61,7 +61,7 @@ class Projects extends Component {
                     </Row>
                     <Row>
                         <Col xs={12} md={10} lg={8}>
-                            <h3>I've developed and faciliated trainings about digital storytelling and podcasting...</h3>
+                            <h3>I've developed and facilitated trainings about digital storytelling and podcasting...</h3>
                             <img src="https://res.cloudinary.com/dnrk3irn4/image/upload/v1548291805/imovie-min.png" alt="iMovie screenshot" className="relative" responsive />
                         </Col>
                     </Row>

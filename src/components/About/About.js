@@ -59,7 +59,7 @@ class Projects extends Component {
                         
                     <Row>
                         <Col xs={12} md={12} lg={12}>
-                            <Image className="no-borders" className="center" src="https://res.cloudinary.com/dnrk3irn4/image/upload/c_scale,h_350/v1548291363/lars.jpg" alt="Lars headshot" height="350" rounded responsive />
+                            <Image className="no-borders center" src="https://res.cloudinary.com/dnrk3irn4/image/upload/c_scale,h_350/v1548291363/lars.jpg" alt="Lars headshot" height="350" rounded responsive />
                         </Col>
                     </Row>
                     <Col xs={12} md={6} lg={6}>
