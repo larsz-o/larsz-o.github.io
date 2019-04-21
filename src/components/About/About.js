@@ -39,7 +39,7 @@ class Projects extends Component {
                             <Image className="no-borders" src="https://res.cloudinary.com/dnrk3irn4/image/upload/c_scale,h_350/v1548291363/lars.jpg" alt="Lars headshot" height="350" rounded responsive />
                         </Col>
                         <Col xs={12} md={6} lg={6}>
-                            <ul class="about-text">
+                            <ul className="about-text">
                                 <div class="list-border"><li>- I am a problem solver</li></div>
                                 <li>- I design online educational experiences for <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer">work</a></li>
                                 <li>- I care a lot about accessibility and user experience</li>
@@ -64,12 +64,12 @@ class Projects extends Component {
                     </Row>
                     <Col xs={12} md={6} lg={6}>
                     
-                            <ul class="about-text">
+                            <ul className="about-text-mobile">
                                 <div class="margin-top">
                                 <li>- I am a problem solver</li></div>
                                 <li>- I design online educational experiences for <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer">work</a></li>
                                 <li>- I care a lot about accessibility and user experience</li>
-                                <li>- I have worked on a bunch of neat educational technology <a href="/#/projects#back-arrow">projects</a></li>
+                                <li>- I have worked on a bunch of neat educational technology <a href="/#/projects">projects</a></li>
                                 <li>- I have a <a href={require('../images/Mackenzie_Resume_2019_04_07.pdf')} target="_blank" rel="noopener noreferrer">resume</a> with more details</li>
                                 <li>- I <a href="https://softwareforgood.com/talking-tech-for-good-lars-mackenzie/" target="_blank" rel="noopener noreferrer">believe</a> in critical thinking and changing systems that no longer serve our needs (or maybe never have)</li>
                                 <li>- I am trained as an academic and a <a href="https://www.github.com/larsz-o" target="_blank" rel="noopener noreferrer">full-stack software engineer</a></li>
@@ -79,9 +79,10 @@ class Projects extends Component {
                                 <li>- I look at my <a className="link" href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">email</a> a lot and love to connect with new people</li>
                                 <li>- I am training to make the perfect pizza</li>
                                 <li>- I already have the perfect <a href="https://res.cloudinary.com/dnrk3irn4/image/upload/v1555811740/IMG_0366.jpg" target="_blank" rel="noopener noreferrer">dog</a></li>
+                                <li><div className="margin-top"><Diamonds/></div></li>
                             </ul>
                         </Col>
-                        <div className="margin-top"><Diamonds/></div>
+                        
                        
                         </div>)}
                 </Grid>

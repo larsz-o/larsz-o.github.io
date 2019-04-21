@@ -11,6 +11,13 @@ a:active {
 .about-text {
   font-size: 1.4em; 
 }
+.about-text-mobile{
+  font-size: 1.4em;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 2; 
+}
 #back-arrow {
   margin: 2%;
   font-size: 1.3em;
