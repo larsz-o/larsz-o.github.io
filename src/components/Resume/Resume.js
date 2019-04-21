@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Nav from '../Nav/Nav';
 import { Grid, Row, Col } from 'react-bootstrap';
 import { HashLink as Link } from 'react-router-hash-link';
 
@@ -26,7 +25,6 @@ class Resume extends Component {
         let isDesktop = this.state.isDesktop;
         return (
             <section className="main">
-                <Nav />
                 <Grid>
                     <Row className="center">
                         <Col xs={12} md={6} lg={8}>

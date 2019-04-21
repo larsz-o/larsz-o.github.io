@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Image, Grid, Row, Col } from 'react-bootstrap';
-import Nav from '../Nav/Nav';
 import Diamonds from '../Diamonds/Diamonds'; 
 
 class Projects extends Component {
@@ -27,10 +26,10 @@ class Projects extends Component {
         let isDesktop = this.state.isDesktop;
         return (
             <section className="main">
-                <Nav />
                 <Grid>
                     <Row>
-                        <div className="center"><h2>Hi! I'm Lars!</h2></div>
+                        <h2 className="name-header">Lars Mackenzie</h2>
+                        <h4 className="subheading">academic technologist + web developer</h4>
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
@@ -39,60 +38,49 @@ class Projects extends Component {
                         <Col xs={12} md={6} lg={6}>
                             <Image src="https://res.cloudinary.com/dnrk3irn4/image/upload/c_scale,h_350/v1548291363/lars.jpg" alt="Lars headshot" height="350" rounded responsive />
                         </Col>
-                        <Col xs={12} md={6} lg={6} className="dashed-edge">
-                            <p className="about-text">I am an academic technologist and a web developer. I love creating technology that can improve people's lives - from automating tedious processes, to building platforms to connect people, to delivering meaningful insights from under-utilized data.</p>
-                            <div className="spacing"></div>
-                            <p className="about-text">I earned my PhD at the University of Minnesota, where I studied how software and data-driven decision-making impact marginalized people from a critical perspective. Specifically, I closely examined social justice implications of big data surveillance and software design in healthcare, financial industries, and law as they relate to gender and race.</p>
-                            <div className="spacing"></div>
-                            <p className="about-text">During this time, I was deeply involved with educational technology: helping faculty to integrate digital technology into their research and teaching, and training students to produce digital media projects. I've tackled big problems in this work, like figuring out how to <span className="emphasis">archive hundreds of student-made video projects while protecting their privacy,</span> or how to best highlight research insights from qualitative studies in <span className="emphasis">narrative digital maps.</span></p>
-                            <div className="spacing"></div>
-                            <p className="about-text">I'm passionate about fostering critical data literacy while also helping people to build tools, platforms, and portfolios to showcase their ideas and forge connections.</p>
-                            <div className="spacing"></div>
-                            <p className="about-text">Learn more about some of my <a href="/#/projects" className="link">projects</a> or check out my <a href="/#/resume" className="link">resume.</a></p>
+                        <Col xs={12} md={6} lg={6}>
+                            <ul class="about-text">
+                                <div class="list-border"><li>- I am a problem solver</li></div>
+                                <li>- I design online educational experiences for <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer">work</a></li>
+                                <li>- I care a lot about accessibility and user experience</li>
+                                <li>- I have worked on a bunch of neat <a href="/#/projects">educational technology</a> projects</li>
+                                <li>- I have a <a href={require('../images/Mackenzie_Resume_2019_04_07.pdf')} target="_blank" rel="noopener noreferrer">resume</a> with more details</li>
+                                <li>- I <a href="https://softwareforgood.com/talking-tech-for-good-lars-mackenzie/" target="_blank" rel="noopener noreferrer">believe</a> in critical thinking and changing systems that no longer serve our needs (or maybe never have)</li>
+                                <li>- I am trained as an academic and a <a href="https://www.github.com/larsz-o" target="_blank" rel="noopener noreferrer">full-stack software engineer</a></li>
+                                <li>- I wrote a dissertation about how information systems impact trans people whose identities change over time</li>
+                                <li>- I like reading <a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer">Twitter</a> but usually just delete my tweets</li>
+                                <li>- I am working on leveling up my skills in Python</li>
+                                <li>- I look at my <a className="link" href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">email</a> a lot and love to connect with new people</li>
+                                <li>- I am training myself to make the perfect pizza</li>
+                                <li>- I already have the perfect dog</li>
+                            </ul>
                         </Col>
-                    </Row>) : (<div className="center">
+                    </Row>) : (<div className="margin-bottom">
                         
                     <Row>
                         <Col xs={12} md={12} lg={12}>
                             <Image className="center" src="https://res.cloudinary.com/dnrk3irn4/image/upload/c_scale,h_350/v1548291363/lars.jpg" alt="Lars headshot" height="350" rounded responsive />
                         </Col>
                     </Row>
-                    <div className="spacing"></div>
-                        <Row>
-                            <Col xs={12} md={6} lg={6}>
-                                <h4 className="about-text">I am an academic technologist and a web developer. I love creating technology that can improve people's lives - from automating tedious processes, to building platforms to connect people, to delivering meaningful insights from under-utilized data.</h4>
-                            </Col>
-                        </Row>
-                        <div className="spacing"></div>
-                        <Row>
-                            <Col xs={12} md={6} lg={6}>
-                                <h4 className="about-text">I earned my PhD at the University of Minnesota, where I studied how software and data-driven decision-making impact marginalized people from a critical perspective. Specifically, I closely examined social justice implications of big data surveillance and software design in healthcare, financial industries, and law as they relate to gender and race.</h4>
-                            </Col>
-                        </Row>
-                        <div className="spacing"></div>
-                        <Row>
-                            <Col xs={12} md={6} lg={6}>
-                                <h4 className="about-text">During this time, I was deeply involved with educational technology: helping faculty to integrate digital technology into their research and teaching, and training students to produce digital media projects.</h4>
-                            </Col>
-                        </Row>
-                        <div className="spacing"></div>
-                    <Row>
-                            <Col xs={12} md={6} lg={6}>
-                            <h4 className="about-text"> I've tackled big problems in this work, like figuring out how to <span className="emphasis">archive hundreds of student-made video projects while protecting their privacy,</span> or how to best highlight research insights from qualitative studies in <span className="emphasis">narrative digital maps.</span></h4>
-                            </Col>
-                        </Row>
-                        <div className="spacing"></div>
-                        <Row>
-                            <Col xs={12} md={6} lg={6}>
-                                <h4 className="about-text">I'm passionate about fostering critical data literacy while also helping people to build tools, platforms, and portfolios to showcase their ideas and forge connections.</h4>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col xs={12} md={6} lg={6}>
-                                <h4 className="about-text">Learn more about some of my <a href="/#/projects" className="link">projects</a> or check out my <a href="/#/resume" className="link">resume.</a></h4>
-                            </Col>
-                        </Row>
-                        <div className="spacing"></div>
+                    <Col xs={12} md={6} lg={6}>
+                    
+                            <ul class="about-text">
+                                <div class="margin-top">
+                                <li>- I am a problem solver</li></div>
+                                <li>- I design online educational experiences for <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer">work</a></li>
+                                <li>- I care a lot about accessibility and user experience</li>
+                                <li>- I have worked on a bunch of neat <a href="/#/projects">educational technology</a> projects</li>
+                                <li>- I have a <a href={require('../images/Mackenzie_Resume_2019_04_07.pdf')} target="_blank" rel="noopener noreferrer">resume</a> with more details</li>
+                                <li>- I <a href="https://softwareforgood.com/talking-tech-for-good-lars-mackenzie/" target="_blank" rel="noopener noreferrer">believe</a> in critical thinking and changing systems that no longer serve our needs (or maybe never have)</li>
+                                <li>- I am trained as an academic and a <a href="https://www.github.com/larsz-o" target="_blank" rel="noopener noreferrer">full-stack software engineer</a></li>
+                                <li>- I wrote a dissertation about how information systems impact trans people whose identities change over time</li>
+                                <li>- I like reading <a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer">Twitter</a> but usually just delete my tweets</li>
+                                <li>- I am working on leveling up my skills in Python</li>
+                                <li>- I look at my <a className="link" href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">email</a> a lot and love to connect with new people</li>
+                                <li>- I am training myself to make the perfect pizza</li>
+                                <li>- I already have the perfect dog</li>
+                            </ul>
+                        </Col>
                         <Diamonds/>
                         </div>)}
                 </Grid>

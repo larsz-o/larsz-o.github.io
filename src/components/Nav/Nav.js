@@ -25,7 +25,8 @@ class Nav extends Component {
         return (
             <div className="nav-background">
                 <a className="header-link" href="/#/"><div className="header-padding">
-                    {isDesktop ? (<div className="flex-box-left"><img src={require('./programmer.svg')} alt="select logo" height="75px" width="75px" /><h1>Lars Mackenzie, PhD</h1></div>) : (<div className="flex-box-evenly"><h1 className="mobile-h1">Lars Mackenzie, PhD</h1><img src={require('./programmer.svg')} alt="select logo" height="75px" width="75px" /></div>)}
+                    <h2 class="name-header">Lars Mackenzie</h2>
+                    <h4 class="subheading">academic technologist + web developer</h4>
                 </div></a>
                 {isDesktop ? (<nav className="flex-box-evenly nav-item">
                     <div><a href="/">About</a></div>

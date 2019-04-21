@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Nav from '../Nav/Nav';
-
 class Contact extends Component {
     constructor(props) {
         super(props);
@@ -24,7 +22,6 @@ class Contact extends Component {
         let isDesktop = this.state.isDesktop;
         return (
             <section className="main">
-                <Nav />
                 {isDesktop ? (<div className="dashed-edge-tight center">
                     <h2>Let's connect!</h2>
                     <h3>Find me on social media</h3>

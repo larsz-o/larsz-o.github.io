@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col, Button } from 'react-bootstrap';
-import Nav from '../Nav/Nav';
 import Diamonds from '../Diamonds/Diamonds'; 
+import { HashLink as Link } from 'react-router-hash-link';
 
 class Projects extends Component {
     constructor(props) {
@@ -26,7 +26,9 @@ class Projects extends Component {
         let isDesktop = this.state.isDesktop;
         return (
             <section className="main">
-                <Nav />
+            <div id="back-arrow">
+                <a href="#"><img src={require('../images/left-arrow.png')} alt="back-arrow"/> back home</a>
+            </div>
                 <Grid>
                     <Row>
                         <Col xs={12} md={6} lg={4}>
@@ -156,7 +158,7 @@ class Projects extends Component {
                     </Row>
                     <Row>
                         <Col xs={12} lg={12}>
-                            <h3>As an academic + technologist, I aim to utilize tools, platforms, and methodologies that foster critical thinking and information literacy skills while also centering accessibility and usability.</h3>
+                            <h3>I aim to utilize tools, platforms, and methodologies that foster critical thinking and information literacy skills while also centering accessibility and usability.</h3>
                         </Col>
                     </Row>
                     <Row>
@@ -165,12 +167,14 @@ class Projects extends Component {
                     <Row>
                         <Col xs={12} lg={12}>
                             <div className="center">
-                                <h3>Interested in working with me? <br/><Button bsSize="large" bsStyle="info" className="breathing-room" onClick={() => this.props.history.push('/contact')}>Reach out</Button></h3>
+                                <h3>Interested in working with me? <br/><Button bsSize="large" bsStyle="info" className="breathing-room" onClick={()=>window.location.href="mailto:larsmackenzie@gmail.com"}>Reach out</Button></h3>
                             </div>
                         </Col>
                     </Row>
+                    <div className="right">
+                        <Link className="link" to="/projects#back-arrow"><img src={require('../images/up-arrow.png')} alt="back-to-top-icon"/></Link><p>back to top</p>
+                    </div>
                 </Grid>
-
             </section>
         );
     }

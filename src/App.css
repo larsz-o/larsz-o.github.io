@@ -1,13 +1,20 @@
 
 a {
   text-decoration: none;
-  color: black; 
 }
-a:hover{
-  text-decoration: none; 
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
 }
 .about-text {
   font-size: 1.4em; 
+}
+#back-arrow {
+  margin: 2%;
+  font-size: 1.3em;
+  text-decoration: none;
 }
 .bottom {
   position: relative;
@@ -33,9 +40,6 @@ a:hover{
   margin-right: 25vw;
   background-color: whitesmoke;
 }
-/* .emphasis {
-  font-weight: bold; 
-} */
 .flex-box {
   display: flex;
   flex-direction: row;
@@ -76,8 +80,9 @@ footer {
   height: 7vh; 
   padding: 10px; 
 }
-.header-link:hover{
+.header-link{
   color: black; 
+  margin: 0;
 }
 .header-padding{
   text-align: left; 
@@ -102,27 +107,13 @@ h2 {
 }
 h3 {
   font-family: 'Inconsolata', monospace;
-  font-size: 2em; 
+  font-size: 1.7em; 
 }
 html, body {
   font-family: 'Archivo', sans-serif;
 }
-.icon-div {
-  margin: 2px; 
-}
-.jumbotron{
-  margin-bottom: 0px; 
-}
-.left {
-  text-align: left; 
-}
-.license-link{
-  color: thistle;
-  margin-left: 5px; 
-  margin-right: 15vw; 
-}
-.link {
-  color: rgb(68, 68, 182);
+.list-border {
+    border-top: 2px solid purple;
 }
 .main {
   margin-bottom: 25vh; 
@@ -131,7 +122,7 @@ html, body {
  margin-bottom: 4vh; 
 }
 .margin-top {
-  margin-top: 15vh;
+  margin-top: 10vh;
 }
 .mobile-nav-item{
   padding: 5px; 
@@ -142,6 +133,11 @@ html, body {
 .mobile-h1 {
   font-size: 1.3em; 
   font-weight: 600;
+}
+.name-header {
+  font-size: 5em; 
+  margin-top: 5vh;
+  text-decoration: none;
 }
 .nav-background {
   margin-bottom: 10vh; 
@@ -178,29 +174,22 @@ html, body {
   margin-top: 20vh;
   padding-top: 5px; 
 }
-.project-card-text{
-  padding: 3px;
-}
 .relative {
   width: 100%;
 }
+.right {
+  margin-left: 90%;
+}
 .row-padding {
   padding: 40px; 
-}
-.services-div {
-  height: 500px; 
-  padding: 5px; 
-  margin-top: 10px; 
-  margin-bottom: 10px; 
-  text-align: center;
 }
 .skills-list{
   font-family: 'Inconsolata', monospace;
   font-size: 1.2em; 
 }
-.subheading {
-  font-style: italic; 
-  margin-left: 5px; 
+.subheading { 
+  margin-left: 1%; 
+  color: black;
 }
 .spacing {
   padding: 10px; 
@@ -214,8 +203,12 @@ html, body {
 .white {
   background-color: #eaf9f9;
 }
+ul{
+  list-style-type: none;
+  font-family: 'Inconsolata', monospace;
+}
 body, html {
-  background-color: #eaf9f9;
+  color: black; 
   margin: 0; 
   padding: 0; 
 }
