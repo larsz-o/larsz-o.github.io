@@ -69,7 +69,7 @@ class Projects extends Component {
                                 <li>- I am a problem solver</li></div>
                                 <li>- I design online educational experiences for <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer">work</a></li>
                                 <li>- I care a lot about accessibility and user experience</li>
-                                <li>- I have worked on a bunch of neat educational technology <a href="/#/projects">projects</a></li>
+                                <li>- I have worked on a bunch of neat educational technology <a href="/#/projects#back-arrow">projects</a></li>
                                 <li>- I have a <a href={require('../images/Mackenzie_Resume_2019_04_07.pdf')} target="_blank" rel="noopener noreferrer">resume</a> with more details</li>
                                 <li>- I <a href="https://softwareforgood.com/talking-tech-for-good-lars-mackenzie/" target="_blank" rel="noopener noreferrer">believe</a> in critical thinking and changing systems that no longer serve our needs (or maybe never have)</li>
                                 <li>- I am trained as an academic and a <a href="https://www.github.com/larsz-o" target="_blank" rel="noopener noreferrer">full-stack software engineer</a></li>
