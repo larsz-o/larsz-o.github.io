@@ -52,7 +52,7 @@ class Projects extends Component {
                                 <li>- I am working on leveling up my skills in Python</li>
                                 <li>- I look at my <a className="link" href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">email</a> a lot and love to connect with new people</li>
                                 <li>- I am training myself to make the perfect pizza</li>
-                                <li>- I already have the perfect dog</li>
+                                <li>- I already have the perfect <a href="https://res.cloudinary.com/dnrk3irn4/image/upload/v1555811740/IMG_0366.jpg" target="_blank" rel="noopener noreferrer">dog</a></li>
                             </ul>
                         </Col>
                     </Row>) : (<div className="margin-bottom">
@@ -78,7 +78,7 @@ class Projects extends Component {
                                 <li>- I am working on leveling up my skills in Python</li>
                                 <li>- I look at my <a className="link" href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">email</a> a lot and love to connect with new people</li>
                                 <li>- I am training myself to make the perfect pizza</li>
-                                <li>- I already have the perfect dog</li>
+                                <li>- I already have the perfect <a href="https://res.cloudinary.com/dnrk3irn4/image/upload/v1555811740/IMG_0366.jpg" target="_blank" rel="noopener noreferrer">dog</a></li>
                             </ul>
                         </Col>
                         <Diamonds/>
