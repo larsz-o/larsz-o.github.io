@@ -167,7 +167,7 @@ class Projects extends Component {
                     <Row>
                         <Col xs={12} lg={12}>
                             <div className="center">
-                                <h3>Interested in working with me? <br/><Button bsSize="large" bsStyle="info" className="breathing-room" onClick={()=>window.location.href="mailto:larsmackenzie@gmail.com"}>Reach out</Button></h3>
+                                <h3>Interested in working with me? <br/><Button bsSize="large" bsStyle="info" className="breathing-room" onClick={()=>window.location.href="mailto:larsmackenzie@gmail.com?body='Hi Lars!"}>Reach out</Button></h3>
                             </div>
                         </Col>
                     </Row>
