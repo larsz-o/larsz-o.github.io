@@ -16,10 +16,6 @@ a:active {
   font-size: 1.3em;
   text-decoration: none;
 }
-.bottom {
-  position: relative;
-  bottom: 0;
-}
 .breathing-room {
   margin-top: 5vh; 
 }
@@ -112,6 +108,9 @@ h3 {
 html, body {
   font-family: 'Archivo', sans-serif;
 }
+img {
+  border: 1px solid black; 
+}
 .list-border {
     border-top: 2px solid purple;
 }
@@ -158,6 +157,9 @@ html, body {
   border: 2px lightblue dashed;
   border-radius: 5px; 
 }
+.no-borders {
+  border: 0px; 
+}
 .packages-div {
   height: 450px; 
   padding: 5px; 
@@ -174,6 +176,7 @@ html, body {
   margin-top: 20vh;
   padding-top: 5px; 
 }
+
 .relative {
   width: 100%;
 }

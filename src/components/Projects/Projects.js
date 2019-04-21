@@ -27,7 +27,7 @@ class Projects extends Component {
         return (
             <section className="main">
             <div id="back-arrow">
-                <a href="#"><img src={require('../images/left-arrow.png')} alt="back-arrow"/> back home</a>
+                <a href="#"><img src={require('../images/left-arrow.png')} className="no-borders" alt="back-arrow"/> back home</a>
             </div>
                 <Grid>
                     <Row>
@@ -167,12 +167,12 @@ class Projects extends Component {
                     <Row>
                         <Col xs={12} lg={12}>
                             <div className="center">
-                                <h3>Interested in working with me? <br/><Button bsSize="large" bsStyle="info" className="breathing-room" onClick={()=>window.location.href="mailto:larsmackenzie@gmail.com?body='Hi Lars!"}>Reach out</Button></h3>
+                                <h3>Interested in working with me? <br/><Button bsSize="large" bsStyle="info" className="breathing-room" onClick={()=>window.location.href="mailto:larsmackenzie@gmail.com?body=Hi Lars!"}>Reach out</Button></h3>
                             </div>
                         </Col>
                     </Row>
                     <div className="right">
-                        <Link className="link" aria-labelledby="back-to-top-icon" to="/projects#back-arrow"><img src={require('../images/up-arrow.png')} alt="back-to-top-icon"/></Link><p>back to top</p>
+                        <Link className="link" aria-labelledby="back-to-top-icon" to="/projects#back-arrow"><img className="no-borders" src={require('../images/up-arrow.png')} alt="back-to-top-icon"/></Link><p>back to top</p>
                     </div>
                 </Grid>
             </section>
