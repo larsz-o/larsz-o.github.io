@@ -120,6 +120,7 @@ img {
 }
 .list-border {
     border-top: 2px solid #cc33ad;
+    padding-bottom: 5vh;
 }
 .main {
   margin-bottom: 25vh; 
@@ -130,40 +131,11 @@ img {
 .margin-top {
   margin-top: 10vh;
 }
-/* .mobile-nav-item{
-  padding: 5px; 
-  font-size: 1.5em;
-  margin: 0; 
-  text-align: center; 
-}
-.mobile-h1 {
-  font-size: 1.3em; 
-  font-weight: 600;
-} */
 .name-header {
   font-size: 5em; 
   margin-top: 5vh;
   text-decoration: none;
 }
-/* .nav-background {
-  margin-bottom: 10vh; 
-  margin-left: 5vw;
-  margin-right: 5vw;
-}
-.nav-drop{
-  list-style-type: none;
-  font-family: 'Inconsolata', monospace;
-  font-size: 1.5em; 
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-.nav-item {
-  font-size: 1.5em; 
-  font-family: 'Inconsolata', monospace;
-  padding: 10px; 
-  border: 2px lightblue dashed;
-  border-radius: 5px; 
-} */
 .no-borders {
   border: 0px; 
 }
