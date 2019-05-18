@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import { Image, Grid, Row, Col } from 'react-bootstrap';
 import Diamonds from '../Diamonds/Diamonds'; 
 
@@ -92,4 +91,4 @@ class Projects extends Component {
     }
 }
 
-export default connect()(Projects); 
+export default Projects; 
