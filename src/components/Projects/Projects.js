@@ -41,7 +41,7 @@ class Projects extends Component {
                                 <h3>I've worked on a number of projects where I've been responsible for integrating technology into teaching, building web applications, and promoting research through technology.</h3>
                             </Col>
                             <Col xs={12} md={6} lg={8}>
-                                <img className="no-borders" src="https://res.cloudinary.com/dnrk3irn4/image/upload/c_scale,h_500/v1548291380/apple.jpg" alt="computer" responsive />
+                                <img src={require('../images/wireframe.jpg')} alt="computer" className="relative no-borders" responsive />
                             </Col></div>) :
                             (<div>
                                 <Col xs={12} md={6} lg={4}>
@@ -105,7 +105,7 @@ class Projects extends Component {
                         </Col>
                         <Col xs={12} md={10} lg={8}>
                         <h3>...and designed and taught online courses.</h3>
-                            <img src="https://res.cloudinary.com/dnrk3irn4/image/upload/v1548291975/transhealth-min.png" alt="online class" className="relative" responsive />
+                            <img src={require('../images/canvas.png')} alt="online class" className="relative" responsive />
                         </Col>
                     </Row>
                     <Row>
@@ -118,7 +118,11 @@ class Projects extends Component {
                     <Row>
                         <Col xs={12} md={10} lg={8}>
                             <h3>I've built full-stack web applications to help improve information tracking...</h3>
-                            <img src="https://res.cloudinary.com/dnrk3irn4/image/upload/v1548291797/card-min.png" alt="fitness tracker software" className="relative" responsive />
+                        <Row>
+                            <Col xs={12} md={10} lg={8}>
+                            <img src="https://github.com/odissii/odissii-app/raw/master/public/images/supervisor_dashboard_view.png" className="no-borders" height="80%" alt="dashboard view in odissii app" responsive/>
+                            </Col>
+                        </Row>
                         </Col>
                     </Row>
                     <Row>
@@ -133,7 +137,8 @@ class Projects extends Component {
                         </Col>
                         <Col xs={12} md={10} lg={8}>
                             <h3>...and maintained web portfolios for community-oriented research projects.</h3>
-                            <img src="https://res.cloudinary.com/dnrk3irn4/image/upload/v1548291844/digitalstories-min.png" alt="digital stories grid for MYSS project" className="relative" responsive />
+                            <img src={require('../images/myss.png')} alt="MYSS digital stories page" className="relative" responsive />
+                            {/* <img src="https://res.cloudinary.com/dnrk3irn4/image/upload/v1548291844/digitalstories-min.png" alt="digital stories grid for MYSS project" className="relative" responsive /> */}
                         </Col>
                     </Row>
                     <Row>
