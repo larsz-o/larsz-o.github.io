@@ -35,7 +35,7 @@ class Projects extends Component {
                     </Row>
                     {isDesktop ? (<Row>
                         <Col xs={12} md={6} lg={6}>
-                            <Image className="no-borders" src="https://res.cloudinary.com/dnrk3irn4/image/upload/c_scale,h_350/v1548291363/lars.jpg" alt="Lars headshot" height="350" rounded responsive />
+                            <Image className="no-borders" src={require('../images/lars.jpg')} alt="Lars headshot" height="350" rounded responsive />
                         </Col>
                         <Col xs={12} md={6} lg={6}>
                             <ul className="about-text">
@@ -46,7 +46,7 @@ class Projects extends Component {
                                 <li>- I have a <a href={require('../images/Mackenzie_Resume_2019_04_07.pdf')} target="_blank" rel="noopener noreferrer">resume</a> with more details</li>
                                 <li>- I <a href="https://softwareforgood.com/talking-tech-for-good-lars-mackenzie/" target="_blank" rel="noopener noreferrer">believe</a> in critical thinking and changing systems that no longer serve our needs (or maybe never have)</li>
                                 <li>- I am trained as an academic and a <a href="https://www.github.com/larsz-o" target="_blank" rel="noopener noreferrer">full-stack software engineer</a></li>
-                                <li>- I wrote a dissertation about how information systems impact trans people whose identities change over time</li>
+                                <li>- I wrote a dissertation about how <a href={require('../images/AfterlifeData.pdf')} target="_blank" rel="noopener noreferrer">information systems impact trans people</a>  whose identities change over time</li>
                                 <li>- I like reading <a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer">Twitter</a> but usually just delete my tweets</li>
                                 <li>- I am working on leveling up my skills in Python</li>
                                 <li>- I look at my <a className="link" href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">email</a> a lot and love to connect with new people</li>

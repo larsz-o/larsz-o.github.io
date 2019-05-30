@@ -10,6 +10,7 @@ a:active {
 }
 .about-text {
   font-size: 1.4em; 
+  line-height: 1.75; 
 }
 .about-text-mobile{
   font-size: 1.4em;
@@ -109,8 +110,8 @@ h2 {
   font-size: 3em;
 }
 h3 {
-  font-family: 'Inconsolata', monospace;
-  font-size: 1.7em; 
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em; 
 }
 html, body {
   font-family: 'Archivo', sans-serif;
@@ -121,6 +122,7 @@ html, body {
 }
 .main {
   margin-bottom: 25vh; 
+
 }
 .margin-bottom {
  margin-bottom: 4vh; 
@@ -155,6 +157,10 @@ html, body {
 .relative {
   width: 100%;
 }
+.responsive-img{
+  width: 100%;
+  height: auto; 
+}
 .right {
   margin-left: 90%;
 }
@@ -183,12 +189,13 @@ html, body {
 }
 ul{
   list-style-type: none;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Roboto', sans-serif;
 }
 body, html {
   color: black; 
   margin: 5px; 
   padding: 0; 
+  font-family: 'Roboto', sans-serif;
 }
 @media (max-width:629px) {
   img#screenshot {
