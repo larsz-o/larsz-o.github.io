@@ -39,7 +39,7 @@ class Projects extends Component {
                         </Col>
                         <Col xs={12} md={6} lg={6}>
                             <ul className="about-text">
-                                <div class="list-border"><li>- I am a problem solver</li></div>
+                                <div><li class="list-border">- I am a problem solver</li></div>
                                 <li>- I design online educational experiences for <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer">work</a></li>
                                 <li>- I care a lot about accessibility and user experience</li>
                                 <li>- I have worked on a bunch of neat educational technology <a href="/#/projects">projects</a></li>

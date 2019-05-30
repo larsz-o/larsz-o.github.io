@@ -6,13 +6,14 @@ class fourOhFour extends Component {
         return (
             <Grid class="main">
                 <Row>
-                    <h2 className="name-header">Lars Mackenzie</h2>
-                    <h4 className="subheading">academic technologist + web developer</h4>
+                    <a href="/#/"><h2 className="name-header">Lars Mackenzie</h2>
+                    <h4 className="subheading">academic technologist + web developer</h4></a>
                 </Row>
-                <div class="center main margin-top">
+                <div class="center main margin-top error">
+                    <div class="spacer"></div>
                     <h3>I'm very sorry to say that the page you are looking for cannot be found.</h3>
-                    <h4>Time for this little puppy to go <a href="https://www.larsmackenzie.com">home.</a></h4>
                     <img src={require('../images/sadpug.jpeg')} class="responsive-img" alt="a very sad pug" />
+                    <h4 class="breathing-room">Time for this little puppy to go <a href="/#/">home.</a></h4>
                 </div>
             </Grid>
         );
