@@ -8,6 +8,9 @@ a:hover {
 a:active {
   text-decoration: none;
 }
+p {
+  font-size: 1.5em;
+}
 .error{
   font-size: 2em;
 }
@@ -21,11 +24,6 @@ a:active {
   margin: 0;
   padding: 0;
   line-height: 2; 
-}
-#back-arrow {
-  margin: 2%;
-  font-size: 1.3em;
-  text-decoration: none;
 }
 .breathing-room {
   margin-top: 5vh; 
@@ -106,20 +104,28 @@ footer {
   padding-bottom: 5vh; 
 }
 h1 {
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 h2 {
-  font-family: 'Inconsolata', monospace;
-  font-size: 3em;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 2.5em;
 }
 h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-size: 1.5em; 
 }
 html, body {
-  font-family: 'Archivo', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-size: .9em; 
 }
-
+.link {
+  text-decoration: none; 
+  color: black; 
+}
+.link:hover{
+  text-decoration: none;
+  color: #cc33ad;
+}
 .list-border {
     border-top: 2px solid #cc33ad;
     padding-top: 10px;
@@ -135,7 +141,7 @@ html, body {
   margin-top: 10vh;
 }
 .name-header {
-  font-size: 5em; 
+  font-size: 3em; 
   margin-top: 5vh;
   text-decoration: none;
   color: black; 
@@ -175,6 +181,12 @@ html, body {
 .skills-list{
   font-family: 'Inconsolata', monospace;
   font-size: 1.2em; 
+}
+.smaller-header {
+  font-size: 2.7em; 
+  margin-top: 1vh;
+  text-decoration: none;
+  color: black; 
 }
 .subheading { 
   margin-left: 1%; 

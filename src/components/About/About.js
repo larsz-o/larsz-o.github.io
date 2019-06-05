@@ -41,11 +41,11 @@ class Projects extends Component {
                             <ul className="about-text">
                                 <div><li class="list-border">- I am a problem solver</li></div>
                                 <li>- I design online educational experiences for <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer">work</a></li>
-                                <li>- I care a lot about accessibility and user experience</li>
+                                <li>- I care a lot about accessibility, user experience, and critical approaches to teaching, learning, and research</li>
                                 <li>- I have worked on a bunch of neat educational technology <a href="/#/projects">projects</a></li>
                                 <li>- I have a <a href={require('../images/Mackenzie_Resume_2019_04_07.pdf')} target="_blank" rel="noopener noreferrer">resume</a> with more details</li>
                                 <li>- I <a href="https://softwareforgood.com/talking-tech-for-good-lars-mackenzie/" target="_blank" rel="noopener noreferrer">believe</a> in critical thinking and changing systems that no longer serve our needs (or maybe never have)</li>
-                                <li>- I am trained as an academic and a <a href="https://www.github.com/larsz-o" target="_blank" rel="noopener noreferrer">full-stack software engineer</a></li>
+                                <li>- I am trained as an academic and a <a href="https://www.github.com/larsz-o" target="_blank" rel="noopener noreferrer">full-stack web developer</a></li>
                                 <li>- I wrote a dissertation about how <a href={require('../images/AfterlifeData.pdf')} target="_blank" rel="noopener noreferrer">information systems impact trans people</a>  whose identities change over time</li>
                                 <li>- I like reading <a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer">Twitter</a> but usually just delete my tweets</li>
                                 <li>- I am working on leveling up my skills in Python</li>
@@ -67,11 +67,11 @@ class Projects extends Component {
                                 <div class="margin-top">
                                 <li>- I am a problem solver</li></div>
                                 <li>- I design online educational experiences for <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer">work</a></li>
-                                <li>- I care a lot about accessibility and user experience</li>
+                                <li>- I care a lot about accessibility, user experience, and critical approaches to teaching, learning, and research</li>
                                 <li>- I have worked on a bunch of neat educational technology <a href="/#/projects">projects</a></li>
                                 <li>- I have a <a href={require('../images/Mackenzie_Resume_2019_04_07.pdf')} target="_blank" rel="noopener noreferrer">resume</a> with more details</li>
                                 <li>- I <a href="https://softwareforgood.com/talking-tech-for-good-lars-mackenzie/" target="_blank" rel="noopener noreferrer">believe</a> in critical thinking and changing systems that no longer serve our needs (or maybe never have)</li>
-                                <li>- I am trained as an academic and a <a href="https://www.github.com/larsz-o" target="_blank" rel="noopener noreferrer">full-stack software engineer</a></li>
+                                <li>- I am trained as an academic and a <a href="https://www.github.com/larsz-o" target="_blank" rel="noopener noreferrer">full-stack web developer</a></li>
                                 <li>- I wrote a dissertation about how information systems impact trans people whose identities change over time</li>
                                 <li>- I like reading <a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer">Twitter</a> but usually just delete my tweets</li>
                                 <li>- I am working on leveling up my skills in Python</li>
