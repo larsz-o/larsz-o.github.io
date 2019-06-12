@@ -72,7 +72,7 @@ class Projects extends Component {
                                 <li>- I have a <a href={require('../images/Mackenzie_Resume_2019_04_07.pdf')} target="_blank" rel="noopener noreferrer">resume</a> with more details</li>
                                 <li>- I <a href="https://softwareforgood.com/talking-tech-for-good-lars-mackenzie/" target="_blank" rel="noopener noreferrer">believe</a> in critical thinking and changing systems that no longer serve our needs (or maybe never have)</li>
                                 <li>- I am trained as an academic and a <a href="https://www.github.com/larsz-o" target="_blank" rel="noopener noreferrer">full-stack web developer</a></li>
-                                <li>- I wrote a dissertation about how <a href={require('../images/AfterlifeData.pdf')} target="_blank" download="Mackenzie_Afterlife_of_Data" rel="noopener noreferrer" title="Afterlife of Data"></a>information systems impact trans people</a> whose identities change over time</li>
+                                <li>- I wrote a dissertation about how <a href={require('../images/AfterlifeData.pdf')} target="_blank" download="Mackenzie_Afterlife_of_Data" rel="noopener noreferrer" title="Afterlife of Data">information systems impact trans people</a> whose identities change over time</li>
                                 <li>- I like reading <a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer">Twitter</a> but usually just delete my tweets</li>
                                 <li>- I am working on leveling up my skills in Python</li>
                                 <li>- I look at my <a className="link" href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">email</a> a lot and love to connect with new people</li>
