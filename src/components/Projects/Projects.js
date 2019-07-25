@@ -26,10 +26,11 @@ class Projects extends Component {
         let isDesktop = this.state.isDesktop;
         return (
             <section className="main">
+                {/* revise the content in this page */}
                 <Grid>
                 <Row>
                     <a href="/#/"><h2 className="smaller-header" id="back-arrow">Lars Mackenzie</h2>
-                    <h4 className="subheading">academic technologist + web developer</h4></a>
+                    <h4 className="subheading">web developer + academic technologist</h4></a>
                 </Row>
                     <Row>
                         <div className="row-padding"></div>

@@ -28,7 +28,7 @@ class Projects extends Component {
                 <Grid>
                     <Row>
                         <h2 className="name-header">Lars Mackenzie</h2>
-                        <h4 className="subheading">academic technologist + web developer</h4>
+                        <h4 className="subheading">web developer + academic technologist</h4>
                     </Row>
                     <Row>
                         <div className="row-padding"></div>
@@ -40,15 +40,12 @@ class Projects extends Component {
                         <Col xs={12} md={6} lg={6}>
                             <ul className="about-text">
                                 <div><li class="list-border">- I am a problem solver</li></div>
-                                <li>- I design online educational experiences for <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer">work</a></li>
-                                <li>- I care a lot about accessibility, information architecture, user experience, and critical approaches to teaching, learning, and research</li>
-                                <li>- I have worked on a bunch of neat educational technology <a href="/#/projects">projects</a></li>
-                                <li>- I have a <a href={require('../images/Mackenzie_Resume_2019_04_07.pdf')} target="_blank" rel="noopener noreferrer">resume</a> with more details</li>
-                                <li>- I <a href="https://softwareforgood.com/talking-tech-for-good-lars-mackenzie/" target="_blank" rel="noopener noreferrer">believe</a> in critical thinking and changing systems that no longer serve our needs (or maybe never have)</li>
-                                <li>- I am trained as an academic and a <a href="https://www.github.com/larsz-o" target="_blank" rel="noopener noreferrer">full-stack web developer</a></li>
-                                <li>- I wrote a dissertation about how <a href={require('../images/AfterlifeData.pdf')} target="_blank" rel="noopener noreferrer" title="Afterlife of Data">information systems impact trans people</a>  whose identities change over time</li>
+                                <li>- I currently design online educational experiences for <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer">work</a></li>
+                                <li>- I get to do a lot of cool stuff like launch AWS environments for robotics and bioinformatics courses, build web apps to make our information delivery more efficient, and help online instructors transform their courses to be interactive, beautiful, and intuitive to use.</li>
+                                <li>- I care about accessibility, information architecture, and learning something new every day.</li>
+                                <li>- I have built some neat projects on my own and on teams as a <a href="https://www.github.com/larsz-o" target="_blank" rel="noopener noreferrer">full-stack software developer</a></li>
+                                <li>- I was trained as an academic in my past life, and I wrote a dissertation about how <a href={require('../images/AfterlifeData.pdf')} target="_blank" rel="noopener noreferrer" title="Afterlife of Data">information systems impact people</a>  whose identities change over time</li>
                                 <li>- I like reading <a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer">Twitter</a> but usually just delete my tweets</li>
-                                <li>- I am working on leveling up my skills in Python</li>
                                 <li>- I look at my <a className="link" href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">email</a> a lot and love to connect with new people</li>
                                 <li>- I am training to make the perfect pizza</li>
                                 <li>- I already have the perfect <a href="https://res.cloudinary.com/dnrk3irn4/image/upload/v1555811740/IMG_0366.jpg" target="_blank" rel="noopener noreferrer">dog</a></li>
@@ -65,16 +62,13 @@ class Projects extends Component {
                     
                             <ul className="about-text-mobile">
                                 <div class="margin-top">
-                                <li>- I am a problem solver</li></div>
-                                <li>- I design online educational experiences for <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer">work</a></li>
-                                <li>- I care a lot about accessibility, information architecture, user experience, and critical approaches to teaching, learning, and research</li>
-                                <li>- I have worked on a bunch of neat educational technology <a href="/#/projects">projects</a></li>
-                                <li>- I have a <a href={require('../images/Mackenzie_Resume_2019_04_07.pdf')} target="_blank" rel="noopener noreferrer">resume</a> with more details</li>
-                                <li>- I <a href="https://softwareforgood.com/talking-tech-for-good-lars-mackenzie/" target="_blank" rel="noopener noreferrer">believe</a> in critical thinking and changing systems that no longer serve our needs (or maybe never have)</li>
-                                <li>- I am trained as an academic and a <a href="https://www.github.com/larsz-o" target="_blank" rel="noopener noreferrer">full-stack web developer</a></li>
-                                <li>- I wrote a dissertation about how <a href={require('../images/AfterlifeData.pdf')} target="_blank" rel="noopener noreferrer" title="Afterlife of Data">information systems impact trans people</a> whose identities change over time</li>
+                                <li class="list-border">- I am a problem solver</li></div>
+                                <li>- I currently design online educational experiences for <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer">work</a></li>
+                                <li>- I get to do a lot of cool stuff like launch AWS environments for robotics and bioinformatics courses, build web apps to make our information delivery more efficient, and help online instructors transform their courses to be interactive, beautiful, and intuitive to use.</li>
+                                <li>- I care about accessibility, information architecture, and learning something new every day.</li>
+                                <li>- I have built some neat projects on my own and on teams as a <a href="https://www.github.com/larsz-o" target="_blank" rel="noopener noreferrer">full-stack software developer</a></li>
+                                <li>- I was trained as an academic in my past life, and I wrote a dissertation about how <a href={require('../images/AfterlifeData.pdf')} target="_blank" rel="noopener noreferrer" title="Afterlife of Data">information systems impact people</a>  whose identities change over time</li>
                                 <li>- I like reading <a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer">Twitter</a> but usually just delete my tweets</li>
-                                <li>- I am working on leveling up my skills in Python</li>
                                 <li>- I look at my <a className="link" href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">email</a> a lot and love to connect with new people</li>
                                 <li>- I am training to make the perfect pizza</li>
                                 <li>- I already have the perfect <a href="https://res.cloudinary.com/dnrk3irn4/image/upload/v1555811740/IMG_0366.jpg" target="_blank" rel="noopener noreferrer">dog</a></li>
