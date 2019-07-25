@@ -1,9 +1,12 @@
 
 a {
   text-decoration: none;
+  background-color: #AEF3E7;
+  color: navy;
 }
 a:hover {
   text-decoration: none;
+  color: #cc33ad;
 }
 a:active {
   text-decoration: none;
@@ -117,14 +120,6 @@ h3 {
 html, body {
   font-family: 'Roboto Mono', monospace;
   font-size: .9em; 
-}
-.link {
-  text-decoration: none; 
-  color: black; 
-}
-.link:hover{
-  text-decoration: none;
-  color: #cc33ad;
 }
 .list-border {
     border-top: 2px solid #cc33ad;

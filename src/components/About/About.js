@@ -46,7 +46,7 @@ class Projects extends Component {
                                 <li>- I have built some neat projects on my own and on teams as a <a href="https://www.github.com/larsz-o" target="_blank" rel="noopener noreferrer">full-stack software developer</a></li>
                                 <li>- I was trained as an academic in my past life, and I wrote a dissertation about how <a href={require('../images/AfterlifeData.pdf')} target="_blank" rel="noopener noreferrer" title="Afterlife of Data">information systems impact people</a>  whose identities change over time</li>
                                 <li>- I like reading <a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer">Twitter</a> but usually just delete my tweets</li>
-                                <li>- I look at my <a className="link" href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">email</a> a lot and love to connect with new people</li>
+                                <li>- I look at my <a href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">email</a> a lot and love to connect with new people</li>
                                 <li>- I am training to make the perfect pizza</li>
                                 <li>- I already have the perfect <a href="https://res.cloudinary.com/dnrk3irn4/image/upload/v1555811740/IMG_0366.jpg" target="_blank" rel="noopener noreferrer">dog</a></li>
                             </ul>
@@ -69,7 +69,7 @@ class Projects extends Component {
                                 <li>- I have built some neat projects on my own and on teams as a <a href="https://www.github.com/larsz-o" target="_blank" rel="noopener noreferrer">full-stack software developer</a></li>
                                 <li>- I was trained as an academic in my past life, and I wrote a dissertation about how <a href={require('../images/AfterlifeData.pdf')} target="_blank" rel="noopener noreferrer" title="Afterlife of Data">information systems impact people</a>  whose identities change over time</li>
                                 <li>- I like reading <a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer">Twitter</a> but usually just delete my tweets</li>
-                                <li>- I look at my <a className="link" href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">email</a> a lot and love to connect with new people</li>
+                                <li>- I look at my <a href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">email</a> a lot and love to connect with new people</li>
                                 <li>- I am training to make the perfect pizza</li>
                                 <li>- I already have the perfect <a href="https://res.cloudinary.com/dnrk3irn4/image/upload/v1555811740/IMG_0366.jpg" target="_blank" rel="noopener noreferrer">dog</a></li>
                                 <li><div className="margin-top"><Diamonds/></div></li>
