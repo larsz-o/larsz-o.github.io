@@ -41,10 +41,10 @@ class Projects extends Component {
                             <ul className="about-text">
                                 <div><li class="list-border">I am a problem solver</li></div>
                                 <li>I currently design online educational experiences for <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer">work</a></li>
-                                <li>I get to do a lot of cool stuff like launch AWS environments for robotics and bioinformatics courses, build web apps to make our information delivery more efficient, and help online instructors transform their courses to be interactive, beautiful, and intuitive to use.</li>
+                                <li>I get to do a lot of cool stuff like launch AWS environments for software engineering courses, build web apps to make our information delivery more efficient, and help online instructors transform their courses to become more interactive, beautiful, and intuitive to use.</li>
                                 <li>I care about accessibility, information architecture, and learning something new every day.</li>
                                 <li>I have built some neat projects on my own and on teams as a <a href="https://www.github.com/larsz-o" target="_blank" rel="noopener noreferrer">full-stack software developer</a></li>
-                                <li>I was trained as an academic in my past life, and I wrote a dissertation about how <a href={require('../images/AfterlifeData.pdf')} target="_blank" rel="noopener noreferrer" title="Afterlife of Data">information systems impact people</a>  whose identities change over time</li>
+                                <li>I am trained as an academic and in my past life I wrote a dissertation about how <a href={require('../images/AfterlifeData.pdf')} target="_blank" rel="noopener noreferrer" title="Afterlife of Data">the consequences of exclusionary and unethical information regimes on marginalized people.</a></li>
                                 <li>I like reading <a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer">Twitter</a> but usually just delete my tweets</li>
                                 <li>I look at my <a href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">email</a> a lot and love to connect with new people</li>
                                 <li>I am training to make the perfect pizza</li>
@@ -64,10 +64,10 @@ class Projects extends Component {
                                 <div class="margin-top">
                                 <li class="list-border">I am a problem solver</li></div>
                                 <li>I currently design online educational experiences for <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer">work</a></li>
-                                <li>I get to do a lot of cool stuff like launch AWS environments for robotics and bioinformatics courses, build web apps to make our information delivery more efficient, and help online instructors transform their courses to be interactive, beautiful, and intuitive to use.</li>
+                                <li>I get to do a lot of cool stuff like launch AWS environments for software engineering courses, build web apps to make our information delivery more efficient, and help online instructors transform their courses to become more interactive, beautiful, and intuitive to use.</li>
                                 <li>I care about accessibility, information architecture, and learning something new every day.</li>
                                 <li>I have built some neat projects on my own and on teams as a <a href="https://www.github.com/larsz-o" target="_blank" rel="noopener noreferrer">full-stack software developer</a></li>
-                                <li>I was trained as an academic in my past life, and I wrote a dissertation about how <a href={require('../images/AfterlifeData.pdf')} target="_blank" rel="noopener noreferrer" title="Afterlife of Data">information systems impact people</a>  whose identities change over time</li>
+                                <li>I am trained as an academic and in my past life I wrote a dissertation about how <a href={require('../images/AfterlifeData.pdf')} target="_blank" rel="noopener noreferrer" title="Afterlife of Data">the consequences of exclusionary and unethical information regimes on marginalized people.</a></li>
                                 <li>I like reading <a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer">Twitter</a> but usually just delete my tweets</li>
                                 <li>I look at my <a href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">email</a> a lot and love to connect with new people</li>
                                 <li>I am training to make the perfect pizza</li>
