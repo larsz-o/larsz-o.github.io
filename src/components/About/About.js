@@ -35,7 +35,7 @@ class Projects extends Component {
                     </Row>
                     {isDesktop ? (<Row>
                         <Col xs={12} md={6} lg={6}>
-                            <Image className="no-borders" src={require('../images/lars.jpg')} alt="Lars headshot" height="350" rounded responsive />
+                            <Image className="no-borders" src={require('../images/lars.jpg')} alt="Lars headshot" height="350px" rounded />
                         </Col>
                         <Col xs={12} md={6} lg={6}>
                             <ul className="about-text">
