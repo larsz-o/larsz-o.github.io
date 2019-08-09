@@ -6,30 +6,29 @@ class Projects extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isDesktop: true,
             menu: true,
-            web: false,
-            design: false,
-            research: false, 
-            webProjects: [],
-            designProjects: [],
-            researchProjects: []
+            web: ['web'],
+            design: ['design'],
+            research: ['research'],
+            selected: ''
         }
     }
-    componentDidMount() {
-        this.updatePredicate();
-        window.addEventListener("resize", this.updatePredicate)
-    }
-    componentWillUnmount() {
-        window.removeEventListener("resize", this.updatePredicate);
-    }
-    updatePredicate = () => {
+    linkClicked = (property) => {
         this.setState({
-            isDesktop: window.innerWidth >= 1024
+            ...this.state,
+            selected: `this.state.${property}`,
+            menu: false
+        })
+    }
+    reset = () => {
+        this.setState({
+            ...this.state,
+            menu: true,
+            selected: ''
         })
     }
     render() {
-        let isDesktop = this.state.isDesktop;
+
         return (
             <section className="main">
                 <Grid>
@@ -38,19 +37,34 @@ class Projects extends Component {
                     <h4 className="subheading">web developer + academic technologist</h4></a>
                 </Row>
                     {this.state.menu ? (<div className="flex-box-evenly breathing-room">
-                        <div className="choice">
+                        <div onClick={()=>this.linkClicked('web')} className="choice">
                             <h3>Web Development</h3>
                         </div>
-                        <div className="choice">
+                        <div onClick={()=>this.linkClicked('design')} className="choice">
                             <h3>Instructional Design</h3>
                         </div>
-                        <div className="choice">
+                        <div onClick={()=>this.linkClicked('research')} className="choice">
                             <h3>Research</h3>
                         </div>
-                    </div>) : (<div className="flex-box-evenly">
+                    </div>) : (<div>
                         {/* display whatever link you just clicked */}
-                        <ProjectView/>
-                    </div>)} 
+                       <div className="margin-top"><button onClick={this.reset}>Back</button></div> 
+                        {this.state.selected === 'this.state.web' && <div>
+                            {this.state.web.map((project, i) => {
+                                return(<ProjectView project={project} key={i}/>)
+                            })}
+                        </div>}
+                        {this.state.selected === 'this.state.design' && <div>
+                        {this.state.design.map((project, i) => {
+                                return(<ProjectView project={project} key={i}/>)
+                            })}
+                        </div>}
+                        {this.state.selected === 'this.state.research' && <div>
+                        {this.state.research.map((project, i) => {
+                                return(<ProjectView project={project} key={i}/>)
+                            })}
+                        </div>}
+                        </div>)}
                   
                 </Grid>
             </section>

@@ -25,6 +25,15 @@ a:active {
 .breathing-room {
   margin-top: 30vh; 
 }
+button {
+  padding: 10px;
+  border-radius: 5px;
+  width: 20%;
+  text-transform: uppercase;
+  background-color: #2C363F;
+  outline: none;
+  color: white;
+}
 .center {
   text-align: center; 
 }
