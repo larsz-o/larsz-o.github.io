@@ -37,7 +37,7 @@ class Projects extends Component {
                     <a href="/#/"><h2 className="smaller-header" id="back-arrow">Lars Mackenzie</h2>
                     <h4 className="subheading">web developer + academic technologist</h4></a>
                 </Row>
-                    {this.state.menu && (<div className="flex-box-evenly breathing-room">
+                    {this.state.menu ? (<div className="flex-box-evenly breathing-room">
                         <div className="choice">
                             <h3>Web Development</h3>
                         </div>
@@ -47,7 +47,7 @@ class Projects extends Component {
                         <div className="choice">
                             <h3>Research</h3>
                         </div>
-                    </div>) (<div className="flex-box-evenly">
+                    </div>) : (<div className="flex-box-evenly">
                         {/* display whatever link you just clicked */}
                         <ProjectView/>
                     </div>)} 
