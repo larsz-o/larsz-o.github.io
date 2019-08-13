@@ -16,7 +16,7 @@ class Projects extends Component {
     linkClicked = (property) => {
         this.setState({
             ...this.state,
-            selected: `this.state.${property}`,
+            selected: property,
             menu: false
         })
     }
@@ -49,17 +49,17 @@ class Projects extends Component {
                     </div>) : (<div>
                         {/* display whatever link you just clicked */}
                        <div className="margin-top"><button onClick={this.reset}>Back</button></div> 
-                        {this.state.selected === 'this.state.web' && <div>
+                        {this.state.selected === 'web' && <div>
                             {this.state.web.map((project, i) => {
                                 return(<ProjectView project={project} key={i}/>)
                             })}
                         </div>}
-                        {this.state.selected === 'this.state.design' && <div>
+                        {this.state.selected === 'design' && <div>
                         {this.state.design.map((project, i) => {
                                 return(<ProjectView project={project} key={i}/>)
                             })}
                         </div>}
-                        {this.state.selected === 'this.state.research' && <div>
+                        {this.state.selected === 'research' && <div>
                         {this.state.research.map((project, i) => {
                                 return(<ProjectView project={project} key={i}/>)
                             })}
