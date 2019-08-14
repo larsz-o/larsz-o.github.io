@@ -7,10 +7,10 @@ class Projects extends Component {
         super(props);
         this.state = {
             menu: true,
-            web: ['web'],
-            design: ['design'],
-            research: ['research'],
-            selected: ''
+            web: [{title: '', url: '', img: '', img_desc: '', description: ''}],
+            design: [{title: '', url: '', img: '', img_desc: '', description: ''}],
+            research: [{title: '', url: '', img: '', img_desc: '', description: ''}],
+            selected: '',
         }
     }
     linkClicked = (property) => {
