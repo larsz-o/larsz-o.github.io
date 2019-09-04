@@ -1,14 +1,15 @@
 
-a {
+a, .link {
   text-decoration: none;
   background-color: #D1FCE9;
   color: #0B4F6C;
 }
-a:hover {
+a:hover, .link:hover {
   text-decoration: none;
+  cursor: pointer;
   color: #cc33ad;
 }
-a:active {
+a:active, .link:active {
   text-decoration: none;
 }
 .about-text {
@@ -24,15 +25,6 @@ a:active {
 }
 .breathing-room {
   margin-top: 30vh; 
-}
-button {
-  padding: 10px;
-  border-radius: 5px;
-  width: 20%;
-  text-transform: uppercase;
-  background-color: #2C363F;
-  outline: none;
-  color: white;
 }
 .center {
   text-align: center; 
@@ -134,7 +126,6 @@ h3 {
 }
 html, body {
   font-family: 'Roboto Mono', monospace;
-  font-size: .9em; 
 }
 .list-border {
     border-top: 2px dashed #cc33ad;
@@ -174,6 +165,10 @@ html, body {
 .padding-top {
   margin-top: 20vh;
   padding-top: 5px; 
+}
+.project-card{
+  padding: 10px;
+  margin: 5px;
 }
 .relative {
   width: 100%;
@@ -231,4 +226,23 @@ body, html {
   img#screenshot {
     display: none;
   }
+}
+/* For mobile: */
+[class*="column-"] {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .column-1 {width: 8.33%;}
+  .column-2 {width: 16.66%;}
+  .column-3 {width: 25%;}
+  .column-4 {width: 33.33%;}
+  .column-5 {width: 41.66%;}
+  .column-6 {width: 50%;}
+  .column-7 {width: 58.33%;}
+  .column-8 {width: 66.66%;}
+  .column-9 {width: 75%;}
+  .column-10 {width: 83.33%;}
+  .column-11 {width: 91.66%;}
+  .column-12 {width: 100%;}
 }
