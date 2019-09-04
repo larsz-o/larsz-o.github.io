@@ -12,11 +12,11 @@ a:hover, .link:hover {
 a:active, .link:active {
   text-decoration: none;
 }
-.about-text {
+.about-text-true {
   font-size: 1.4em; 
   line-height: 1.75; 
 }
-.about-text-mobile{
+.about-text-false{
   font-size: 1.4em;
   width: 100%;
   margin: 0;
