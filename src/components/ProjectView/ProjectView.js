@@ -8,7 +8,7 @@ class ProjectView extends Component {
                 <h3>{this.props.project.title}</h3>
                 <img src={this.props.project.img} alt={this.props.project.img_desc} width="100%"/>
                 <p>{this.props.project.description}</p>
-                <div className="center"><a href={this.props.project.url} target="_blank" rel="noopener noreferrer">View live demo</a></div>
+                <div className="center"><a href={this.props.project.url} target="_blank" rel="noopener noreferrer">View project</a></div>
             </div>
             </section>
         )
