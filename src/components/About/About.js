@@ -39,7 +39,7 @@ class Projects extends Component {
                         </Col>
                         <Col xs={12} md={6} lg={6}>
                             <ul className={`about-text-${isDesktop}`}>
-                                {isDesktop ? (<div><li class="list-border">I am a problem solver.</li></div>) : (<div className="margin-top"><li class="list-border">I am a problem solver.</li></div>)}
+                                {isDesktop ? (<div><li className="list-border">I am a problem solver.</li></div>) : (<div className="margin-top"><li class="list-border">I am a problem solver.</li></div>)}
                                 <li>I currently design online educational experiences for <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer">work.</a></li>
                                 <li>I get to do a lot of cool stuff like launch AWS environments for software engineering courses, build web apps, and consult with instructors on how to increase interactivity, collaboration, and peer learning in online learning environments.</li>
                                 <li>I care about accessibility, information architecture, and learning something new every day.</li>
