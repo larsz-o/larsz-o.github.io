@@ -44,11 +44,11 @@ class Projects extends Component {
                                 <li>I do a lot of cool things at my job, like launch AWS environments, build web apps, and consult with instructors on how to increase interactivity, collaboration, and peer learning in online classrooms.</li>
                                 <li>I care about accessibility, information architecture, and learning something new every day.</li>
                                 <li>I'm interdisciplinary and collaborative at my core: I love working with teams across institutions to iteratively improve on processes or to rethink how things are done.</li>
-                                <li>I went through a rigorous training in <a href="https://www.github.com/larsz-o" target="_blank" rel="noopener noreferrer">full-stack web development (and I really love building software).</a></li>
+                                <li>I went through a rigorous training in <a href="https://www.github.com/larsz-o" target="_blank" rel="noopener noreferrer">full-stack web development </a>(and I really love building software).</li>
                                 <li>I am trained as an academic and I wrote a dissertation about how <a href={require('../images/AfterlifeData.pdf')} target="_blank" rel="noopener noreferrer" title="Afterlife of Data">marginalized people navigate through commerical and medical information systems.</a></li>
                                 <li>I like reading <a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer">Twitter</a> but usually just delete my tweets.</li>
                                 <li>I look at my <a href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">email</a> a lot and love to connect with new people.</li>
-                                <li>I am training to make the perfect pizza</li>
+                                <li>I am training to make the perfect pizza.</li>
                                 <li>I already have the perfect <a href="https://res.cloudinary.com/dnrk3irn4/image/upload/v1555811740/IMG_0366.jpg" target="_blank" rel="noopener noreferrer">dog.</a></li>
                             </ul>
                             {!isDesktop && <div className="margin-top"><Diamonds /></div>}
