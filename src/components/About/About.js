@@ -41,7 +41,7 @@ class Projects extends Component {
                             <ul className={`about-text-${isDesktop}`}>
                                 {isDesktop ? (<div><li className="list-border">I am a problem solver.</li></div>) : (<div className="margin-top"><li class="list-border">I am a problem solver.</li></div>)}
                                 <li>I currently design online educational experiences for <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer">work.</a></li>
-                                <li>I do a lot of cool things at work, like launch AWS environments, build web apps, and consult with instructors on how to increase interactivity, collaboration, and peer learning in online classrooms.</li>
+                                <li>I do a lot of cool things at my job, like launch AWS environments, build web apps, and consult with instructors on how to increase interactivity, collaboration, and peer learning in online classrooms.</li>
                                 <li>I care about accessibility, information architecture, and learning something new every day.</li>
                                 <li>I'm interdisciplinary and collaborative at my core: I love working with teams across institutions to iteratively improve on processes or to rethink how things are done.</li>
                                 <li>I went through a rigorous training in <a href="https://www.github.com/larsz-o" target="_blank" rel="noopener noreferrer">full-stack web development (and I really love building software).</a></li>
