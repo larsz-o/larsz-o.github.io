@@ -41,9 +41,10 @@ class Projects extends Component {
                             <ul className={`about-text-${isDesktop}`}>
                                 {isDesktop ? (<div><li className="list-border">I am a problem solver.</li></div>) : (<div className="margin-top"><li class="list-border">I am a problem solver.</li></div>)}
                                 <li>I currently design online educational experiences for <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer">work.</a></li>
-                                <li>I get to do a lot of cool stuff like launch AWS environments for software engineering courses, build web apps, and consult with instructors on how to increase interactivity, collaboration, and peer learning in online learning environments.</li>
+                                <li>I do a lot of cool things at work, like launch AWS environments, build web apps, and consult with instructors on how to increase interactivity, collaboration, and peer learning in online classrooms.</li>
                                 <li>I care about accessibility, information architecture, and learning something new every day.</li>
-                                <li>I have built some neat projects on my own and on teams as a <a href="https://www.github.com/larsz-o" target="_blank" rel="noopener noreferrer">full-stack software developer.</a></li>
+                                <li>I'm interdisciplinary and collaborative at my core: I love working with teams across institutions to iteratively improve on processes or to rethink how things are done.</li>
+                                <li>I went through a rigorous training in <a href="https://www.github.com/larsz-o" target="_blank" rel="noopener noreferrer">full-stack web development (and I really love building software).</a></li>
                                 <li>I am trained as an academic and I wrote a dissertation about how <a href={require('../images/AfterlifeData.pdf')} target="_blank" rel="noopener noreferrer" title="Afterlife of Data">marginalized people navigate through commerical and medical information systems.</a></li>
                                 <li>I like reading <a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer">Twitter</a> but usually just delete my tweets.</li>
                                 <li>I look at my <a href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">email</a> a lot and love to connect with new people.</li>
