@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Image } from 'react-bootstrap';
 import Diamonds from '../Diamonds/Diamonds';
 
 class Projects extends Component {
@@ -18,7 +17,7 @@ class Projects extends Component {
     }
     updatePredicate = () => {
         this.setState({
-            isDesktop: window.innerWidth >= 1024
+            isDesktop: window.innerWidth >= 768
         })
     }
     render() {
@@ -38,13 +37,14 @@ class Projects extends Component {
                     </div>
                     
                         <div className="row-padding"></div>
-                  <div className="flex-box">
-                        <div className="column-6">
-                            <Image className="no-borders" src={require('../images/lars.jpg')} alt="Lars headshot" height="350px" rounded />
+                  <div className="flex-box-left">
+                        <div className="column-4 column-md-6">
+                            <img src={require('../images/lars.jpg')} alt="Lars headshot" height="320"/>
                         </div>
-                        <div className="column-6">
-                            <ul className={`about-text-${isDesktop}`}>
-                                {isDesktop ? (<div><li className="list-border">I am a problem solver.</li></div>) : (<div className="margin-top"><li class="list-border">I am a problem solver.</li></div>)}
+                        <div className="column-2 column-md-12"></div>
+                        <div className="column-6 column-md-12">
+                            <ul>
+                              <div>{isDesktop? (<li className="list-border">I am a problem solver.</li>):(<li >I am a problem solver.</li>)}</div>
                                 <li>I currently design online educational experiences for <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer">work.</a></li>
                                 <li>I do a lot of cool things at my job, like launch AWS environments, build web apps, and consult with instructors on how to increase interactivity, collaboration, and peer learning in online classrooms.</li>
                                 <li>I care about accessibility, information architecture, and learning something new every day.</li>
