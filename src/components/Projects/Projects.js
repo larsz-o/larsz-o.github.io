@@ -64,13 +64,13 @@ class Projects extends Component {
                         </div>
                     </div>
                     {this.state.menu ? (<div className="flex-box-evenly breathing-room">
-                        <div onClick={() => this.linkClicked('web')} className="choice">
+                        <div onClick={() => this.linkClicked('web')} className="choice column-3 center">
                             <h3>Web Development</h3>
                         </div>
-                        <div onClick={() => this.linkClicked('design')} className="choice">
+                        <div onClick={() => this.linkClicked('design')} className="choice column-3 center">
                             <h3>Academic Technology Design</h3>
                         </div>
-                        <div onClick={() => this.linkClicked('research')} className="choice">
+                        <div onClick={() => this.linkClicked('research')} className="choice column-3 center">
                             <h3>Research</h3>
                         </div>
                     </div>) : (<div>

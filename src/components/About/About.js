@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image, Grid, Row, Col } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 import Diamonds from '../Diamonds/Diamonds';
 
 class Projects extends Component {
@@ -36,15 +36,13 @@ class Projects extends Component {
                             <h4 className="space"><a href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">Contact Me</a></h4>
                         </div>
                     </div>
-                    <Grid>
-                    <Row>
+                    
                         <div className="row-padding"></div>
-                    </Row>
-                    <Row>
-                        <Col xs={12} md={6} lg={6}>
+                  <div className="flex-box">
+                        <div className="column-6">
                             <Image className="no-borders" src={require('../images/lars.jpg')} alt="Lars headshot" height="350px" rounded />
-                        </Col>
-                        <Col xs={12} md={6} lg={6}>
+                        </div>
+                        <div className="column-6">
                             <ul className={`about-text-${isDesktop}`}>
                                 {isDesktop ? (<div><li className="list-border">I am a problem solver.</li></div>) : (<div className="margin-top"><li class="list-border">I am a problem solver.</li></div>)}
                                 <li>I currently design online educational experiences for <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer">work.</a></li>
@@ -58,11 +56,11 @@ class Projects extends Component {
                                 <li>I already have the perfect <a href="https://res.cloudinary.com/dnrk3irn4/image/upload/v1555811740/IMG_0366.jpg" target="_blank" rel="noopener noreferrer">dog.</a></li>
                             </ul>
                             {!isDesktop && <div className="margin-top"><Diamonds /></div>}
-                        </Col>
-                    </Row><div className="margin-bottom">
+                        </div>
+                    <div className="margin-bottom">
                     </div>
-                </Grid>
-
+              
+                    </div>
             </section>
         );
     }
