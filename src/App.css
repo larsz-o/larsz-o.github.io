@@ -112,13 +112,7 @@ footer {
   color: black; 
   margin: 0;
 }
-.header-padding{
-  text-align: left; 
-  margin-left: 5vh; 
-  margin-bottom: 5px; 
-  padding-bottom: 5vh; 
-  margin-top: 5vh;
-}
+
 .headline{
   text-align: center;
   margin-top: 5px;
@@ -131,7 +125,7 @@ h1 {
 }
 h2 {
   font-family: 'Roboto Mono', monospace;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 h3 {
   font-family: 'Roboto Mono', monospace;
@@ -151,10 +145,10 @@ h3 {
   margin-top: 10vh;
 }
 .name-header {
-  font-size: 3em; 
+  font-size: 2.2em; 
   margin-top: 5vh;
   text-decoration: none;
-  color: black; 
+
 }
 .no-borders {
   border: 0px; 

@@ -26,11 +26,11 @@ class Projects extends Component {
         return (
             <section className="main">
                     <div className="flex-box-between baseline">
-                        <div className="column-4">
+                        <div className="column-5">
                             <h2 className="name-header">Lars Mackenzie, PhD</h2>
                             <h4 className="subheading">web developer + academic technologist</h4>
                         </div>
-                        <div className="flex-box-between nav column-6">
+                        <div className="flex-box-between nav column-5">
                             <h4 className="space"><a href="/">About</a></h4>
                             <h4 className="space"><a href="/#/projects">Projects</a></h4>
                             <h4 className="space"><a href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">Contact Me</a></h4>

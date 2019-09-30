@@ -52,7 +52,7 @@ class Projects extends Component {
 
         return (
             <section className="main">
-                           <div className="flex-box-between baseline">
+                           <div className="flex-box-between baseline heading">
                         <div className="column-4" id="top">
                             <h2 className="name-header">Lars Mackenzie, PhD</h2>
                             <h4 className="subheading">web developer + academic technologist</h4>
