@@ -23,6 +23,7 @@ a:active, .link:active {
   padding: 0;
   line-height: 2; 
 }
+
 .breathing-room {
   margin-top: 30vh; 
 }
@@ -40,6 +41,9 @@ a:active, .link:active {
 }
 .choice:hover{
   color: #0B4F6C;
+}
+.choice > span {
+  font-size: 1.2em;
 }
 .dashed-edge{
   padding: 10px; 
@@ -59,7 +63,6 @@ a:active, .link:active {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
 }
 .flex-box-center {
   display: flex;
@@ -167,8 +170,21 @@ html, body {
   padding-top: 5px; 
 }
 .project-card{
-  padding: 10px;
-  margin: 5px;
+  padding: 15px;
+  margin: 15px;
+  background-color: whitesmoke;
+  font-family: 'Roboto Mono', monospace;
+}
+.project-card > p {
+  margin-top: 2vh;
+}
+.project-card > h3 {
+  font-weight: 800;
+  text-align: center;
+}
+.project-card > img {
+  max-width: 100%;
+
 }
 .relative {
   width: 100%;
