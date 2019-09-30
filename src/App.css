@@ -26,7 +26,7 @@ a:active, .link:active {
   align-items: baseline; 
 }
 .breathing-room {
-  margin-top: 30vh; 
+  margin-top: 20vh; 
 }
 .box {
   border: 2px dashed #0B4F6C;
@@ -171,7 +171,7 @@ p{
 }
 .project-card{
   padding: 15px;
-  margin: 15px;
+  margin: 20px;
   background-color: whitesmoke;
   font-family: 'Roboto Mono', monospace;
 }

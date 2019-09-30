@@ -75,7 +75,7 @@ class Projects extends Component {
                         </div>
                     </div>) : (<div>
                         {/* display whatever link you just clicked */}
-                     <div class="margin-bottom"></div>
+                     <div class="margin-bottom margin-top"></div>
                             {this.state.selected === 'web' && <div className="flex-box-evenly">
                                 {this.state.web.map((project, i) => {
                                     return (
