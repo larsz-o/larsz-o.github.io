@@ -25,11 +25,18 @@ class Projects extends Component {
         let isDesktop = this.state.isDesktop;
         return (
             <section className="main">
-                <Grid>
-                    <Row>
-                        <h2 className="name-header">Lars Mackenzie</h2>
-                        <h4 className="subheading">web developer + academic technologist</h4>
-                    </Row>
+                    <div className="flex-box-between baseline">
+                        <div className="column-4">
+                            <h2 className="name-header">Lars Mackenzie</h2>
+                            <h4 className="subheading">web developer + academic technologist</h4>
+                        </div>
+                        <div className="flex-box-between nav column-6">
+                            <h4 className="space"><a href="/">About</a></h4>
+                            <h4 className="space"><a href="/#/projects">Projects</a></h4>
+                            <h4 className="space"><a href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">Contact Me</a></h4>
+                        </div>
+                    </div>
+                    <Grid>
                     <Row>
                         <div className="row-padding"></div>
                     </Row>
@@ -47,7 +54,6 @@ class Projects extends Component {
                                 <li>I went through a rigorous training in <a href="https://www.github.com/larsz-o" target="_blank" rel="noopener noreferrer">full-stack web development </a>(and I really love building software).</li>
                                 <li>I am trained as an academic and I wrote a dissertation about how <a href={require('../images/AfterlifeData.pdf')} target="_blank" rel="noopener noreferrer" title="Afterlife of Data">marginalized people navigate through commerical and medical information systems.</a></li>
                                 <li>I like reading <a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer">Twitter</a> but usually just delete my tweets.</li>
-                                <li>I look at my <a href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">email</a> a lot and love to connect with new people.</li>
                                 <li>I am training to make the perfect pizza.</li>
                                 <li>I already have the perfect <a href="https://res.cloudinary.com/dnrk3irn4/image/upload/v1555811740/IMG_0366.jpg" target="_blank" rel="noopener noreferrer">dog.</a></li>
                             </ul>

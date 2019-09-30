@@ -13,8 +13,9 @@ a:active, .link:active {
   text-decoration: none;
 }
 .about-text-true {
-  font-size: 1.4em; 
+  font-size: 1.1em;
   line-height: 1.75; 
+  font-family: 'Roboto Mono', monospace;
 }
 .about-text-false{
   font-size: 1.4em;
@@ -22,8 +23,11 @@ a:active, .link:active {
   margin: 0;
   padding: 0;
   line-height: 2; 
+  font-family: 'Roboto Mono', monospace;
 }
-
+.baseline {
+  align-items: baseline; 
+}
 .breathing-room {
   margin-top: 30vh; 
 }
@@ -33,7 +37,7 @@ a:active, .link:active {
 .choice {
   padding: 20px;
   margin: 10px;
-  background-color: #D2F1E4;
+  background-color: #D1FCE9;
   color: #cc33ad;
   box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
   border-radius: 2px;
@@ -43,7 +47,7 @@ a:active, .link:active {
   color: #0B4F6C;
 }
 .choice > span {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 .dashed-edge{
   padding: 10px; 
@@ -63,6 +67,12 @@ a:active, .link:active {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+.flex-box-between {
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .flex-box-center {
   display: flex;
@@ -127,19 +137,15 @@ h3 {
   font-family: 'Roboto Mono', monospace;
   font-size: 1.5em; 
 }
-html, body {
-  font-family: 'Roboto Mono', monospace;
-}
 .list-border {
     border-top: 2px dashed #cc33ad;
     padding-top: 10px;
 }
 .main {
   margin-bottom: 25vh; 
-
 }
 .margin-bottom {
- margin-bottom: 4vh; 
+ margin-bottom: 20vh; 
 }
 .margin-top {
   margin-top: 10vh;
@@ -199,10 +205,7 @@ html, body {
 .row-padding {
   padding: 40px; 
 }
-.skills-list{
-  font-family: 'Inconsolata', monospace;
-  font-size: 1.2em; 
-}
+
 .smaller-header {
   font-size: 2.7em; 
   margin-top: 1vh;
@@ -213,6 +216,15 @@ html, body {
   margin-left: 1%; 
   color: #cc33ad;
 }
+.nav {
+  padding: 5px;
+  margin: 10px;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #0B4F6C;
+}
+.space { margin: 10px;}
+.space > a {background-color: white}
 .spacing {
   padding: 10px; 
 }
@@ -230,7 +242,7 @@ html, body {
 }
 ul{
   list-style-type: circle;
-  font-family: 'Roboto', sans-serif;
+ 
 }
 body, html {
   color: black; 
