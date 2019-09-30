@@ -132,6 +132,14 @@ h3 {
   font-family: 'Roboto Mono', monospace;
   font-size: 1.5em; 
 }
+
+.invisible {
+  height: 5px;
+}
+.lars {
+  height: 300px;
+  border-radius: 10%;
+}
 .list-border {
     border-top: 2px dashed #cc33ad;
     padding-top: 10px;
@@ -151,14 +159,8 @@ h3 {
   text-decoration: none;
 
 }
-.packages-div {
-  height: 450px; 
-  padding: 5px; 
-  margin-top: 10px; 
-  margin-bottom: 10px; 
-  text-align: center;
-  background-color: white;
-  border: 1px gray solid; 
+p{
+  font-size: 1.1em;
 }
 .padding {
   padding: 5px;
