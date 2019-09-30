@@ -54,7 +54,7 @@ class Projects extends Component {
             <section className="main">
                            <div className="flex-box-between baseline">
                         <div className="column-4" id="top">
-                            <h2 className="name-header">Lars Mackenzie</h2>
+                            <h2 className="name-header">Lars Mackenzie, PhD</h2>
                             <h4 className="subheading">web developer + academic technologist</h4>
                         </div>
                         <div className="flex-box-between nav column-6">
