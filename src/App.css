@@ -12,15 +12,18 @@ a:hover, .link:hover {
 a:active, .link:active {
   text-decoration: none;
 }
-.about-text-true {
+.about-text-true > p {
   font-size: 1.1em;
   line-height: 1.75; 
   font-family: 'Roboto Mono', monospace;
+  padding: 5px;
 }
-.about-text-false{
-  padding: 0;
+
+.about-text-false > p {
   line-height: 2; 
   font-family: 'Roboto Mono', monospace;
+  margin: 10px;
+  padding: 10px;
 }
 .baseline {
   align-items: baseline; 
@@ -139,6 +142,7 @@ h3 {
 .lars {
   height: 300px;
   border-radius: 10%;
+  max-width: 95%;
 }
 .list-border {
     border-top: 2px dashed #cc33ad;
