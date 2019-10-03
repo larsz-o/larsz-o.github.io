@@ -12,11 +12,13 @@
     "nodemon": "^1.18.8",
     "prerender-node": "^3.2.1",
     "react": "^16.6.1",
+    "react-animations": "^1.0.0",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.6.1",
     "react-router-dom": "^4.3.1",
     "react-router-hash-link": "^1.2.1",
-    "react-scripts": "^3.0.1"
+    "react-scripts": "^3.0.1",
+    "styled-components": "^4.4.0"
   },
   "scripts": {
     "start": "node server/server.js",

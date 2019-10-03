@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 class Contact extends Component {
     constructor(props) {
         super(props);
@@ -15,29 +16,42 @@ class Contact extends Component {
     }
     updatePredicate = () => {
         this.setState({
-            isDesktop: window.innerWidth >= 1024
+            isDesktop: window.innerWidth >= 768
         })
     }
     render() {
         let isDesktop = this.state.isDesktop;
         return (
-            <section className="main">
-                {isDesktop ? (<div className="dashed-edge-tight center">
-                    <h2>Let's connect!</h2>
-                    <h3>Find me on social media</h3>
-                    <div className="headline"><a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer"><img src={require('../images/twitter-min.png')} height="50px" alt="twitter icon" /></a>
-                        <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer"><img src={require('../images/linkedin2.png')} height="50px" alt="linkedin icon" /></a>
-                        <a href="https://github.com/larsz-o" target="_blank" rel="noopener noreferrer"><img src={require('../images/Octocat-min.png')} height="50px" alt="github icon" /></a></div>
-                    <h3>or send me an <a className="link" href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">email.</a></h3>
-                </div>) : (<div className="center">
-                    <h2>Let's connect!</h2><h3>Find me on social media</h3>
-                    <div className="headline"><a href="https://twitter.com/larszmac" target="_blank" rel="noopener noreferrer"><img src={require('../images/twitter-min.png')} height="50px" alt="twitter icon" /></a>
-                        <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer"><img src={require('../images/linkedin2.png')} height="50px" alt="linkedin icon" /></a>
-                        <a href="https://github.com/larsz-o" target="_blank" rel="noopener noreferrer"><img src={require('../images/Octocat-min.png')} height="50px" alt="github icon" /></a></div>
-                    <h3>or send me an <a className="link" href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">email.</a></h3>
-                </div>)}
-
-            </section>
+           <div>
+                <div className="flex-box-between baseline">
+                       {isDesktop? (<div className="column-5">
+                            <h2 className="name-header">Lars Mackenzie, PhD</h2>
+                            <h4 className="subheading">web developer + academic technologist</h4>
+                        </div>):(<div className="column-5">
+                            <h2 className="name-header">Lars Mackenzie, PhD</h2>
+                            <h4 className="subheading">web developer + academic technologist</h4>
+                        </div>)} 
+                       {isDesktop ? (<div className="nav column-5">
+                            <div className="flex-box-between"><h4 className="space"><a className="white" href="/">About</a></h4>
+                            <h4 className="space"><a className="white" href="/#/projects">Projects</a></h4>
+                            <h4 className="space"><a className="white" href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">Contact Me</a></h4></div>
+                        </div>):(<div className="nav column-5">
+                            <div className="flex-box-between"><h4 className="space"><a className="white" href="/">About</a></h4>
+                            <h4 className="space"><a className="white" href="/#/projects">Projects</a></h4>
+                            <h4 className="space"><a className="white" href="/#/contact">Contact Me</a></h4></div>
+                        </div>)} 
+                    </div>
+                   
+                    <div className="column-12 flex-box-center margin-top">
+                        <div className="gray column-8 flex-box-center">
+                        <iframe src="https://giphy.com/embed/l0IsIZw8doJm3ysRq" width="480" height="264" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        </div>
+                  
+                    </div>
+                    <div className="column-12 flex-box-center margin-top">
+                       <div className="button"><h3><a href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">send me an email</a></h3></div>
+                    </div>
+           </div>
         );
     }
 }

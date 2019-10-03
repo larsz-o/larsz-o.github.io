@@ -32,6 +32,7 @@ class Projects extends Component {
             {title: 'Cataloguing and Digital Asset Management', url: '', img: 'https://lars-prof-site.s3.us-east-2.amazonaws.com/featured1.svg', img_desc: 'database icon', description: 'I have also been responsible for developing relational database architectures for web applications and for defining metadata schemas for digital media assets. I contributed to an oral history project at the University of Minnesota, writing abstracts for the finding guides for dozens of oral history transcripts.'}
         ],
             selected: '',
+            isDestkop: true
         }
     }
     linkClicked = (property) => {
@@ -48,20 +49,39 @@ class Projects extends Component {
             selected: ''
         })
     }
+    componentDidMount() {
+        this.updatePredicate();
+        window.addEventListener("resize", this.updatePredicate)
+    }
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.updatePredicate);
+    }
+    updatePredicate = () => {
+        this.setState({
+            isDesktop: window.innerWidth >= 768
+        })
+    }
     render() {
- 
+        let isDesktop = this.state.isDesktop;
         return (
             <section className="main">
-                           <div className="flex-box-between baseline heading">
-                        <div className="column-4" id="top">
+                      <div className="flex-box-between baseline">
+                      {isDesktop? (<div className="column-5">
                             <h2 className="name-header">Lars Mackenzie, PhD</h2>
                             <h4 className="subheading">web developer + academic technologist</h4>
-                        </div>
-                        <div className="nav column-5">
-                       <div className="flex-box-between"><h4 className="space"><a href="/">About</a></h4>
-                            <h4 className="space"><a href="/#/projects">Projects</a></h4>
-                            <h4 className="space"><a href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">Contact Me</a></h4></div>
-                        </div>
+                        </div>):(<div className="column-5">
+                            <h2 className="name-header">Lars Mackenzie, PhD</h2>
+                            <h4 className="subheading">web developer + academic technologist</h4>
+                        </div>)} 
+                       {isDesktop ? (<div className="nav column-5">
+                            <div className="flex-box-between"><h4 className="space"><a className="white" href="/">About</a></h4>
+                            <h4 className="space"><span className="link white" onClick={()=>this.reset()}>Projects</span></h4>
+                            <h4 className="space"><a className="white" href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">Contact Me</a></h4></div>
+                        </div>):(<div className="nav column-5">
+                            <div className="flex-box-between"><h4 className="space"><a className="white" href="/">About</a></h4>
+                            <h4 className="space"><a className="white" href="/#/projects">Projects</a></h4>
+                            <h4 className="space"><a  className="white" href="/#/contact">Contact Me</a></h4></div>
+                        </div>)} 
                     </div>
                     {this.state.menu ? (<div className="flex-box-evenly breathing-room">
                         <div onClick={() => this.linkClicked('web')} className="choice column-3 center">

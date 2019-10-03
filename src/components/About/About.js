@@ -25,18 +25,22 @@ class Projects extends Component {
         return (
             <div className="main">
                     <div className="flex-box-between baseline">
-                        <div className="column-5">
+                    {isDesktop? (<div className="column-5">
                             <h2 className="name-header">Lars Mackenzie, PhD</h2>
                             <h4 className="subheading">web developer + academic technologist</h4>
-                        </div>
-                        <div className="nav column-5">
-                            {isDesktop? (<div className="flex-box-between"><h4 className="space"><a href="/">About</a></h4>
-                            <h4 className="space"><a href="/#/projects">Projects</a></h4>
-                            <h4 className="space"><a href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">Contact Me</a></h4></div>) : 
-                            (<div className="flex-box-between"><h4 className="choice"><a href="/">About</a></h4>
-                            <h4 className="choice"><a href="/#/projects">Projects</a></h4>
-                            <h4 className="choice"><a href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">Contact Me</a></h4></div>)}
-                        </div>
+                        </div>):(<div className="column-5">
+                            <h2 className="name-header">Lars Mackenzie, PhD</h2>
+                            <h4 className="subheading">web developer + academic technologist</h4>
+                        </div>)} 
+                       {isDesktop ? (<div className="nav column-5">
+                            <div className="flex-box-between"><h4 className="space"><a className="white" href="/">About</a></h4>
+                            <h4 className="space"><a className="white" href="/#/projects">Projects</a></h4>
+                            <h4 className="space"><a className="white" href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">Contact Me</a></h4></div>
+                        </div>):(<div className="nav column-5">
+                            <div className="flex-box-between"><h4 className="space"><a className="white" href="/">About</a></h4>
+                            <h4 className="space"><a className="white" href="/#/projects">Projects</a></h4>
+                            <h4 className="space"><a  className="white" href="/#/contact">Contact Me</a></h4></div>
+                        </div>)} 
                     </div>
                     
                         <div className="row-padding"></div>
