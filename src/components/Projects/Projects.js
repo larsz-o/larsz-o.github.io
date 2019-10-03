@@ -76,11 +76,11 @@ class Projects extends Component {
                        {isDesktop ? (<div className="nav column-5">
                             <div className="flex-box-between"><h4 className="space"><a className="white" href="/">About</a></h4>
                             <h4 className="space"><span className="link white" onClick={()=>this.reset()}>Projects</span></h4>
-                            <h4 className="space"><a className="white" href="/#/contact">Contact Me</a></h4></div>
+                            <h4 className="space"><a className="white" href="/#/contact">Contact</a></h4></div>
                         </div>):(<div className="nav column-5">
                             <div className="flex-box-between"><h4 className="space"><a className="white" href="/">About</a></h4>
                             <h4 className="space"><a className="white" href="/#/projects">Projects</a></h4>
-                            <h4 className="space"><a  className="white" href="/#/contact">Contact Me</a></h4></div>
+                            <h4 className="space"><a  className="white" href="/#/contact">Contact</a></h4></div>
                         </div>)} 
                     </div>
                     {this.state.menu ? (<div className="flex-box-evenly breathing-room">
