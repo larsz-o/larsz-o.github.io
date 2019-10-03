@@ -35,7 +35,7 @@ class Projects extends Component {
                        {isDesktop ? (<div className="nav column-5">
                             <div className="flex-box-between"><h4 className="space"><a className="white" href="/">About</a></h4>
                             <h4 className="space"><a className="white" href="/#/projects">Projects</a></h4>
-                            <h4 className="space"><a className="white" href="mailto:larsmackenzie@gmail.com?body=Hi Lars!">Contact Me</a></h4></div>
+                            <h4 className="space"><a className="white" href="/#/contact">Contact Me</a></h4></div>
                         </div>):(<div className="nav column-5">
                             <div className="flex-box-between"><h4 className="space"><a className="white" href="/">About</a></h4>
                             <h4 className="space"><a className="white" href="/#/projects">Projects</a></h4>
