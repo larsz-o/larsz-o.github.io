@@ -44,7 +44,7 @@ class Contact extends Component {
                    
                     <div className="column-12 flex-box-center margin-top">
                         <div className="gray column-8 flex-box-center">
-                        <iframe src="https://giphy.com/embed/l0IsIZw8doJm3ysRq" width="480" height="264" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        <iframe title="Moss popcorn" src="https://giphy.com/embed/l0IsIZw8doJm3ysRq" width="480" height="264" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
                         </div>
                   
                     </div>

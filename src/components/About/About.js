@@ -45,7 +45,7 @@ class Projects extends Component {
                     
                         <div className="row-padding"></div>
                   <div className="flex-box-left">
-                        <div className="column-6 column-md-12">
+                        <div className="column-5 column-md-12" height="100%">
                             <img src={require('../images/lars.jpg')} alt="Lars headshot" className="lars"/>
                         </div>
                       <div className="column-1"></div>
