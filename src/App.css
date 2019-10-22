@@ -197,7 +197,9 @@ h3 {
   margin-top: 5vh;
   text-decoration: none;
 }
-
+.no-background {
+  background-color: transparent;
+}
 p{
   font-size: 1.1em;
 }

@@ -117,7 +117,7 @@ class Projects extends Component {
                             </div>}
                             {this.state.selected === 'research' && <div>
                             <div className="explainer flex-end">
-                            <p className="column-6"><span className="highlight">*</span>Rather than a list of past research projects, this is a sampling of the research methodologies I am trained in and have practiced through my doctoral studies. I love applying these skills in my current roles as much as I can, and I am always looking to expand my skillset, especially towards quantitative methods. If you're interested in some of my specific past research projects at the intersections of technology, identity, and marginalization, feel free to <a href="/#/contact">reach out.</a></p></div>
+                            <p className="column-6"><span className="highlight">*</span>Rather than a list of past research projects, this is a sampling of the research methodologies I am trained in and have practiced through my doctoral studies. I love applying these skills in my current roles as much as I can, and I am always looking to expand my skillset, especially towards quantitative methods. If you're interested in some of my specific past research projects at the intersections of technology, identity, and marginalization, feel free to <a href="/#/contact" className="no-background">reach out.</a></p></div>
                             <div className="flex-box-evenly">
                                 {this.state.research.map((project, i) => {
                                     return (<ProjectView project={project} key={i} demo={false}/>)
