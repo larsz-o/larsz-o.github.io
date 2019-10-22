@@ -97,21 +97,33 @@ class Projects extends Component {
                     </div>) : (<div>
                         {/* display whatever link you just clicked */}
                      <div class="margin-bottom margin-top"></div>
-                            {this.state.selected === 'web' && <div className="flex-box-evenly">
+                            {this.state.selected === 'web' && <div className="flex-box-center">
+                                <div className="explainer column-12">
+                          <p>These are a few web development projects I have worked on either as part of a paid or learning opportunity.</p></div>
+                            <div className="flex-box-evenly">
                                 {this.state.web.map((project, i) => {
                                     return (
                                     <ProjectView project={project} key={i} demo={true}/>)
                                 })}
+                                </div>
                             </div>}
-                            {this.state.selected === 'design' && <div className="flex-box-evenly">
+                            {this.state.selected === 'design' && <div className="flex-box-center">
+                            <div className="explainer column-12">
+                                <p>I have supported the production of academic technology projects since 2014 - from training students to use multimedia tools to helping faculty and graduate students envision how they can leverage technology to showcase and enhance their research and teaching.</p></div>
+                                <div className="flex-box-evenly">
                                 {this.state.design.map((project, i) => {
                                     return (<ProjectView project={project} key={i} demo={false}/>)
                                 })}
+                                </div>
                             </div>}
                             {this.state.selected === 'research' && <div className="flex-box-evenly">
+                            <div className="explainer column-12">
+                            <p >Rather than a list of past research projects, this is a showcase of the research methodologies I am trained in and have practiced through my doctoral studies. I love applying these skills in my current roles as much as I can, and I am always looking to expand my skillset, especially towards quantitative methods.</p></div>
+                            <div className="flex-box-evenly">
                                 {this.state.research.map((project, i) => {
                                     return (<ProjectView project={project} key={i} demo={false}/>)
                                 })}
+                                </div>
                             </div>}
                         </div>
                     )}
