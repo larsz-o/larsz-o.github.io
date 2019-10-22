@@ -96,9 +96,9 @@ class Projects extends Component {
                     </div>) : (<div>
                         {/* display whatever link you just clicked */}
                      <div class="margin-bottom margin-top"></div>
-                            {this.state.selected === 'web' && <div className="flex-box-center">
-                                <div className="explainer column-10">
-                          <p>These are a few web development projects I have worked on either as part of a paid or learning opportunity. My go-to tech stack is PostgreSQL, Express, React, and Node. I love building component-based applications. I am always interested in learning new languages, libraries, and frameworks. I learned how to learn new technologies quickly through my experience in an immersive full-stack software engineering bootcamp.</p><p> I deploy to AWS and Heroku and I've set up CI/CD pipelines using CircleCI. I have experience using Material UI and Bootstrap, but I prefer to write my own CSS. I can often be found experimenting with different APIs and Node packages, or working on esoteric personal projects.</p></div>
+                            {this.state.selected === 'web' && <div>
+                                <div className="explainer flex-end">
+                          <p className="column-6"><span className="highlight">*</span>These are a few web development projects I have worked on either as part of a paid or learning opportunity. My go-to tech stack is PostgreSQL, Express, React, and Node. I love building component-based applications. I am always interested in learning new languages, libraries, and frameworks. I learned how to learn new technologies quickly through my experience in an immersive full-stack software engineering bootcamp. I deploy to AWS and Heroku and I've set up CI/CD pipelines using CircleCI. I have experience using Material UI and Bootstrap, but I prefer to write my own CSS. I can often be found experimenting with different APIs and Node packages, or working on esoteric personal projects.</p></div>
                             <div className="flex-box-evenly">
                                 {this.state.web.map((project, i) => {
                                     return (
@@ -106,18 +106,18 @@ class Projects extends Component {
                                 })}
                                 </div>
                             </div>}
-                            {this.state.selected === 'design' && <div className="flex-box-center">
-                            <div className="explainer column-10">
-                                <p>Since 2014, I have supported the production of academic technology projects - from training students to use multimedia tools to helping faculty and graduate students envision how they can leverage technology to showcase and enhance their research and teaching. These are some of the technologies I interfaced with in these projects and my areas of greatest interest.</p></div>
+                            {this.state.selected === 'design' && <div>
+                            <div className="explainer flex-end">
+                                <p className="column-5"><span className="highlight">*</span>Since 2014, I have supported the production of academic technology projects - from training students to use multimedia tools to helping faculty and graduate students envision how they can leverage technology to showcase and enhance their research and teaching. These are some of the technologies I interfaced with in these projects and my areas of greatest interest.</p></div>
                                 <div className="flex-box-evenly">
                                 {this.state.design.map((project, i) => {
                                     return (<ProjectView project={project} key={i} demo={false}/>)
                                 })}
                                 </div>
                             </div>}
-                            {this.state.selected === 'research' && <div className="flex-box-center">
-                            <div className="explainer column-10">
-                            <p >Rather than a list of past research projects, this is a showcase of the research methodologies I am trained in and have practiced through my doctoral studies. I love applying these skills in my current roles as much as I can, and I am always looking to expand my skillset, especially towards quantitative methods.</p><p>If you're interested in some of my specific past research projects at the intersections of technology, identity, and marginalization, feel free to <a href="/#/contact">reach out.</a></p></div>
+                            {this.state.selected === 'research' && <div>
+                            <div className="explainer flex-end">
+                            <p className="column-6"><span className="highlight">*</span>Rather than a list of past research projects, this is a sampling of the research methodologies I am trained in and have practiced through my doctoral studies. I love applying these skills in my current roles as much as I can, and I am always looking to expand my skillset, especially towards quantitative methods. If you're interested in some of my specific past research projects at the intersections of technology, identity, and marginalization, feel free to <a href="/#/contact">reach out.</a></p></div>
                             <div className="flex-box-evenly">
                                 {this.state.research.map((project, i) => {
                                     return (<ProjectView project={project} key={i} demo={false}/>)
