@@ -15,7 +15,8 @@ class Header extends Component {
                       <h3 className="subheading">full-stack web developer + designer</h3>
                       <div className={`flex-box ${this.props.display}`} >
                           
-                          <div className="button"><h4><a href="https://drive.google.com/file/d/13_9AwJilmZZ7fJQ8KKfjGt2dEhppb_M_/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></h4></div><div className="button"><h4><a href="mailto:larsmackenzie@gmail.com">Contact</a></h4></div>
+                      <a href="https://drive.google.com/file/d/13_9AwJilmZZ7fJQ8KKfjGt2dEhppb_M_/view?usp=sharing" target="_blank" rel="noopener noreferrer"><div className="button"><h4>Resume</h4></div></a>
+                      <a href="mailto:larsmackenzie@gmail.com"><div className="button"><h4>Contact</h4></div></a>
                          
                   </div>
                   <div className="column-1"></div>
