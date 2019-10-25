@@ -6,7 +6,7 @@ class fourOhFour extends Component {
         return (
             <div class="main">
                  <Header display={'none'}/>
-                <div class="center main margin-top error">
+                <div class="center main margin-top error column-12">
                     <div class="spacer"></div>
                     <h3>I'm very sorry to say that the page you are looking for cannot be found.</h3>
                     <img src={require('../images/sadpug.jpeg')} className="square" alt="a very sad pug" />
