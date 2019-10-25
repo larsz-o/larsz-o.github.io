@@ -33,11 +33,11 @@ class Contact extends Component {
                         </div>)} 
                        {isDesktop ? (<div className="nav column-5">
                             <div className="flex-box-between"><h4 className="space"><a className="white" href="/">About</a></h4>
-                            <h4 className="space"><a className="white" href="/#/projects">Projects</a></h4>
+                            
                             <h4 className="space"><a className="white" href="/#/contact">Contact</a></h4></div>
                         </div>):(<div className="nav column-5">
                             <div className="flex-box-between"><h4 className="space"><a className="white" href="/">About</a></h4>
-                            <h4 className="space"><a className="white" href="/#/projects">Projects</a></h4>
+                
                             <h4 className="space"><a className="white" href="/#/contact">Contact</a></h4></div>
                         </div>)} 
                     </div>
