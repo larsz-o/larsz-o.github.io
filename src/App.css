@@ -11,6 +11,10 @@ a:hover {
   text-decoration: none;
   color: #cc33ad;
 }
+a:visited{
+  text-decoration: none;
+  color: #cc33ad;
+}
 .bio-img {
   max-width: 90%;
 }
