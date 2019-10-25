@@ -1,16 +1,15 @@
 
 a, .link {
   text-decoration: none;
-  background-color: #D1FCE9;
-  color: #0B4F6C;
-}
-a:hover, .link:hover {
-  text-decoration: none;
-  cursor: pointer;
   color: #cc33ad;
 }
 a:active, .link:active {
   text-decoration: none;
+  color: #cc33ad;
+}
+a:hover {
+  text-decoration: none;
+  color: #cc33ad;
 }
 .about-text-true > p {
   font-size: 1.1em;
@@ -32,13 +31,15 @@ a:active, .link:active {
   background-color: #D1FCE9;
 }
 .button {
-  padding: 10px;
-  margin: 10px;
-  background-color: #D1FCE9;
+  padding: 8px;
+  margin: 8px;
   color: #cc33ad;
-  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
-  border-radius: 2px;
+  border-radius: 8px;
   cursor: pointer;
+  border: 1px solid #cc33ad;
+}
+.button:hover{
+  box-shadow: 0 2px 6px 0 #cc33ad;
 }
 .breathing-room {
   margin-top: 20vh; 
@@ -144,6 +145,9 @@ footer {
 .gray {
   background: linear-gradient(rgba(204, 51, 173, .3));
 }
+.greeting {
+  padding-left: 8px;
+}
 .header-link{
   color: black; 
   margin: 0;
@@ -164,6 +168,7 @@ h2 {
 }
 h3 {
   font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
   font-size: 1.5em; 
 }
 .highlight {
@@ -171,37 +176,40 @@ h3 {
   font-size: 2.5em;
   line-height: 1em;
 }
-.invisible {
-  height: 5px;
+html, body {
+  margin: 5px; 
+  color: rgb(71, 68, 68);
+  padding: 0; 
+  font-family: 'Arimon', sans-serif;
 }
-.lars {
-  height: 300px;
-  border-radius: 10%;
-  max-width: 95%;
+.icon{
+  padding: 15px;
 }
-.list-border {
-    border-top: 2px dashed #cc33ad;
-    padding-top: 10px;
+.icon:hover {
+  border-bottom: 1px solid #cc33ad;
+}
+img {
+  border-radius: 50%;
 }
 .main {
   margin-bottom: 25vh; 
 }
-.margin-bottom {
- margin-bottom: 5vh; 
-}
 .margin-top {
-  margin-top: 10vh;
-}
-.name-header {
-  font-size: 2.2em; 
-  margin-top: 5vh;
-  text-decoration: none;
+  margin-top: 20vh;
 }
 .no-background {
   background-color: transparent;
 }
+.none {
+  display: none;
+}
 p{
-  font-size: 1.1em;
+  font-size: 1.2em;
+  margin: 1.1em;
+  padding-left: 8px;
+}
+p:hover {
+  border-left: 2px solid #cc33ad;
 }
 .padding {
   padding: 5px;
@@ -247,6 +255,10 @@ p{
   text-decoration: none;
   color: black; 
 }
+.square {
+  border-radius: 0;
+height: 100%;
+}
 .subheading { 
   margin-left: 1%; 
   color: #cc33ad;
@@ -280,12 +292,7 @@ ul{
   font-size: 1.1em;
   font-family: 'Roboto Mono';
 }
-body, html {
-  color: black; 
-  margin: 5px; 
-  padding: 0; 
-  font-family: 'Roboto', sans-serif;
-}
+
 
 /* For mobile: */
 [class*="column-"] {
