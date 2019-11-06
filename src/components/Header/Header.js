@@ -12,7 +12,7 @@ class Header extends Component {
                   </div>
                   <div className="column-5">
                   <h2 className="name-header">Lars Mackenzie, PhD</h2>
-                      <h3 className="subheading">learning designer + web developer</h3>
+                      <h3 className="subheading">learning designer + web developer </h3>
                       <div className={`flex-box ${this.props.display}`} >
                           
                       <a href="https://docs.google.com/document/d/13CpnBm968fYaO_TUW_baLE7okG6sEkg_Otq9w0qMEW0/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><div className="button"><h4>Resume</h4></div></a>
