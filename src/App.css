@@ -15,6 +15,9 @@ a:visited{
   text-decoration: none;
   color: #cc33ad;
 }
+.bio {
+  background-color: rgba(112, 112, 112, 0.2)
+}
 .bio-img {
   max-width: 100%;
 }
@@ -115,9 +118,6 @@ html, body {
 }
 .icon{
   padding: 15px;
-}
-.icon:hover {
-  border-bottom: 1px solid #cc33ad;
 }
 img {
   border-radius: 70%;
