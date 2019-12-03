@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../Header/Header';
 import Bio from '../Bio/Bio';
+import Projects from '../Projects/Projects';
 
 class About extends Component {
     render() {
@@ -10,6 +11,7 @@ class About extends Component {
               <Header display={'true'}/>
                         <div className="row-padding"></div>
                     <Bio/>
+                    <Projects/>
                  
                     <div className="row-padding"></div>
                     <div className="flex-box-center">

@@ -1,38 +1,39 @@
 
 a, .link {
   text-decoration: none;
-  color: #cc33ad;
+  color: #0B4F6C;
 }
 a:active, .link:active {
   text-decoration: none;
-  color: #cc33ad;
+  color: #0B4F6C;
 }
 a:hover {
   text-decoration: none;
-  color: #cc33ad;
+  color: #0B4F6C;
 }
 a:visited{
   text-decoration: none;
-  color: #cc33ad;
+  color: #0B4F6C;
 }
 .bio {
   background-color: rgba(112, 112, 112, 0.1);
 }
 .bio-img {
   max-width: 100%;
+  border-radius: 70%;
 }
 .button {
   padding: 5px;
   margin: 10px;
-  color: #cc33ad;
+  color: #0B4F6C;
   border-radius: 8px;
   cursor: pointer;
-  border: 1px solid #cc33ad;
+  border: 1px solid #0B4F6C;
   text-transform: uppercase;
-  box-shadow: 0 2px 2px 0 #cc33ad;
+  box-shadow: 0 2px 2px 0 #0B4F6C;
 }
 .button:hover{
-  box-shadow: 0 2px 6px 0 #cc33ad;
+  box-shadow: 0 2px 6px #0B4F6C;
 }
 .button > h4 {
   text-decoration: none;
@@ -83,6 +84,12 @@ a:visited{
   flex-wrap: wrap;
   justify-content: flex-end;
 }
+.grayed {
+  background-color: rgba(255, 255, 255, .4);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 15px;
+}
 .greeting {
   padding-left: 8px;
 }
@@ -119,9 +126,7 @@ html, body {
 .icon{
   padding: 15px;
 }
-img {
-  border-radius: 70%;
-}
+
 .main {
   margin-bottom: 25vh; 
 }
@@ -139,15 +144,16 @@ p{
   margin: 1.1em;
   padding-left: 8px;
 }
-p:hover {
-  border-left: 2px solid #cc33ad;
-}
 .padding {
   padding: 5px;
 }
 .padding-top {
   margin-top: 20vh;
   padding-top: 5px; 
+}
+.projects {
+  height: 100%;
+  background-image: url('./components/images/wireframe.jpg');
 }
 .project-card{
   padding: 15px;
@@ -192,7 +198,7 @@ p:hover {
 }
 .subheading { 
   margin-left: 1%; 
-  color: #cc33ad;
+  color: #0B4F6C
 }
 .nav {
   padding: 5px;
