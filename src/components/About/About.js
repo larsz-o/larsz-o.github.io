@@ -11,7 +11,7 @@ class About extends Component {
               <Header display={'true'}/>
                         <div className="row-padding"></div>
                     <Bio/>
-                    <Projects/>
+                  
                  
                     <div className="row-padding"></div>
                     <div className="flex-box-center">

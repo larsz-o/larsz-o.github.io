@@ -8,7 +8,8 @@ class Projects extends Component {
                     <div className="column-2"></div>
                     <div className="column-8 grayed">
                <h3>Projects</h3>
-               <p>I've worked on a number of projects related to educational technology, media production for research and teaching, social justice workshops, qualitative research, and web development.</p>
+               <p>I've worked on a number of projects related to educational technology, teaching and research, and web development.</p>
+               
             </div>
             </div>
             </div>
