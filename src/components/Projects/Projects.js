@@ -5,7 +5,7 @@ class Projects extends Component {
         super(props);
         this.state = {
             projects: [
-                { name: 'eBook Publishing with PubPub and Bookdown', image: '', description: '' }, 
+                { name: 'eBook Publishing with PubPub and Bookdown', image: '', description: `I've been working with PubPub and Bookdown to publish online multimedia books for faculty.` }, 
                 { name: 'eBook Publishing with PubPub and Bookdown', image: '', description: '' },
                 { name: 'eBook Publishing with PubPub and Bookdown', image: '', description: '' },
 
