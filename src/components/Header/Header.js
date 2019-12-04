@@ -7,10 +7,11 @@ class Header extends Component {
             <div>
             <div className="row-padding"></div>
             <div className="flex-box-left">
-                <div className="column-2"></div>
+                <div className="column-1"></div>
                   <div className={`column-5 ${this.props.display}`}>
                   <a href="/#/"><img src={require('../images/DSC01757.jpg')} alt="Lars headshot" height="300px" className="bio-img"/></a>
                   </div>
+                  <div className="column-1"></div>
                   <div className="column-5">
                   <h2 className="name-header">Lars Mackenzie, PhD</h2>
                       <h3 className="subheading">learning designer + web developer </h3>
