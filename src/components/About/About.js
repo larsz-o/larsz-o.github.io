@@ -14,7 +14,7 @@ class About extends Component {
                 <Divider />
                 <Bio/>
                 <Divider />
-                <Projects />
+  
                 <div className="row-padding"></div>
               
 
