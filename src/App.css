@@ -50,6 +50,13 @@ a:visited{
 .center {
   text-align: center; 
 }
+.close {
+  border: 0;
+  color: black;
+}
+.close:hover{
+  cursor: pointer;
+}
 .divider {
   height: 1vh;
   background: linear-gradient(217deg, rgba(201, 122, 233,.8), rgba(201, 122, 233, 0) 70.71%),
@@ -200,9 +207,17 @@ p{
   text-decoration: none;
   color: black; 
 }
+.space {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
 .subheading { 
   margin-left: 1%; 
   color: #0B4F6C
+}
+.title {
+  margin: 0;
+  padding: 5px;
 }
 .nav {
   padding: 5px;
