@@ -147,6 +147,9 @@ html, body {
 .none {
   display: none;
 }
+.no-wrap {
+  flex-wrap: nowrap;
+}
 p{
   font-size: 1.2em;
   margin: 1.1em;
