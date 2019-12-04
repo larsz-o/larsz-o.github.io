@@ -93,7 +93,6 @@ class Projects extends Component {
                                 return(
                                     <img key={i} src={require(`../images/icons/${icon.img}`)} alt={icon.name} className="icon" height="75px"/>
                                 )
-                              
                             })}
                         </div>
 
