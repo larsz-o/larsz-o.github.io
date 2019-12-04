@@ -21,7 +21,9 @@ class Projects extends Component {
                 { name: 'University Teaching', category: 'teaching', class: '' },
                 { name: 'Qualitative Research', category: 'research', class: '' },
                 { name: 'Evaluation and Testing', category: 'research', class: '' },
-                {name: 'Workshop Design and Facilitation', category: 'teaching', class: ''}
+                {name:  'Workshop Design and Facilitation', category: 'teaching', class: ''},
+                {name:  'Digital Storytelling', category: 'lx', class: ''},
+                {name:  'Narrative Mapping', category: 'lx', class: ''}
                 
             ],
             dev: [
@@ -45,6 +47,7 @@ class Projects extends Component {
             ]
         }
     }
+ 
     setClass = (project) => {
         let projects = this.state.projects;
         if(project.class === ''){
