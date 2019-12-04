@@ -17,6 +17,7 @@ a:visited{
 }
 .bio {
   background-color: rgba(112, 112, 112, 0.1);
+  padding-bottom: 20vh;
 }
 .bio-img {
   max-width: 100%;
@@ -41,13 +42,18 @@ a:visited{
 .breathing-room {
   margin-top: 20vh; 
 }
-
 .box {
   border: 2px dashed #0B4F6C;
   padding: 10px
 }
 .center {
   text-align: center; 
+}
+.divider {
+  height: 1vh;
+  background: linear-gradient(217deg, rgba(201, 122, 233,.8), rgba(201, 122, 233, 0) 70.71%),
+  linear-gradient(127deg, rgba(85, 238, 154, 0.8), rgba(85, 238, 154,0) 70.71%),
+  linear-gradient(336deg, rgba(11,79,108,.8), rgba(11,79,108,0) 70.71%);
 }
 .flex-box {
   display: flex;
@@ -116,9 +122,7 @@ h3 {
   text-transform: uppercase;
   font-size: 1.5em; 
 }
-
-html, body {
-  margin: 5px; 
+html, body { 
   color: rgb(71, 68, 68);
   padding: 0; 
   font-family: 'Arimon', sans-serif;
@@ -126,15 +130,11 @@ html, body {
 .icon{
   padding: 15px;
 }
-
 .main {
   margin-bottom: 25vh; 
 }
 .margin-top {
   margin-top: 20vh;
-}
-.no-background {
-  background-color: transparent;
 }
 .none {
   display: none;
@@ -151,10 +151,6 @@ p{
   margin-top: 20vh;
   padding-top: 5px; 
 }
-.projects {
-  height: 100%;
-  background-image: url('./components/images/wireframe.jpg');
-}
 .project-card{
   padding: 15px;
   margin: 20px;
@@ -164,13 +160,12 @@ p{
 .project-card > p {
   margin-top: 2vh;
 }
-.project-card > h3 {
-  font-weight: 800;
+.project-card > h4 {
+  font-weight: 400;
   text-align: center;
 }
 .project-card > img {
   max-width: 100%;
-
 }
 .relative {
   width: 100%;
@@ -185,16 +180,11 @@ p{
 .row-padding {
   padding: 40px; 
 }
-
 .smaller-header {
   font-size: 2.7em; 
   margin-top: 1vh;
   text-decoration: none;
   color: black; 
-}
-.square {
-  border-radius: 0;
-  width: 100%;
 }
 .subheading { 
   margin-left: 1%; 
@@ -207,30 +197,6 @@ p{
   cursor: pointer;
   color: #0B4F6C;
 }
-
-.space { margin: 10px;}
-.spacing {
-  padding: 10px; 
-}
-.spacer {
-	height: 5vh;
-}
-.thumbnail {
-  height:50px;
-  width: 50px;
-  border: 1px black solid; 
-  margin: 3px; 
-}
-.white {
-  background-color: white;
-}
-ul{
-  list-style-type: circle;
-  font-size: 1.1em;
-  font-family: 'Roboto Mono';
-}
-
-
 /* For mobile: */
 [class*="column-"] {
   width: 100%;
