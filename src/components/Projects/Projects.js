@@ -86,6 +86,7 @@ class Projects extends Component {
                         <div className="flex-box">
                             {this.state.projects.map((project, i) => {
                                 return (
+                                    // to do: add an onClick that opens a modal - interested in learning more? contact me.
                                     <div onMouseEnter={()=>this.setClass(project)} onMouseLeave={()=>this.resetClass(project)} className={`project-card ${project.class}`} key={i}><p>{project.name}</p></div>
                                 )
                             })}
