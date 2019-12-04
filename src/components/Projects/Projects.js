@@ -12,6 +12,7 @@ class Projects extends Component {
                 { name: 'Website and LMS Design', category: 'web', class: '' },
                 { name: 'Cloud Computing System Administration', category: 'web', class: '' },
                 { name: 'Curriculum Development', category: 'lx', class: '' },
+                { name: 'Universal Design for Learning', category: 'lx', class: '' },
                 { name: 'Feedback and Coaching', category: 'teaching', class: '' },
                 { name: 'Audio and Video Editing', category: 'lx', class: '' },
                 { name: 'Project Scoping', category: 'lx', class: '' },
@@ -20,6 +21,8 @@ class Projects extends Component {
                 { name: 'University Teaching', category: 'teaching', class: '' },
                 { name: 'Qualitative Research', category: 'research', class: '' },
                 { name: 'Evaluation and Testing', category: 'research', class: '' },
+                {name: 'Workshop Design and Facilitation', category: 'teaching', class: ''}
+                
             ],
             dev: [
                 {name: 'AWS', img: 'amazonwebservices-plain-wordmark.svg'},
@@ -28,6 +31,7 @@ class Projects extends Component {
                 {name: 'CSS3', img: 'css3-original.svg'},
                 {name: 'Django', img: 'django-plain.svg'},
                 {name: 'GitHub', img: 'github-original.svg'},
+                {name: 'Google Scripts', img: 'google-plain.svg'},
                 {name: 'Heroku', img: 'heroku-plain.svg'},
                 {name: 'HTML5', img: 'html5-original.svg'},
                 {name: 'JavaScript', img: 'javascript-plain.svg'},
