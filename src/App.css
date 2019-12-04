@@ -18,6 +18,7 @@ a:visited{
 .bio {
   background-color: rgba(112, 112, 112, 0.1);
   padding-bottom: 20vh;
+  padding-top: 20vh;
 }
 .bio-img {
   max-width: 100%;
