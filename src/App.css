@@ -159,7 +159,7 @@ html, body {
 }
 p{
   font-size: 1.2em;
-  margin: 1.1em;
+  margin: 1.2em;
   padding-left: 8px;
 }
 .padding {
@@ -175,6 +175,7 @@ p{
 }
 .project-card{
   margin: 4px;
+  padding: 1px;
   background-color: whitesmoke;
   font-family: 'Roboto Mono', monospace;
 }
@@ -183,10 +184,6 @@ p{
 }
 .project-card > p {
   font-size: 1em;
-}
-.project-card > h4 {
-  font-weight: 400;
-  text-align: center;
 }
 .relative {
   width: 100%;

@@ -48,8 +48,21 @@ class Projects extends Component {
                 { name: 'Redux', img: 'redux-original.svg' },
                 { name: 'WordPress', img: 'wordpress-plain-wordmark.svg' }
             ],
-            show: false
+            show: false,
+            isDesktop: true
         }
+    }
+    componentDidMount() {
+        this.updatePredicate();
+        window.addEventListener("resize", this.updatePredicate)
+    }
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.updatePredicate);
+    }
+    updatePredicate = () => {
+        this.setState({
+            isDesktop: window.innerWidth >= 1024
+        })
     }
     setClass = (project) => {
         let projects = this.state.projects;
@@ -81,17 +94,22 @@ class Projects extends Component {
         });
     }
     render() {
+        let isDesktop = this.state.isDesktop;
         return (
             <div className="projects">
                 <div className="flex-box-left">
                     <div className="column-2"></div>
                     <div className="column-8 grayed">
-                        <h3>Skills</h3>
+                        {isDesktop ? ( <h3>Skills</h3>):( <h3 onMouseEnter={() => this.setState({ ...this.state, show: true })} onMouseLeave={()=>this.setState({...this.state, show: false})}>Skills</h3>)}
+                       
                         <div className="flex-box">
                             {this.state.projects.map((project, i) => {
                                 return (
-                                    // to do: add an onClick that opens a modal - interested in learning more? contact me.
-                                    <div onClick={() => this.setState({ ...this.state, show: true })} onMouseEnter={() => this.setClass(project)} onMouseLeave={() => this.resetClass(project)} className={`project-card ${project.class}`} key={i}><p>{project.name}</p></div>
+                              <div>
+                                  {isDesktop ? (<div onClick={() => this.setState({ ...this.state, show: true })} onMouseEnter={() => this.setClass(project)} onMouseLeave={() => this.resetClass(project)} className={`project-card ${project.class}`} key={i}><p>{project.name}</p></div>):
+                                  (<div onMouseEnter={() => this.setClass(project)} onMouseLeave={() => this.resetClass(project)} className={`project-card ${project.class}`} key={i}><p>{project.name}</p></div>)}
+                              </div>
+                                    
                                 )
                             })}
                         </div>
