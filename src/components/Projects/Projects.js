@@ -42,14 +42,14 @@ class Projects extends Component {
                 { name: 'JavaScript', img: 'javascript-plain.svg' },
                 { name: 'Moodle', img: 'moodle-original-wordmark.svg' },
                 { name: 'Node', img: 'nodejs-plain-wordmark.svg' },
-                { name: 'PostgreSQl', img: 'postgresql-plain-wordmark.svg' },
+                { name: 'PostgreSQL', img: 'postgresql-plain-wordmark.svg' },
                 { name: 'Python', img: 'python-original.svg' },
                 { name: 'React', img: 'react-original-wordmark.svg' },
                 { name: 'Redux', img: 'redux-original.svg' },
                 { name: 'WordPress', img: 'wordpress-plain-wordmark.svg' }
             ],
             show: false,
-            isDesktop: true
+            isDesktop: true,
         }
     }
     componentDidMount() {
@@ -117,7 +117,7 @@ class Projects extends Component {
                         <div className="flex-box-center">
                             {this.state.dev.map((icon, i) => {
                                 return (
-                                    <img key={i} src={require(`../images/icons/${icon.img}`)} alt={icon.name} className="icon" height="75px" />
+                                   <img key={i} src={require(`../images/icons/${icon.img}`)} alt={icon.name} className="icon" height="75px" />
                                 )
                             })}
                         </div>
