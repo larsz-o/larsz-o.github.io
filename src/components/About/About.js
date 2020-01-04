@@ -11,7 +11,7 @@ class About extends Component {
         return (
             <div>
             <div className="main">
-                <Header display={'true'} />
+                <Header display={true}/>
                 <div className="row-padding"></div>
                 <Divider />
                 <Bio/>

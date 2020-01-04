@@ -19,6 +19,11 @@ class Social extends Component {
                     <img src={require('../images/twitter.svg')} alt="Twitter" width="30px" />
                 </a>
             </div>
+            <div className="icon">
+                <a href="mailto:larsmackenzie@gmail.com" rel="noopener noreferrer">
+                    <img src={require('../images/envelope.svg')} alt="email" width="30px" />
+                </a>
+            </div>
         </div>
         )
     }
