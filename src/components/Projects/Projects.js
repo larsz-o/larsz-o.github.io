@@ -34,6 +34,7 @@ class Projects extends Component {
                 { name: 'AWS', img: 'amazonwebservices-plain-wordmark.svg' },
                 { name: 'AngularJS', img: 'angularjs-plain.svg' },
                 { name: 'Bootstrap', img: 'bootstrap-plain.svg' },
+                {name: 'C#', img: 'csharp-original.svg'},
                 { name: 'CSS3', img: 'css3-original.svg' },
                 { name: 'Django', img: 'django-plain.svg' },
                 { name: 'GitHub', img: 'github-original.svg' },

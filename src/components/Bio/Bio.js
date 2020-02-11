@@ -8,7 +8,7 @@ class Bio extends Component {
                     <div className="column-2"></div>
                         <div className="column-8">      
                              <h3 className="greeting">Hi, I'm Lars!</h3>
-                                <p className="bio-text">I'm a learning experience designer and full-stack web developer based in the Greater Boston area. I currently <a href="https://www.linkedin.com/in/lars-mackenzie/" target="_blank" rel="noopener noreferrer">work</a> at Brandeis University, where I build online educational experiences for the Rabb School of Continuing Studies, supporting faculty to foster interactivity, collaboration, and student success in digital classrooms.</p>   
+                                <p className="bio-text">I'm a learning experience designer and full-stack web developer based in the Greater Boston area. I currently work at Brandeis University, where I build online educational experiences for the Rabb School of Continuing Studies, supporting faculty to foster interactivity, collaboration, and student success in digital classrooms.</p>   
 
                                <p className="bio-text">In this role, I support course development projects by developing web applications, editing audio and video, and creating interactive lessons. I also lead my team's efforts to support faculty who want to use cloud services for their teaching, such as Amazon Web Services and GitHub. Some highlights of my work include redesigning a course template used for twelve online graduate programs; developing a health and wellness training for all incoming first-year and transfer students; and building web applications for teaching and learning.</p>
 
