@@ -16,9 +16,8 @@ class Footer extends Component{
     }
     render(){
         return(
-            <footer className="flex-box-between no-wrap">
-                <p>Lars Mackenzie &copy;{this.state.year}</p>
-                <p><a href="https://github.com/larsz-o/larsz-o.github.io">page revision history</a></p>
+            <footer className="flex-box flex-end no-wrap">
+                <p className="greeting">Lars Mackenzie &copy;{this.state.year}</p>
             </footer>
         )
     }
