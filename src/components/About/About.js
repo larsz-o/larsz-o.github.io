@@ -13,9 +13,9 @@ class About extends Component {
             <div className="main">
                 <Header display={true}/>
                 <div className="row-padding"></div>
-                <Divider />
+                {/* <Divider /> */}
                 <Bio/>
-                <Divider />
+                {/* <Divider /> */}
                 <Projects/>
                 <div className="row-padding"></div>
             </div>

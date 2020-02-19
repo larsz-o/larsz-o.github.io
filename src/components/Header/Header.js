@@ -4,7 +4,7 @@ import Social from '../Social/Social';
 class Header extends Component {
     render(){
         return(
-            <div className={`image-${this.props.display}`}>
+            <div className={`image-${this.props.display} header`}>
             <div className="row-padding"></div>
             <div className="flex-box-left">
                 <div className="column-1"></div>
