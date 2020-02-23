@@ -16,6 +16,7 @@ class Projects extends Component {
                 {name:  'User Research', category: 'lx', class: ''},
                 { name: 'Cloud Computing System Administration', category: 'web', class: '' },
                 { name: 'Curriculum Development', category: 'lx', class: '' },
+                { name: 'Game Design', category: 'web', class: '' },
                 { name: 'Universal Design for Learning', category: 'lx', class: '' },
                 { name: 'Feedback and Coaching', category: 'teaching', class: '' },
                 { name: 'Audio and Video Editing', category: 'lx', class: '' },
