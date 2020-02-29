@@ -11,7 +11,6 @@ class PortfolioItem extends Component{
                     </div>
                     <div className="column-4">
                     <h3>{this.props.project.title}</h3>
-                    <p>{this.props.project.description}</p>
                     <div className="flex-box-center">
                     {this.props.project.demo ? (<a href={this.props.project.link}><div className="button grayed-btn">Project Demo</div></a>):(
                         <a href={this.props.project.link}><div className="button grayed-btn">View Client</div></a>)}
