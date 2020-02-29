@@ -9,9 +9,8 @@ class PortfolioItem extends Component{
                 <div className="column-12 flex-box-evenly">
                     <div className="column-10">
                     <h3 className="greeting">{this.props.project.title}</h3>
-                    <ImageDeck imgUrls={this.props.project.images} description={this.props.project.description}/>
-                    {/* <img src={require(`../images/${this.props.project.image}`)} className="large-image" alt={this.props.project.title}/> */}
-                    
+                    <p>{this.props.project.description}</p>
+                    <ImageDeck imgUrls={this.props.project.images} className="column-12" />
                     </div> 
                 </div>
             </div>

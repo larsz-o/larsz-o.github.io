@@ -8,12 +8,10 @@ class PortfolioPage extends Component {
         this.state = {
             categories: [
                 {id: 0, slug: 'visual-design', name: 'visual design', image: 'visual.png'},
-                {id: 1, slug: 'multimedia', name: 'multimedia production', image: 'animation.png'},
-                {id: 2, slug: 'web-lms', name: 'web and LMS design', image: 'LMS.png'},
+                {id: 1, slug: 'multimedia', name: 'multimedia production', image: 'storyboard.jpg'},
+                {id: 2, slug: 'web-lms', name: 'web and LMS design', image: 'css.png'},
                 {id: 3, slug: 'game-design',name: 'game design', image: 'games.png'},
-                {id: 4, slug: 'teaching', name: 'instructional coaching and support', image: 'support.jpg'},
-                {id: 5, slug: 'training', name: 'technical trainings', image: 'video.jpg'},
-                {id: 6, slug: 'research', name: 'research, writing, and evaluation', image: 'research.jpg'},
+                {id: 4, slug: 'training', name: 'technical trainings', image: 'video.jpg'},
             ]
         }
     }
