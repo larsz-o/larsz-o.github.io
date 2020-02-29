@@ -208,6 +208,9 @@ html, body {
   background-color: whitesmoke;
   padding-bottom: 10vh;
 }
+.large-image {
+  max-width: 100%;
+}
 .main {
   margin-bottom: 25vh; 
 }
@@ -232,7 +235,6 @@ p{
   padding-top: 5px; 
 }
 .portfolio-area {
-  margin-top: 25vh;
   margin-bottom: 25vh;
   padding: 8px;
 }
