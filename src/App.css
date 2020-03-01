@@ -204,6 +204,10 @@ html, body {
   padding: 0; 
   font-family: 'Arimon', sans-serif;
 }
+.highlight {
+  background-color: #DAFF7D;
+  padding: 5px;
+}
 .icon{
   padding: 5px;
 }
