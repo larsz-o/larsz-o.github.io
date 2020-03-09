@@ -231,6 +231,9 @@ max-height: 900px;
 .margin-top {
   margin-top: 20vh;
 }
+.mirror {
+  transform: scaleX(-1);
+}
 .mono-link {
 text-align: center;
   font-family: 'Roboto Mono', monospace;

@@ -16,9 +16,6 @@ class Header extends Component {
                   <a className="plain-link" href="/"><h2 className="name-header">Lars Mackenzie, PhD</h2></a>
                       <h3 className="subheading">learning designer + web developer </h3>
                       <div className={`flex-box flex-evenly flex-stretch column-12 ${this.props.display}`} >
-                      {/* {this.props.display && <div><a href="/#/portfolio"><div className="button"><h4>Portfolio</h4></div></a></div>} */}
-                      {this.props.display && <div><a href="https://docs.google.com/document/d/13CpnBm968fYaO_TUW_baLE7okG6sEkg_Otq9w0qMEW0/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><div className="button"><h4>Resume</h4></div></a></div>}
-                      
                       <Social/>
                   </div>
          
