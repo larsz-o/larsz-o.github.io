@@ -32,30 +32,32 @@ class Projects extends Component {
 
             ],
             dev: [
-                { name: 'Adobe', img: 'adobe.svg' },
-                { name: 'AWS', img: 'amazonwebservices-plain-wordmark.svg' },
-                { name: 'AngularJS', img: 'angularjs-plain.svg' },
-                { name: 'Bootstrap', img: 'bootstrap-plain.svg' },
-                {name: 'C#', img: 'csharp-original.svg'},
-                { name: 'CSS3', img: 'css3-original.svg' },
-                { name: 'Django', img: 'django-plain.svg' },
-                { name: 'GarageBand', img: 'garage-band.svg' },
-                { name: 'GitHub', img: 'github-original.svg' },
-                { name: 'Google Scripts', img: 'google-plain.svg' },
-                { name: 'Heroku', img: 'heroku-plain.svg' },
-                { name: 'HTML5', img: 'html5-original.svg' },
-                { name: 'iMovie', img: 'imovie.svg' },
                 { name: 'JavaScript', img: 'javascript-plain.svg' },
-                { name: 'Moodle', img: 'moodle-original-wordmark.svg' },
-                { name: 'Node', img: 'nodejs-plain-wordmark.svg' },
-                { name: 'PostgreSQL', img: 'postgresql-plain-wordmark.svg' },
-                { name: 'Python', img: 'python-original.svg' },
                 { name: 'React', img: 'react-original-wordmark.svg' },
                 { name: 'Redux', img: 'redux-original.svg' },
+                { name: 'AngularJS', img: 'angularjs-plain.svg' },
+                {name: 'C#', img: 'csharp-original.svg'},
+                { name: 'Bootstrap', img: 'bootstrap-plain.svg' },
+                { name: 'CSS3', img: 'css3-original.svg' },
+                { name: 'HTML5', img: 'html5-original.svg' },
+                {name: 'Illustrator', img: 'ai.svg'},
+                { name: 'PhotoShop', img: 'photoshop.svg' },
+                { name: 'iMovie', img: 'imovie.svg' },
+                { name: 'GarageBand', img: 'garage-band.svg' },
+                { name: 'Google Scripts', img: 'google-plain.svg' },
+                { name: 'Python', img: 'python-original.svg' },
+                { name: 'Django', img: 'django-plain.svg' },
+                { name: 'Node', img: 'nodejs-plain-wordmark.svg' },
+                { name: 'PostgreSQL', img: 'postgresql-plain-wordmark.svg' },
+                { name: 'Heroku', img: 'heroku-plain.svg' },
+                { name: 'AWS', img: 'amazonwebservices-plain-wordmark.svg' },
+                { name: 'GitHub', img: 'github-original.svg' },
+                { name: 'Moodle', img: 'moodle-original-wordmark.svg' },
                 { name: 'WordPress', img: 'wordpress-plain-wordmark.svg' }
             ],
             show: false,
             isDesktop: true,
+            displayToolTip: false
         }
     }
     componentDidMount() {
@@ -123,7 +125,10 @@ class Projects extends Component {
                         <div className="flex-box-center">
                             {this.state.dev.map((icon, i) => {
                                 return (
-                                   <img key={i} src={require(`../images/icons/${icon.img}`)} alt={icon.name} className="icon" height="75px" />
+                                    <div key={i}>
+                                   <img src={require(`../images/icons/${icon.img}`)} alt={icon.name} className="icon" height="75px" onMouseEnter={()=>this.setState({...this.state, displayToolTip: true})} onMouseLeave={()=>this.setState({...this.state, displayToolTip: false})}/>
+                                {this.state.displayToolTip && <div className="tool-tip">{icon.name}</div>}
+                                   </div>
                                 )
                             })}
                         </div>
