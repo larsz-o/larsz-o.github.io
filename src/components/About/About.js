@@ -9,13 +9,10 @@ class About extends Component {
     render() {
 
         return (
-            <div>
+            <div>           
             <div className="main">
                 <Header display={true}/>
-                <div className="row-padding"></div>
-           
-                <Bio/>
-              
+                <Bio/> 
                 <Projects/>
                 <div className="row-padding"></div>
             </div>
