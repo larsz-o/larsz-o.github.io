@@ -1,4 +1,5 @@
 
+
 a, .link {
   text-decoration: none;
   color: #66666E;
@@ -170,6 +171,9 @@ min-height: 5vh;
   background-color: black;
   color: white;
 }
+.header {
+  background-color: black;
+}
 .header-link{
   color: black; 
   margin: 0;
@@ -216,7 +220,6 @@ html, body {
   font-size: .9em;
 }
 .image-false {
-  background-color: whitesmoke;
   padding-bottom: 10vh;
 }
 .large-image {
@@ -239,6 +242,9 @@ text-align: center;
   font-family: 'Roboto Mono', monospace;
   color: #3626A7 !important;
   font-size: .9em;
+}
+.name-header {
+  color: white;
 }
 .nav-arrow {
   cursor: pointer;
@@ -324,6 +330,7 @@ p{
   margin-left: 1%; 
   font-weight: 400;
   font-size: 1.3em;
+  color: #DAFF7D;
 }
 .title {
   margin: 0;
