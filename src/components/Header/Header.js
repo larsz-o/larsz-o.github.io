@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Social from '../Social/Social';
+
 
 class Header extends Component {
     render() {
@@ -17,7 +17,6 @@ class Header extends Component {
                             <a className="plain-link" href="/"><h2 className="name-header">Lars Mackenzie, PhD</h2></a>
                             <h3 className="subheading">learning designer + web developer </h3>
                             <div className={`flex-box flex-evenly flex-stretch column-12 ${this.props.display}`} >
-                                <Social />
                             </div>
 
 
