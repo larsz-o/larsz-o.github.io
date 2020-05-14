@@ -275,12 +275,7 @@ text-align: center;
   background: radial-gradient(circle at 20% 20%,#5183f5 25%,#4640ff 100%);
   box-shadow: 0.5rem 1.25rem 1.75rem 0 rgba(100,110,140,.4);
   color: hsla(0,0%,100%,.9);
-  border-radius: 6px;
   padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
 }
 .none {
   display: none;

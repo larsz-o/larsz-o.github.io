@@ -11,13 +11,14 @@ class Projects extends Component {
                 { name: 'Open Educational Resource Development', category: 'lx', class: '' },
                 { name: 'Web Application Development', category: 'web', class: '' },
                 { name: 'Interactive Lesson Design', category: 'lx', class: '' },
-                { name: 'Learning Management System Administration', category: 'web', class: '' },
+                { name: 'Animation Design', category: 'web', class: '' },
                 { name: 'User Interface Design', category: 'web', class: '' },
                 {name:  'User Research', category: 'lx', class: ''},
                 { name: 'Cloud Computing System Administration', category: 'web', class: '' },
                 { name: 'Curriculum Development', category: 'lx', class: '' },
                 { name: 'Game Design', category: 'web', class: '' },
                 { name: 'Universal Design for Learning', category: 'lx', class: '' },
+                { name: 'Learning Management System Administration', category: 'web', class: '' },
                 { name: 'Feedback and Coaching', category: 'teaching', class: '' },
                 { name: 'Audio and Video Editing', category: 'lx', class: '' },
                 { name: 'Project Scoping', category: 'lx', class: '' },
@@ -28,7 +29,8 @@ class Projects extends Component {
                 { name: 'Evaluation and Testing', category: 'research', class: '' },
                 { name: 'Workshop Design and Facilitation', category: 'teaching', class: '' },
                 { name: 'Digital Storytelling', category: 'lx', class: '' },
-                { name: 'Narrative Mapping', category: 'lx', class: '' }
+                { name: 'Narrative Mapping', category: 'lx', class: '' },
+                { name: 'Prototyping', category: 'research', class: '' },
 
             ],
             dev: [

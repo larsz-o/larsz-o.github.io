@@ -4,13 +4,13 @@ import React, { Component } from 'react';
 class Header extends Component {
     render() {
         return (
-            <div className="header">
+            <div className="header note-container">
                 <div className={`image-${this.props.display}`}>
                     <div className="row-padding"></div>
                     <div className="flex-box-left">
                         <div className="column-1"></div>
                         {this.props.display && <div className={`column-5`}>
-                            <a href="/#/"><img src={require('../images/lars-dark.png')} alt="Lars headshot" height="300px" className="bio-img" /></a>
+                            <a href="/#/"><img src={require('../images/lars-01.png')} alt="Lars headshot" height="300px" className="bio-img" /></a>
                         </div>}
                         {this.props.display && <div className="column-1"></div>}
                         <div className="column-5">
