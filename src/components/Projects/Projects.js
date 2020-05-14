@@ -137,7 +137,7 @@ class Projects extends Component {
                         
                        
                     </DialogTitle>
-                    <p className="room">I am currently available for freelance learning design and web development work. Send me an email at <a href="mailto:larsmackenzie@gmail.com">larsmackenzie@gmail.com</a> to get the conversation started.</p>
+                    <p className="room">I am currently available for freelance learning design and web development work. Send me an email at <a className="email-link" href="mailto:larsmackenzie@gmail.com">larsmackenzie@gmail.com</a> to get the conversation started.</p>
                     <div className="flex-box-center space">
                         <img src={require('../images/send (1).png')} alt="paper airplane" height="64px"/>
                     </div>

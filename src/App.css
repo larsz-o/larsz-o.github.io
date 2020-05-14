@@ -108,12 +108,8 @@ padding: 10px;
 .close:hover{
   cursor: pointer;
 }
-.divider {
-  height: .9vh;
-  background: linear-gradient(217deg, rgba(201, 122, 233,.8), rgba(201, 122, 233, 0) 70.71%),
-  linear-gradient(127deg, rgba(85, 238, 154, 0.8), rgba(85, 238, 154,0) 70.71%),
-  linear-gradient(336deg, rgba(11,79,108,.8), rgba(11,79,108,0) 70.71%);
-  background: rgba(115, 115, 115, .3);
+.email-link {
+  color: #4640ff;
 }
 .flex-box {
   display: flex;
@@ -346,7 +342,7 @@ p{
   margin-left: 90%;
 }
 .room {
-  padding: 8px;
+  padding: 2vw;
 }
 .rotate{
   transform: rotate(180deg);
