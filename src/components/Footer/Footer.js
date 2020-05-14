@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Social from '../Social/Social';
 class Footer extends Component{
     constructor(props){
         super(props);
@@ -16,8 +16,9 @@ class Footer extends Component{
     }
     render(){
         return(
-            <footer className="flex-box flex-end no-wrap">
-                <p className="greeting"><span>Lars Mackenzie Designs&nbsp;&nbsp;&nbsp;</span> <span>&copy;2016 - {this.state.year}</span></p>
+            <footer>
+                <Social/>
+                <p><span>Lars Mackenzie Designs&nbsp;&nbsp;</span> <span>&copy;2016 - {this.state.year}</span> </p>
             </footer>
         )
     }

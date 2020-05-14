@@ -106,10 +106,10 @@ class Projects extends Component {
         return (
             <div className="projects">
                 <div className="flex-box-left">
-                    <div className="column-2"></div>
-                    <div className="column-8 grayed">
-                        {isDesktop ? ( <h3>Skills</h3>):( <h3 onMouseEnter={() => this.setState({ ...this.state, show: true })} onMouseLeave={()=>this.setState({...this.state, show: false})}>Skills</h3>)}
-                       
+                    <div className="column-1"></div>
+                    <div className="column-10 grayed">
+                        {isDesktop ? ( <h3 className="greeting">I am experienced in:</h3>):( <h3 onMouseEnter={() => this.setState({ ...this.state, show: true })} onMouseLeave={()=>this.setState({...this.state, show: false})}>I am experienced in:</h3>)}
+                        <div className="row-padding"></div>
                         <div className="flex-box">
                             {this.state.projects.map((project, i) => {
                                 return (
@@ -122,16 +122,7 @@ class Projects extends Component {
                             })}
                         </div>
                         <div className="row-padding"></div>
-                        <div className="flex-box-center">
-                            {this.state.dev.map((icon, i) => {
-                                return (
-                                    <div key={i}>
-                                   <img src={require(`../images/icons/${icon.img}`)} alt={icon.name} className="icon" height="75px" onMouseEnter={()=>this.setState({...this.state, displayToolTip: true})} onMouseLeave={()=>this.setState({...this.state, displayToolTip: false})}/>
-                                {this.state.displayToolTip && <div className="tool-tip">{icon.name}</div>}
-                                   </div>
-                                )
-                            })}
-                        </div>
+
 
                     </div>
                 </div>
@@ -144,12 +135,16 @@ class Projects extends Component {
                         
                        
                     </DialogTitle>
-                    <p className="bio-text">I am currently available for freelance learning design and web development work. Send me an email at <a href="mailto:larsmackenzie@gmail.com">larsmackenzie@gmail.com</a> to get the conversation started.</p>
+                    <p className="room">I am currently available for freelance learning design and web development work. Send me an email at <a href="mailto:larsmackenzie@gmail.com">larsmackenzie@gmail.com</a> to get the conversation started.</p>
                     <div className="flex-box-center space">
                         <img src={require('../images/send (1).png')} alt="paper airplane" height="64px"/>
                     </div>
                     
                 </Dialog>
+                <div className="flex-box flex-center">
+                    <img src={require('../images/typing.gif')} alt="typing"/>
+                </div>
+              
             </div>
         )
     }
