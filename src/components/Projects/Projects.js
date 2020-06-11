@@ -13,7 +13,7 @@ class Projects extends Component {
                 { name: 'Interactive Lesson Design', category: 'lx', class: '' },
                 { name: 'Animation Design', category: 'web', class: '' },
                 { name: 'User Interface Design', category: 'web', class: '' },
-                {name:  'User Research', category: 'lx', class: ''},
+                { name: 'User Research', category: 'lx', class: '' },
                 { name: 'Cloud Computing System Administration', category: 'web', class: '' },
                 { name: 'Curriculum Development', category: 'lx', class: '' },
                 { name: 'Game Design', category: 'web', class: '' },
@@ -38,11 +38,11 @@ class Projects extends Component {
                 { name: 'React', img: 'react-original-wordmark.svg' },
                 { name: 'Redux', img: 'redux-original.svg' },
                 { name: 'AngularJS', img: 'angularjs-plain.svg' },
-                {name: 'C#', img: 'csharp-original.svg'},
+                { name: 'C#', img: 'csharp-original.svg' },
                 { name: 'Bootstrap', img: 'bootstrap-plain.svg' },
                 { name: 'CSS3', img: 'css3-original.svg' },
                 { name: 'HTML5', img: 'html5-original.svg' },
-                {name: 'Illustrator', img: 'ai.svg'},
+                { name: 'Illustrator', img: 'ai.svg' },
                 { name: 'PhotoShop', img: 'photoshop.svg' },
                 { name: 'iMovie', img: 'imovie.svg' },
                 { name: 'GarageBand', img: 'garage-band.svg' },
@@ -110,16 +110,16 @@ class Projects extends Component {
                 <div className="flex-box-left">
                     <div className="column-1"></div>
                     <div className="column-10 grayed">
-                        {isDesktop ? ( <h3 className="greeting">I am experienced in:</h3>):( <h3 onMouseEnter={() => this.setState({ ...this.state, show: true })} onMouseLeave={()=>this.setState({...this.state, show: false})}>I am experienced in:</h3>)}
+                        {isDesktop ? (<h3 className="greeting">I am experienced in:</h3>) : (<h3 onMouseEnter={() => this.setState({ ...this.state, show: true })} onMouseLeave={() => this.setState({ ...this.state, show: false })}>I am experienced in:</h3>)}
                         <div className="row-padding"></div>
                         <div className="flex-box">
                             {this.state.projects.map((project, i) => {
                                 return (
-                              <div>
-                                  {isDesktop ? (<div onClick={() => this.setState({ ...this.state, show: true })} onMouseEnter={() => this.setClass(project)} onMouseLeave={() => this.resetClass(project)} className={`project-card ${project.class}`} key={i}><p>{project.name}</p></div>):
-                                  (<div onMouseEnter={() => this.setClass(project)} onMouseLeave={() => this.resetClass(project)} className={`project-card ${project.class}`} key={i}><p>{project.name}</p></div>)}
-                              </div>
-                                    
+                                    <div>
+                                        {isDesktop ? (<div onClick={() => this.setState({ ...this.state, show: true })} onMouseEnter={() => this.setClass(project)} onMouseLeave={() => this.resetClass(project)} className={`project-card ${project.class}`} key={i}><p>{project.name}</p></div>) :
+                                            (<div onMouseEnter={() => this.setClass(project)} onMouseLeave={() => this.resetClass(project)} className={`project-card ${project.class}`} key={i}><p>{project.name}</p></div>)}
+                                    </div>
+
                                 )
                             })}
                         </div>
@@ -128,25 +128,25 @@ class Projects extends Component {
 
                     </div>
                 </div>
-                <Dialog open={this.state.show} onClose={()=>this.setState({...this.state, show: false})}>
+                <Dialog open={this.state.show} onClose={() => this.setState({ ...this.state, show: false })}>
                     <DialogTitle>
                         <div className="flex-end">
-                           <button className="close" onClick={()=>this.setState({...this.state, show: false})} ><CloseIcon /></button> 
+                            <button className="close" onClick={() => this.setState({ ...this.state, show: false })} ><CloseIcon /></button>
                         </div>
                         <h3 className="title">Interested in working together?</h3>
-                        
-                       
+
+
                     </DialogTitle>
                     <p className="room">I am currently available for freelance learning design and web development work. Send me an email at <a className="email-link" href="mailto:larsmackenzie@gmail.com">larsmackenzie@gmail.com</a> to get the conversation started.</p>
                     <div className="flex-box-center space">
-                        <img src={require('../images/send (1).png')} alt="paper airplane" height="64px"/>
+                        <img src={require('../images/send (1).png')} alt="paper airplane" height="64px" />
                     </div>
-                    
+
                 </Dialog>
                 <div className="flex-box flex-center">
-                    <img src={require('../images/typing.gif')} alt="typing"/>
+                    <img src={require('../images/typing.gif')} alt="typing" />
                 </div>
-              
+
             </div>
         )
     }
